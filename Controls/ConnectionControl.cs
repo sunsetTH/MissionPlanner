@@ -93,19 +93,19 @@ namespace MissionPlanner.Controls
 
         public void UpdateSysIDS()
         {
-            cmb_sysid.Items.Clear();
+            //cmb_sysid.Items.Clear();
 
-            foreach (var port in MainV2.Comports.ToArray())
-            {
-                var list = port.MAVlist.GetRawIDS();
+            //foreach (var port in MainV2.Comports.ToArray())
+            //{
+            //    var list = port.MAVlist.GetRawIDS();
 
-                foreach (int item in list)
-                {
-                    var temp = new port_sysid() { compid = (item % 256) , sysid = (item /256), port = port};
+            //    foreach (int item in list)
+            //    {
+            //        var temp = new port_sysid() { compid = (item % 256) , sysid = (item /256), port = port};
 
-                    cmb_sysid.Items.Add(temp);
-                }
-            }
+            //        cmb_sysid.Items.Add(temp);
+            //    }
+            //}
         }
 
         internal struct port_sysid
@@ -117,23 +117,23 @@ namespace MissionPlanner.Controls
 
         private void CMB_sysid_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmb_sysid.SelectedItem == null)
-                return;
+            //if (cmb_sysid.SelectedItem == null)
+            //    return;
 
-            var temp = (port_sysid) cmb_sysid.SelectedItem;
+            //var temp = (port_sysid) cmb_sysid.SelectedItem;
 
-            foreach (var port in MainV2.Comports)
-            {
-                if (port == temp.port)
-                {
-                    MainV2.comPort = port;
-                    MainV2.comPort.sysidcurrent = temp.sysid;
-                    MainV2.comPort.compidcurrent = temp.compid;
+            //foreach (var port in MainV2.Comports)
+            //{
+            //    if (port == temp.port)
+            //    {
+            //        MainV2.comPort = port;
+            //        MainV2.comPort.sysidcurrent = temp.sysid;
+            //        MainV2.comPort.compidcurrent = temp.compid;
 
-                    if (MainV2.comPort.MAV.param.Count == 0 && !(Control.ModifierKeys == Keys.Control))
-                        MainV2.comPort.getParamList();
-                }
-            }
+            //        if (MainV2.comPort.MAV.param.Count == 0 && !(Control.ModifierKeys == Keys.Control))
+            //            MainV2.comPort.getParamList();
+            //    }
+            //}
         }
 
         private void cmb_sysid_Format(object sender, ListControlConvertEventArgs e)

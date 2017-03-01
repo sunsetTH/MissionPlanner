@@ -408,9 +408,9 @@ namespace MissionPlanner
 
         public void updateLayout(object sender, EventArgs e)
         {
-            MenuSimulation.Visible = DisplayConfiguration.displaySimulation;
-            MenuTerminal.Visible = DisplayConfiguration.displayTerminal;
-            MenuHelp.Visible = DisplayConfiguration.displayHelp;
+            //MenuSimulation.Visible = DisplayConfiguration.displaySimulation;
+            //MenuTerminal.Visible = DisplayConfiguration.displayTerminal;
+            //MenuHelp.Visible = DisplayConfiguration.displayHelp;
             MissionPlanner.Controls.BackstageView.BackstageView.Advanced = DisplayConfiguration.isAdvancedMode;
 
             if (MainV2.instance.FlightData != null)
@@ -524,7 +524,7 @@ namespace MissionPlanner
             _connectionControl.CMB_baudrate.TextChanged += this.CMB_baudrate_TextChanged;
             _connectionControl.CMB_serialport.SelectedIndexChanged += this.CMB_serialport_SelectedIndexChanged;
             _connectionControl.CMB_serialport.Click += this.CMB_serialport_Click;
-            _connectionControl.cmb_sysid.Click += cmb_sysid_Click;
+            //_connectionControl.cmb_sysid.Click += cmb_sysid_Click;
 
             _connectionControl.ShowLinkStats += (sender, e) => ShowConnectionStatsForm();
             srtm.datadirectory = Settings.GetDataDirectory() +
@@ -884,25 +884,25 @@ namespace MissionPlanner
 
             if (Program.Logo != null && Program.name == "VVVVZ")
             {
-                MenuDonate.Click -= this.toolStripMenuItem1_Click;
-                MenuDonate.Text = "";
-                MenuDonate.Image = Program.Logo;
+                //MenuDonate.Click -= this.toolStripMenuItem1_Click;
+                //MenuDonate.Text = "";
+                //MenuDonate.Image = Program.Logo;
 
-                MenuDonate.Click += MenuCustom_Click;
+                //MenuDonate.Click += MenuCustom_Click;
 
                 MenuFlightData.Visible = false;
                 MenuFlightPlanner.Visible = true;
                 MenuConfigTune.Visible = false;
-                MenuHelp.Visible = false;
+                //MenuHelp.Visible = false;
                 MenuInitConfig.Visible = false;
-                MenuSimulation.Visible = false;
-                MenuTerminal.Visible = false;
+                //MenuSimulation.Visible = false;
+                //MenuTerminal.Visible = false;
             }
             else if (Program.Logo != null && Program.names.Contains(Program.name))
             {
-                MenuDonate.Click -= this.toolStripMenuItem1_Click;
-                MenuDonate.Text = "";
-                MenuDonate.Image = Program.Logo;
+                //MenuDonate.Click -= this.toolStripMenuItem1_Click;
+                //MenuDonate.Text = "";
+                //MenuDonate.Image = Program.Logo;
             }
 
             Application.DoEvents();
@@ -996,23 +996,23 @@ namespace MissionPlanner
             MenuFlightData.Image = displayicons.fd;
             MenuFlightPlanner.Image = displayicons.fp;
             MenuInitConfig.Image = displayicons.initsetup;
-            MenuSimulation.Image = displayicons.sim;
+            //MenuSimulation.Image = displayicons.sim;
             MenuConfigTune.Image = displayicons.config_tuning;
-            MenuTerminal.Image = displayicons.terminal;
+            //MenuTerminal.Image = displayicons.terminal;
             MenuConnect.Image = displayicons.connect;
-            MenuHelp.Image = displayicons.help;
-            MenuDonate.Image = displayicons.donate;
+            //MenuHelp.Image = displayicons.help;
+            //MenuDonate.Image = displayicons.donate;
 
 
             MenuFlightData.ForeColor = ThemeManager.TextColor;
             MenuFlightPlanner.ForeColor = ThemeManager.TextColor;
             MenuInitConfig.ForeColor = ThemeManager.TextColor;
-            MenuSimulation.ForeColor = ThemeManager.TextColor;
+            //MenuSimulation.ForeColor = ThemeManager.TextColor;
             MenuConfigTune.ForeColor = ThemeManager.TextColor;
-            MenuTerminal.ForeColor = ThemeManager.TextColor;
+            //MenuTerminal.ForeColor = ThemeManager.TextColor;
             MenuConnect.ForeColor = ThemeManager.TextColor;
-            MenuHelp.ForeColor = ThemeManager.TextColor;
-            MenuDonate.ForeColor = ThemeManager.TextColor;
+            //MenuHelp.ForeColor = ThemeManager.TextColor;
+            //MenuDonate.ForeColor = ThemeManager.TextColor;
         }
 
         void MenuCustom_Click(object sender, EventArgs e)
@@ -1022,10 +1022,10 @@ namespace MissionPlanner
                 MenuFlightData.Visible = true;
                 MenuFlightPlanner.Visible = true;
                 MenuConfigTune.Visible = true;
-                MenuHelp.Visible = true;
+                //MenuHelp.Visible = true;
                 MenuInitConfig.Visible = true;
-                MenuSimulation.Visible = true;
-                MenuTerminal.Visible = true;
+                //MenuSimulation.Visible = true;
+                //MenuTerminal.Visible = true;
             }
             else
             {
@@ -1034,10 +1034,10 @@ namespace MissionPlanner
                     MenuFlightData.Visible = true;
                     MenuFlightPlanner.Visible = true;
                     MenuConfigTune.Visible = true;
-                    MenuHelp.Visible = true;
+                    //MenuHelp.Visible = true;
                     MenuInitConfig.Visible = true;
-                    MenuSimulation.Visible = true;
-                    MenuTerminal.Visible = true;
+                    //MenuSimulation.Visible = true;
+                    //MenuTerminal.Visible = true;
                 }
             }
         }
@@ -3332,7 +3332,7 @@ namespace MissionPlanner
         {
             this.SuspendLayout();
             panel1.Location = new Point(0, 0);
-            panel1.Width = menu.Width;
+            //panel1.Width = menu.Width;
             panel1.BringToFront();
             panel1.Visible = true;
             this.ResumeLayout();
@@ -3355,7 +3355,7 @@ namespace MissionPlanner
                 panel1.Dock = DockStyle.Top;
                 panel1.SendToBack();
                 panel1.Visible = true;
-                menu.Visible = false;
+                //menu.Visible = false;
                 MainMenu.MouseLeave -= MainMenu_MouseLeave;
                 panel1.MouseLeave -= MainMenu_MouseLeave;
                 toolStripConnectionControl.MouseLeave -= MainMenu_MouseLeave;
@@ -3369,8 +3369,8 @@ namespace MissionPlanner
                 MainMenu.MouseLeave += MainMenu_MouseLeave;
                 panel1.MouseLeave += MainMenu_MouseLeave;
                 toolStripConnectionControl.MouseLeave += MainMenu_MouseLeave;
-                menu.Visible = true;
-                menu.SendToBack();
+                //menu.Visible = true;
+                //menu.SendToBack();
                 this.ResumeLayout(false);
             }
         }
