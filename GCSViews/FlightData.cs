@@ -263,12 +263,12 @@ namespace MissionPlanner.GCSViews
 
             CMB_action.DataSource = list;
 
-            CMB_modes.DataSource = Common.getModesList(MainV2.comPort.MAV.cs);
-            CMB_modes.ValueMember = "Key";
-            CMB_modes.DisplayMember = "Value";
+            CMB_setwp.DataSource = Common.getModesList(MainV2.comPort.MAV.cs);
+            CMB_setwp.ValueMember = "Key";
+            CMB_setwp.DisplayMember = "Value";
 
             //default to auto
-            CMB_modes.Text = "Auto";
+            CMB_setwp.Text = "Auto";
 
             CMB_setwp.SelectedIndex = 0;
 
@@ -317,10 +317,10 @@ namespace MissionPlanner.GCSViews
             gMapControl1.Overlays.Add(poioverlay);
 
             float gspeedMax = Settings.Instance.GetFloat("GspeedMAX");
-            if (gspeedMax != 0)
-            {
-                Gspeed.MaxValue = gspeedMax;
-            }
+            //if (gspeedMax != 0)
+            //{
+            //    Gspeed.MaxValue = gspeedMax;
+            //}
 
             MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
 
@@ -664,14 +664,14 @@ namespace MissionPlanner.GCSViews
                 MainV2.comPort.MAV.cs.firmware.ToString());
             var item2 = ParameterMetaDataRepository.GetParameterOptionsInt("MNT_DEFLT_MODE",
                 MainV2.comPort.MAV.cs.firmware.ToString());
-            if (item1.Count > 0)
-                CMB_mountmode.DataSource = item1;
+            //if (item1.Count > 0)
+            //    CMB_mountmode.DataSource = item1;
 
-            if (item2.Count > 0)
-                CMB_mountmode.DataSource = item2;
+            //if (item2.Count > 0)
+            //    CMB_mountmode.DataSource = item2;
 
-            CMB_mountmode.DisplayMember = "Value";
-            CMB_mountmode.ValueMember = "Key";
+            //CMB_mountmode.DisplayMember = "Value";
+            //CMB_mountmode.ValueMember = "Key";
 
             if (Settings.Instance["CHK_autopan"] != null)
                 CHK_autopan.Checked = Settings.Instance.GetBoolean("CHK_autopan");
@@ -1080,12 +1080,12 @@ namespace MissionPlanner.GCSViews
                     if (tracklast.AddSeconds(1.2) < DateTime.Now)
                     {
                         // show disable joystick button
-                        if (MainV2.joystick != null && MainV2.joystick.enabled)
-                        {
-                            this.Invoke((MethodInvoker) delegate {
-                                but_disablejoystick.Visible = true;
-                            });
-                        }
+                        //if (MainV2.joystick != null && MainV2.joystick.enabled)
+                        //{
+                        //    this.Invoke((MethodInvoker) delegate {
+                        //        but_disablejoystick.Visible = true;
+                        //    });
+                        //}
 
                         if (Settings.Instance.GetBoolean("CHK_maprotation"))
                         {
@@ -1655,14 +1655,14 @@ namespace MissionPlanner.GCSViews
                     {
                         MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceQuickTab);
                     }
-                    else if (tabControlactions.SelectedTab == tabGauges)
-                    {
-                        MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
-                    }
-                    else if (tabControlactions.SelectedTab == tabPagePreFlight)
-                    {
-                        MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
-                    }
+                    //else if (tabControlactions.SelectedTab == tabGauges)
+                    //{
+                    //    MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
+                    //}
+                    //else if (tabControlactions.SelectedTab == tabPagePreFlight)
+                    //{
+                    //    MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
+                    //}
                 }
                 else
                 {
@@ -2390,63 +2390,63 @@ namespace MissionPlanner.GCSViews
 
             float scale = tabGauges.Width/(float) tabGauges.Height;
 
-            if (scale > 0.5 && scale < 1.9)
-            {
-// square
-                Gvspeed.Visible = true;
+//            if (scale > 0.5 && scale < 1.9)
+//            {
+//// square
+//                Gvspeed.Visible = true;
 
-                if (tabGauges.Height < tabGauges.Width)
-                    myheight = tabGauges.Height/2;
-                else
-                    myheight = tabGauges.Width/2;
+//                if (tabGauges.Height < tabGauges.Width)
+//                    myheight = tabGauges.Height/2;
+//                else
+//                    myheight = tabGauges.Width/2;
 
-                Gvspeed.Height = myheight;
-                Gspeed.Height = myheight;
-                Galt.Height = myheight;
-                Gheading.Height = myheight;
+//                Gvspeed.Height = myheight;
+//                Gspeed.Height = myheight;
+//                Galt.Height = myheight;
+//                Gheading.Height = myheight;
 
-                Gvspeed.Location = new Point(0, 0);
-                Gspeed.Location = new Point(Gvspeed.Right, 0);
+//                Gvspeed.Location = new Point(0, 0);
+//                Gspeed.Location = new Point(Gvspeed.Right, 0);
 
 
-                Galt.Location = new Point(0, Gspeed.Bottom);
-                Gheading.Location = new Point(Galt.Right, Gspeed.Bottom);
+//                Galt.Location = new Point(0, Gspeed.Bottom);
+//                Gheading.Location = new Point(Galt.Right, Gspeed.Bottom);
 
-                return;
-            }
+//                return;
+//            }
 
-            if (tabGauges.Width < 500)
-            {
-                Gvspeed.Visible = false;
-                mywidth = tabGauges.Width/3;
+            //if (tabGauges.Width < 500)
+            //{
+            //    Gvspeed.Visible = false;
+            //    mywidth = tabGauges.Width/3;
 
-                Gspeed.Height = mywidth;
-                Galt.Height = mywidth;
-                Gheading.Height = mywidth;
+            //    Gspeed.Height = mywidth;
+            //    Galt.Height = mywidth;
+            //    Gheading.Height = mywidth;
 
-                Gspeed.Location = new Point(0, 0);
-            }
-            else
-            {
-                Gvspeed.Visible = true;
-                mywidth = tabGauges.Width/4;
+            //    Gspeed.Location = new Point(0, 0);
+            //}
+            //else
+            //{
+            //    Gvspeed.Visible = true;
+            //    mywidth = tabGauges.Width/4;
 
-                Gvspeed.Height = mywidth;
-                Gspeed.Height = mywidth;
-                Galt.Height = mywidth;
-                Gheading.Height = mywidth;
+            //    Gvspeed.Height = mywidth;
+            //    Gspeed.Height = mywidth;
+            //    Galt.Height = mywidth;
+            //    Gheading.Height = mywidth;
 
-                Gvspeed.Location = new Point(0, 0);
-                Gspeed.Location = new Point(Gvspeed.Right, 0);
-            }
+            //    Gvspeed.Location = new Point(0, 0);
+            //    Gspeed.Location = new Point(Gvspeed.Right, 0);
+            //}
 
-            Galt.Location = new Point(Gspeed.Right, 0);
-            Gheading.Location = new Point(Galt.Right, 0);
+            //Galt.Location = new Point(Gspeed.Right, 0);
+            //Gheading.Location = new Point(Galt.Right, 0);
         }
 
         private void BUT_setmode_Click(object sender, EventArgs e)
         {
-            MainV2.comPort.setMode(CMB_modes.Text);
+            MainV2.comPort.setMode(CMB_setwp.Text);
         }
 
         private void BUT_setwp_Click(object sender, EventArgs e)
@@ -2573,9 +2573,9 @@ namespace MissionPlanner.GCSViews
 
         private void CMB_modes_Click(object sender, EventArgs e)
         {
-            CMB_modes.DataSource = Common.getModesList(MainV2.comPort.MAV.cs);
-            CMB_modes.ValueMember = "Key";
-            CMB_modes.DisplayMember = "Value";
+            CMB_setwp.DataSource = Common.getModesList(MainV2.comPort.MAV.cs);
+            CMB_setwp.ValueMember = "Key";
+            CMB_setwp.DisplayMember = "Value";
         }
 
         private void hud1_DoubleClick(object sender, EventArgs e)
@@ -2664,12 +2664,12 @@ namespace MissionPlanner.GCSViews
 
         private void Gspeed_DoubleClick(object sender, EventArgs e)
         {
-            string max = "60";
-            if (DialogResult.OK == InputBox.Show("Enter Max", "Enter Max Speed", ref max))
-            {
-                Gspeed.MaxValue = float.Parse(max);
-                Settings.Instance["GspeedMAX"] = Gspeed.MaxValue.ToString();
-            }
+            //string max = "60";
+            //if (DialogResult.OK == InputBox.Show("Enter Max", "Enter Max Speed", ref max))
+            //{
+            //    Gspeed.MaxValue = float.Parse(max);
+            //    Settings.Instance["GspeedMAX"] = Gspeed.MaxValue.ToString();
+            //}
         }
 
         private void recordHudToAVIToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3614,16 +3614,16 @@ namespace MissionPlanner.GCSViews
 
         private void BUT_select_script_Click(object sender, EventArgs e)
         {
-            if (openScriptDialog.ShowDialog() == DialogResult.OK)
-            {
-                selectedscript = openScriptDialog.FileName;
-                BUT_run_script.Visible = BUT_edit_selected.Visible = true;
-                labelSelectedScript.Text = "Selected Script: " + selectedscript;
-            }
-            else
-            {
-                selectedscript = "";
-            }
+            //if (openScriptDialog.ShowDialog() == DialogResult.OK)
+            //{
+            //    selectedscript = openScriptDialog.FileName;
+            //    BUT_run_script.Visible = BUT_edit_selected.Visible = true;
+            //    labelSelectedScript.Text = "Selected Script: " + selectedscript;
+            //}
+            //else
+            //{
+            //    selectedscript = "";
+            //}
         }
 
         private void BUT_run_script_Click(object sender, EventArgs e)
@@ -3635,19 +3635,19 @@ namespace MissionPlanner.GCSViews
                     IsBackground = true,
                     Name = "Script Thread (new)"
                 };
-                labelScriptStatus.Text = "Script Status: Running";
+                //labelScriptStatus.Text = "Script Status: Running";
 
                 script = null;
                 outputwindowstarted = false;
 
                 scriptthread.Start();
                 scriptrunning = true;
-                BUT_run_script.Enabled = false;
-                BUT_select_script.Enabled = false;
-                BUT_abort_script.Visible = true;
-                BUT_edit_selected.Enabled = false;
-                scriptChecker.Enabled = true;
-                checkBoxRedirectOutput.Enabled = false;
+                //BUT_run_script.Enabled = false;
+                //BUT_select_script.Enabled = false;
+                //BUT_abort_script.Visible = true;
+                //BUT_edit_selected.Enabled = false;
+                //scriptChecker.Enabled = true;
+                //checkBoxRedirectOutput.Enabled = false;
 
                 while (script == null)
                 {
@@ -3667,41 +3667,41 @@ namespace MissionPlanner.GCSViews
 
         void run_selected_script()
         {
-            script = new Script(checkBoxRedirectOutput.Checked);
-            script.runScript(selectedscript);
-            scriptrunning = false;
+            //script = new Script(checkBoxRedirectOutput.Checked);
+            //script.runScript(selectedscript);
+            //scriptrunning = false;
         }
 
         private void scriptChecker_Tick(object sender, EventArgs e)
         {
-            if (!scriptrunning)
-            {
-                labelScriptStatus.Text = "Script Status: Finished (or aborted)";
-                scriptChecker.Enabled = false;
-                BUT_select_script.Enabled = true;
-                BUT_run_script.Enabled = true;
-                BUT_abort_script.Visible = false;
-                BUT_edit_selected.Enabled = true;
-                checkBoxRedirectOutput.Enabled = true;
-            }
-            else if ((script != null) && (checkBoxRedirectOutput.Checked) && (!outputwindowstarted))
-            {
-                outputwindowstarted = true;
+            //if (!scriptrunning)
+            ////{
+            ////    labelScriptStatus.Text = "Script Status: Finished (or aborted)";
+            ////    scriptChecker.Enabled = false;
+            ////    BUT_select_script.Enabled = true;
+            ////    BUT_run_script.Enabled = true;
+            ////    BUT_abort_script.Visible = false;
+            ////    BUT_edit_selected.Enabled = true;
+            ////    checkBoxRedirectOutput.Enabled = true;
+            //}
+            //else if ((script != null) && (checkBoxRedirectOutput.Checked) && (!outputwindowstarted))
+            //{
+            //    outputwindowstarted = true;
 
-                ScriptConsole console = new ScriptConsole();
-                console.SetScript(script);
-                ThemeManager.ApplyThemeTo(console);
-                console.Show();
-                console.BringToFront();
-                components.Add(console);
-            }
+            //    ScriptConsole console = new ScriptConsole();
+            //    console.SetScript(script);
+            //    ThemeManager.ApplyThemeTo(console);
+            //    console.Show();
+            //    console.BringToFront();
+            //    components.Add(console);
+            //}
         }
 
         private void BUT_abort_script_Click(object sender, EventArgs e)
         {
             scriptthread.Abort();
             scriptrunning = false;
-            BUT_abort_script.Visible = false;
+            //BUT_abort_script.Visible = false;
         }
 
         private void BUT_edit_selected_Click(object sender, EventArgs e)
@@ -3746,23 +3746,23 @@ namespace MissionPlanner.GCSViews
 
         private void BUT_mountmode_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (MainV2.comPort.MAV.param.ContainsKey("MNT_MODE"))
-                {
-                    MainV2.comPort.setParam("MNT_MODE",(int) CMB_mountmode.SelectedValue);
-                }
-                else
-                {
-                    // copter 3.3 acks with an error, but is ok
-                    MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_MOUNT_CONTROL, 0, 0, 0, 0, 0, 0,
-                        (int) CMB_mountmode.SelectedValue);
-                }
-            }
-            catch
-            {
-                CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR);
-            }
+            //try
+            //{
+            //    if (MainV2.comPort.MAV.param.ContainsKey("MNT_MODE"))
+            //    {
+            //        MainV2.comPort.setParam("MNT_MODE",(int) CMB_mountmode.SelectedValue);
+            //    }
+            //    else
+            //    {
+            //        // copter 3.3 acks with an error, but is ok
+            //        MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_MOUNT_CONTROL, 0, 0, 0, 0, 0, 0,
+            //            (int) CMB_mountmode.SelectedValue);
+            //    }
+            //}
+            //catch
+            //{
+            //    CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR);
+            //}
         }
 
         private void but_bintolog_Click(object sender, EventArgs e)
@@ -4220,7 +4220,7 @@ namespace MissionPlanner.GCSViews
 
                 MainV2.joystick.clearRCOverride();
 
-                but_disablejoystick.Visible = false;
+                //but_disablejoystick.Visible = false;
             }
         }
 

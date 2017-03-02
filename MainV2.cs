@@ -417,22 +417,22 @@ namespace MissionPlanner
             {
                 TabControl t = MainV2.instance.FlightData.tabControlactions;
 
-                if (DisplayConfiguration.displayAdvActionsTab && !t.TabPages.Contains(FlightData.tabActions))
-                {
-                    t.TabPages.Add(FlightData.tabActions);
-                }
-                else if (!DisplayConfiguration.displayAdvActionsTab && t.TabPages.Contains(FlightData.tabActions))
-                {
-                    t.TabPages.Remove(FlightData.tabActions);
-                }
-                if (DisplayConfiguration.displaySimpleActionsTab && !t.TabPages.Contains(FlightData.tabActionsSimple))
-                {
-                    t.TabPages.Add(FlightData.tabActionsSimple);
-                }
-                else if (!DisplayConfiguration.displaySimpleActionsTab && t.TabPages.Contains(FlightData.tabActionsSimple))
-                {
-                    t.TabPages.Remove(FlightData.tabActionsSimple);
-                }
+                //if (DisplayConfiguration.displayAdvActionsTab && !t.TabPages.Contains(FlightData.tabActions))
+                //{
+                //    t.TabPages.Add(FlightData.tabActions);
+                //}
+                //else if (!DisplayConfiguration.displayAdvActionsTab && t.TabPages.Contains(FlightData.tabActions))
+                //{
+                //    t.TabPages.Remove(FlightData.tabActions);
+                //}
+                //if (DisplayConfiguration.displaySimpleActionsTab && !t.TabPages.Contains(FlightData.tabActionsSimple))
+                //{
+                //    t.TabPages.Add(FlightData.tabActionsSimple);
+                //}
+                //else if (!DisplayConfiguration.displaySimpleActionsTab && t.TabPages.Contains(FlightData.tabActionsSimple))
+                //{
+                //    t.TabPages.Remove(FlightData.tabActionsSimple);
+                //}
                 if (DisplayConfiguration.displayStatusTab && !t.TabPages.Contains(FlightData.tabStatus))
                 {
                     t.TabPages.Add(FlightData.tabStatus);
@@ -449,14 +449,14 @@ namespace MissionPlanner
                 {
                     t.TabPages.Remove(FlightData.tabServo);
                 }
-                if (DisplayConfiguration.displayScriptsTab && !t.TabPages.Contains(FlightData.tabScripts))
-                {
-                    t.TabPages.Add(FlightData.tabScripts);
-                }
-                else if (!DisplayConfiguration.displayScriptsTab && t.TabPages.Contains(FlightData.tabScripts))
-                {
-                    t.TabPages.Remove(FlightData.tabScripts);
-                }
+                //if (DisplayConfiguration.displayScriptsTab && !t.TabPages.Contains(FlightData.tabScripts))
+                //{
+                //    t.TabPages.Add(FlightData.tabScripts);
+                //}
+                //else if (!DisplayConfiguration.displayScriptsTab && t.TabPages.Contains(FlightData.tabScripts))
+                //{
+                //    t.TabPages.Remove(FlightData.tabScripts);
+                //}
             }
         }
         
