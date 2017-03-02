@@ -100,7 +100,7 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>mpdesktop.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -130,7 +130,7 @@
     <LangVersion>default</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -3963,6 +3963,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Parachute.png" />
+    <Content Include="icon.ico" />
     <Content Include="LogAnalyzer\py2exe\DataflashLog.py" />
     <Content Include="LogAnalyzer\py2exe\example_output.xml" />
     <Content Include="LogAnalyzer\py2exe\LogAnalyzer.py" />
@@ -4006,6 +4007,71 @@
     <None Include="Resources\FW icons 2013+logos-012.png" />
     <None Include="Resources\uavcanesc.jpg" />
     <None Include="Resources\boat.png" />
+    <None Include="Resources\icon\4+.png" />
+    <None Include="Resources\icon\4x.png" />
+    <None Include="Resources\icon\6+.png" />
+    <None Include="Resources\icon\6x.jpg" />
+    <None Include="Resources\icon\6x.png" />
+    <None Include="Resources\icon\8+.png" />
+    <None Include="Resources\icon\8x.png" />
+    <None Include="Resources\icon\40.png" />
+    <None Include="Resources\icon\41.png" />
+    <None Include="Resources\icon\60.png" />
+    <None Include="Resources\icon\61.png" />
+    <None Include="Resources\icon\80.png" />
+    <None Include="Resources\icon\81.png" />
+    <None Include="Resources\icon\90edc97cc55cf066-9158706de6fdef89-641e630226c7d655d4f37532f307ae73.jpg.jpg" />
+    <None Include="Resources\icon\4848n.ico" />
+    <None Include="Resources\icon\1483616956_connections.png" />
+    <None Include="Resources\icon\1483617001_Sharethis.png" />
+    <None Include="Resources\icon\apn_off_48px_1067659_easyicon.net.png" />
+    <None Include="Resources\icon\apn_on_48px_1067660_easyicon.net.png" />
+    <None Include="Resources\icon\application_applications_build_development_hammer_tool_48px_3_easyicon.net.png" />
+    <None Include="Resources\icon\buried_map_trail_treasure_x_72px_11_easyicon.net.png" />
+    <None Include="Resources\icon\chain_link_48px_1179069_easyicon.net.png" />
+    <None Include="Resources\icon\config.png" />
+    <None Include="Resources\icon\config_set_48px_548300_easyicon.net.png" />
+    <None Include="Resources\icon\config_set_48px_548301_easyicon.net.png" />
+    <None Include="Resources\icon\config_set_128px_548300_easyicon.net.ico" />
+    <None Include="Resources\icon\configure_2_48px_539568_easyicon.net.png" />
+    <None Include="Resources\icon\configure_2_72px_539568_easyicon.net.ico" />
+    <None Include="Resources\icon\configure_2_72px_539568_easyicon.net.png" />
+    <None Include="Resources\icon\configure_2_128px_539568_easyicon.net.ico" />
+    <None Include="Resources\icon\configure_2_128px_539568_easyicon.net.png" />
+    <None Include="Resources\icon\flydata.png" />
+    <None Include="Resources\icon\icon.ico" />
+    <None Include="Resources\icon\icon128.png" />
+    <None Include="Resources\icon\iconWarning32.png" />
+    <None Include="Resources\icon\iconWarning48.png" />
+    <None Include="Resources\icon\link.png" />
+    <None Include="Resources\icon\linklost.png" />
+    <None Include="Resources\icon\logo.png" />
+    <None Include="Resources\icon\map_location_51.714285714286px_1201146_easyicon.net.png" />
+    <None Include="Resources\icon\map_location_128px_1201146_easyicon.net.ico" />
+    <None Include="Resources\icon\Paper_Plane_48px_1066419_easyicon.net.png" />
+    <None Include="Resources\icon\Paper_Plane_64px_1066419_easyicon.net.png" />
+    <None Include="Resources\icon\refresh.png" />
+    <None Include="Resources\icon\Refresh_48px_1186205_easyicon.net.png" />
+    <None Include="Resources\icon\refresh_page.png" />
+    <None Include="Resources\icon\route.png" />
+    <None Include="Resources\icon\route_38.29718875502px_1202801_easyicon.net.png" />
+    <None Include="Resources\icon\route_47.730337078652px_1201221_easyicon.net.png" />
+    <None Include="Resources\icon\route_48px_1204746_easyicon.net.png" />
+    <None Include="Resources\icon\route_72px_1088359_easyicon.net.ico" />
+    <None Include="Resources\icon\route_72px_1088359_easyicon.net.png" />
+    <None Include="Resources\icon\route_127.2808988764px_1201221_easyicon.net.png" />
+    <None Include="Resources\icon\route_128px_1201221_easyicon.net.ico" />
+    <None Include="Resources\icon\route_128px_1204746_easyicon.net.ico" />
+    <None Include="Resources\icon\route_617px_1204746_easyicon.net.png" />
+    <None Include="Resources\icon\set.png" />
+    <None Include="Resources\icon\set_system_48px_12353_easyicon.net.png" />
+    <None Include="Resources\icon\set_system_128px_12353_easyicon.net.ico" />
+    <None Include="Resources\icon\set_system_128px_12353_easyicon.net.png" />
+    <None Include="Resources\icon\tethering_48px_1067319_easyicon.net.png" />
+    <None Include="Resources\icon\tools_48px_1067326_easyicon.net.png" />
+    <None Include="Resources\icon\tools_48px_1067327_easyicon.net.png" />
+    <None Include="Resources\icon\韦加无人机LOGO修改转曲-1.jpg" />
+    <None Include="Resources\icon\韦加无人机LOGO修改转曲-1.png" />
     <Content Include="Scripts\example7.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -4280,7 +4346,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -4398,7 +4464,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
-</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>

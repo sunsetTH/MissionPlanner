@@ -119,12 +119,12 @@ namespace MissionPlanner
 
             public override Image connect
             {
-                get { return global::MissionPlanner.Properties.Resources.light_connect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.link; }
             }
 
             public override Image disconnect
             {
-                get { return global::MissionPlanner.Properties.Resources.light_disconnect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.linklost; }
             }
 
             public override Image bg
@@ -181,12 +181,12 @@ namespace MissionPlanner
 
             public override Image connect
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_connect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.link; }
             }
 
             public override Image disconnect
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_disconnect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.linklost; }
             }
 
             public override Image bg
@@ -1133,52 +1133,95 @@ namespace MissionPlanner
 
         private void MenuFlightData_Click(object sender, EventArgs e)
         {
-            MyView.ShowScreen("FlightData");
+            //MyView.ShowScreen("FlightData");
+            splitContainer1.Panel2.Controls.Clear();
+            GCSViews.FlightData frmAddUser = FlightData;
+
+            //frmAddUser.Parent = splitContainer1.Panel2;
+            splitContainer1.Panel2.Controls.Add(frmAddUser);
+            frmAddUser.Dock = DockStyle.Fill;
+            frmAddUser.Show();
         }
 
         private void MenuFlightPlanner_Click(object sender, EventArgs e)
         {
-            MyView.ShowScreen("FlightPlanner");
+            //MyView.ShowScreen("FlightPlanner");
+            splitContainer1.Panel2.Controls.Clear();
+            GCSViews.FlightPlanner frmAddUser = new GCSViews.FlightPlanner();
+
+            //frmAddUser.Parent = splitContainer1.Panel2;
+            splitContainer1.Panel2.Controls.Add(frmAddUser);
+            frmAddUser.Dock = DockStyle.Fill;
+            frmAddUser.Show();
         }
 
         public void MenuSetup_Click(object sender, EventArgs e)
         {
             if (Settings.Instance.GetBoolean("password_protect") == false)
             {
-                MyView.ShowScreen("HWConfig");
+                //MyView.ShowScreen("HWConfig");
+                splitContainer1.Panel2.Controls.Clear();
+                GCSViews.InitialSetup frmAddUser = new GCSViews.InitialSetup();
+
+                //frmAddUser.Parent = splitContainer1.Panel2;
+                splitContainer1.Panel2.Controls.Add(frmAddUser);
+                frmAddUser.Dock = DockStyle.Fill;
+                frmAddUser.Show();
             }
             else
             {
                 if (Password.VerifyPassword())
                 {
-                    MyView.ShowScreen("HWConfig");
+                    //MyView.ShowScreen("HWConfig");
+                    splitContainer1.Panel2.Controls.Clear();
+                    GCSViews.InitialSetup frmAddUser = new GCSViews.InitialSetup();
+
+                    //frmAddUser.Parent = splitContainer1.Panel2;
+                    splitContainer1.Panel2.Controls.Add(frmAddUser);
+                    frmAddUser.Dock = DockStyle.Fill;
+                    frmAddUser.Show();
                 }
             }
         }
 
         private void MenuSimulation_Click(object sender, EventArgs e)
         {
-            MyView.ShowScreen("Simulation");
+            //MyView.ShowScreen("Simulation");
         }
 
         private void MenuTuning_Click(object sender, EventArgs e)
         {
             if (Settings.Instance.GetBoolean("password_protect") == false)
             {
-                MyView.ShowScreen("SWConfig");
+                //MyView.ShowScreen("SWConfig");
+                splitContainer1.Panel2.Controls.Clear();
+                GCSViews.SoftwareConfig frmAddUser = new GCSViews.SoftwareConfig();
+
+                //frmAddUser.Parent = splitContainer1.Panel2;
+                splitContainer1.Panel2.Controls.Add(frmAddUser);
+                frmAddUser.Dock = DockStyle.Fill;
+                frmAddUser.Show();
+
             }
             else
             {
                 if (Password.VerifyPassword())
                 {
-                    MyView.ShowScreen("SWConfig");
+                    //MyView.ShowScreen("SWConfig");
+                    splitContainer1.Panel2.Controls.Clear();
+                    GCSViews.SoftwareConfig frmAddUser = new GCSViews.SoftwareConfig();
+
+                    //frmAddUser.Parent = splitContainer1.Panel2;
+                    splitContainer1.Panel2.Controls.Add(frmAddUser);
+                    frmAddUser.Dock = DockStyle.Fill;
+                    frmAddUser.Show();
                 }
             }
         }
 
         private void MenuTerminal_Click(object sender, EventArgs e)
         {
-            MyView.ShowScreen("Terminal");
+            //MyView.ShowScreen("Terminal");
         }
 
         public void doDisconnect(MAVLinkInterface comPort)
@@ -1481,7 +1524,15 @@ namespace MissionPlanner
                 // save the baudrate for this port
                 Settings.Instance[_connectionControl.CMB_serialport.Text + "_BAUD"] = _connectionControl.CMB_baudrate.Text;
 
-                this.Text = titlebar + " " + comPort.MAV.VersionString;
+                //this.Text = titlebar + " " + comPort.MAV.VersionString;
+                if (comPort.MAV.aptype == MAVLink.MAV_TYPE.HEXAROTOR)
+                    this.Text = "六旋翼";//comPort.MAV.VersionString;
+                else if (comPort.MAV.aptype == MAVLink.MAV_TYPE.QUADROTOR)
+                    this.Text = "四旋翼";
+                else if (comPort.MAV.aptype == MAVLink.MAV_TYPE.OCTOROTOR)
+                    this.Text = "八旋翼";
+                else
+                    this.Text = "其他机型";
 
                 // refresh config window if needed
                 if (MyView.current != null)
@@ -1498,7 +1549,30 @@ namespace MissionPlanner
                     // only do it if we are connected.
                     if (comPort.BaseStream.IsOpen)
                     {
-                        MenuFlightPlanner_Click(null, null);
+                        foreach (Control ctl in splitContainer1.Panel2.Controls)
+                        {
+                            ctl.Visible = false;
+                        }
+
+                        foreach (MainSwitcher.Screen sc in MainV2.View.screens)
+                        {
+                            if (sc.Name == "FlightPlanner")
+                            {
+                                splitContainer1.Panel2.Controls.Add(sc.Control);
+                                ThemeManager.ApplyThemeTo(sc.Control);
+                                ThemeManager.ApplyThemeTo(this);
+
+                                sc.Control.Dock = DockStyle.Fill;
+                                sc.Control.Visible = true;
+
+                                if (sc.Control is IActivate)
+                                {
+                                    ((IActivate)(sc.Control)).Activate();
+                                }
+                                                        
+                                break;
+                            }
+                        }
                         FlightPlanner.BUT_read_Click(null, null);
                     }
                 }
@@ -2777,24 +2851,24 @@ namespace MissionPlanner
             MissionPlanner.Utilities.Tracking.AddTiming("AppLoad", "Load Time",
                 (DateTime.Now - Program.starttime).TotalMilliseconds, "");
 
-            try
-            {
-                // single update check per day - in a seperate thread
-                if (Settings.Instance["update_check"] != DateTime.Now.ToShortDateString())
-                {
-                    System.Threading.ThreadPool.QueueUserWorkItem(checkupdate);
-                    Settings.Instance["update_check"] = DateTime.Now.ToShortDateString();
-                }
-                else if (Settings.Instance.GetBoolean("beta_updates") == true)
-                {
-                    MissionPlanner.Utilities.Update.dobeta = true;
-                    System.Threading.ThreadPool.QueueUserWorkItem(checkupdate);
-                }
-            }
-            catch (Exception ex)
-            {
-                log.Error("Update check failed", ex);
-            }
+            //try
+            //{
+            //    // single update check per day - in a seperate thread
+            //    if (Settings.Instance["update_check"] != DateTime.Now.ToShortDateString())
+            //    {
+            //        System.Threading.ThreadPool.QueueUserWorkItem(checkupdate);
+            //        Settings.Instance["update_check"] = DateTime.Now.ToShortDateString();
+            //    }
+            //    else if (Settings.Instance.GetBoolean("beta_updates") == true)
+            //    {
+            //        MissionPlanner.Utilities.Update.dobeta = true;
+            //        System.Threading.ThreadPool.QueueUserWorkItem(checkupdate);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    log.Error("Update check failed", ex);
+            //}
 
             // play a tlog that was passed to the program/ load a bin log passed
             if (Program.args.Length > 0)
@@ -3039,20 +3113,20 @@ namespace MissionPlanner
             }
         }
 
-        private void checkupdate(object stuff)
-        {
-            if (Program.WindowsStoreApp)
-                return;
+        //private void checkupdate(object stuff)
+        //{
+        //    if (Program.WindowsStoreApp)
+        //        return;
 
-            try
-            {
-                MissionPlanner.Utilities.Update.CheckForUpdate();
-            }
-            catch (Exception ex)
-            {
-                log.Error("Update check failed", ex);
-            }
-        }
+        //    try
+        //    {
+        //        MissionPlanner.Utilities.Update.CheckForUpdate();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        log.Error("Update check failed", ex);
+        //    }
+        //}
 
         private void MainV2_Resize(object sender, EventArgs e)
         {
@@ -3323,7 +3397,7 @@ namespace MissionPlanner
 
             this.SuspendLayout();
 
-            panel1.Visible = false;
+           
 
             this.ResumeLayout();
         }
@@ -3331,10 +3405,6 @@ namespace MissionPlanner
         void menu_MouseEnter(object sender, EventArgs e)
         {
             this.SuspendLayout();
-            panel1.Location = new Point(0, 0);
-            //panel1.Width = menu.Width;
-            panel1.BringToFront();
-            panel1.Visible = true;
             this.ResumeLayout();
         }
 
@@ -3352,22 +3422,10 @@ namespace MissionPlanner
             if (!hide)
             {
                 this.SuspendLayout();
-                panel1.Dock = DockStyle.Top;
-                panel1.SendToBack();
-                panel1.Visible = true;
-                //menu.Visible = false;
-                MainMenu.MouseLeave -= MainMenu_MouseLeave;
-                panel1.MouseLeave -= MainMenu_MouseLeave;
-                toolStripConnectionControl.MouseLeave -= MainMenu_MouseLeave;
-                this.ResumeLayout(false);
+              
             }
             else
             {
-                this.SuspendLayout();
-                panel1.Dock = DockStyle.None;
-                panel1.Visible = false;
-                MainMenu.MouseLeave += MainMenu_MouseLeave;
-                panel1.MouseLeave += MainMenu_MouseLeave;
                 toolStripConnectionControl.MouseLeave += MainMenu_MouseLeave;
                 //menu.Visible = true;
                 //menu.SendToBack();

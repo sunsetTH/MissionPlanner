@@ -1691,4 +1691,193 @@ Control-S - save grid file\par
   <data name="boat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="apn_off_48px_1067659_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\apn_off_48px_1067659_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apn_on_48px_1067660_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\apn_on_48px_1067660_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_applications_build_development_hammer_tool_48px_3_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\application_applications_build_development_hammer_tool_48px_3_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buried_map_trail_treasure_x_72px_11_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\buried_map_trail_treasure_x_72px_11_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chain_link_48px_1179069_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\chain_link_48px_1179069_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="config" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\config.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configure_2_128px_539568_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\configure_2_128px_539568_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configure_2_128px_539568_easyicon_net1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\configure_2_128px_539568_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configure_2_48px_539568_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\configure_2_48px_539568_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configure_2_72px_539568_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\configure_2_72px_539568_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configure_2_72px_539568_easyicon_net1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\configure_2_72px_539568_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="config_set_128px_548300_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\config_set_128px_548300_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="config_set_48px_548300_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\config_set_48px_548300_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="config_set_48px_548301_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\config_set_48px_548301_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flydata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\flydata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\icon128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconWarning321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\iconWarning32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconWarning481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\iconWarning48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linklost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\linklost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_location_128px_1201146_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\map_location_128px_1201146_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_location_51_714285714286px_1201146_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\map_location_51.714285714286px_1201146_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paper_Plane_48px_1066419_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\Paper_Plane_48px_1066419_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paper_Plane_64px_1066419_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\Paper_Plane_64px_1066419_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_48px_1186205_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\Refresh_48px_1186205_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\refresh_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_128px_1201221_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_128px_1201221_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_128px_1204746_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_128px_1204746_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_38_29718875502px_1202801_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_38.29718875502px_1202801_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_47_730337078652px_1201221_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_47.730337078652px_1201221_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_48px_1204746_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_48px_1204746_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_617px_1204746_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_617px_1204746_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_72px_1088359_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_72px_1088359_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="route_72px_1088359_easyicon_net1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\route_72px_1088359_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\set.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_system_128px_12353_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\set_system_128px_12353_easyicon.net.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_system_128px_12353_easyicon_net1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\set_system_128px_12353_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_system_48px_12353_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\set_system_48px_12353_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tethering_48px_1067319_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\tethering_48px_1067319_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tools_48px_1067326_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\tools_48px_1067326_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tools_48px_1067327_easyicon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\tools_48px_1067327_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483616956_connections" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\1483616956_connections.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483617001_Sharethis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\1483617001_Sharethis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4848n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\4848n.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\4+.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\6x.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\6x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\6+.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\8x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\8+.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_90edc97cc55cf066_9158706de6fdef89_641e630226c7d655d4f37532f307ae73_jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\90edc97cc55cf066-9158706de6fdef89-641e630226c7d655d4f37532f307ae73.jpg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="韦加无人机LOGO修改转曲_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\韦加无人机LOGO修改转曲-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="韦加无人机LOGO修改转曲_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\韦加无人机LOGO修改转曲-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

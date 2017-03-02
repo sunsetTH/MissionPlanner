@@ -69,11 +69,11 @@ namespace MissionPlanner
                 new System.Net.Security.RemoteCertificateValidationCallback(
                     (sender, certificate, chain, policyErrors) => { return true; });
 
-            if (args.Length > 0 && args[0] == "/update")
-            {
-                Utilities.Update.DoUpdate();
-                return;
-            }
+            //if (args.Length > 0 && args[0] == "/update")
+            //{
+            //    Utilities.Update.DoUpdate();
+            //    return;
+            //}
 
             name = "Mission Planner";
 
@@ -116,7 +116,7 @@ namespace MissionPlanner
 
             string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Splash.Text = name + " " + Application.ProductVersion + " build " + strVersion;
-            Splash.Show();
+            //Splash.Show();
 
             Application.DoEvents();
             Application.DoEvents();
