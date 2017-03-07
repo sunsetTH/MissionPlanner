@@ -39,6 +39,9 @@
             this.quickView3 = new MissionPlanner.Controls.QuickView();
             this.quickView2 = new MissionPlanner.Controls.QuickView();
             this.quickView1 = new MissionPlanner.Controls.QuickView();
+            this.quickView7 = new MissionPlanner.Controls.QuickView();
+            this.quickView8 = new MissionPlanner.Controls.QuickView();
+            this.quickView9 = new MissionPlanner.Controls.QuickView();
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
@@ -137,9 +140,6 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
-            this.quickView7 = new MissionPlanner.Controls.QuickView();
-            this.quickView8 = new MissionPlanner.Controls.QuickView();
-            this.quickView9 = new MissionPlanner.Controls.QuickView();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -446,7 +446,7 @@
             // 
             this.quickView6.ContextMenuStrip = this.contextMenuStripQuickView;
             this.quickView6.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
-            this.quickView6.desc = "DistToMAV";
+            this.quickView6.desc = "距机体距离";
             resources.ApplyResources(this.quickView6, "quickView6");
             this.quickView6.Name = "quickView6";
             this.quickView6.number = 0D;
@@ -475,7 +475,7 @@
             // 
             this.quickView5.ContextMenuStrip = this.contextMenuStripQuickView;
             this.quickView5.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
-            this.quickView5.desc = "verticalspeed";
+            this.quickView5.desc = "垂直速度";
             resources.ApplyResources(this.quickView5, "quickView5");
             this.quickView5.Name = "quickView5";
             this.quickView5.number = 0D;
@@ -486,8 +486,8 @@
             // quickView4
             // 
             this.quickView4.ContextMenuStrip = this.contextMenuStripQuickView;
-            this.quickView4.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
-            this.quickView4.desc = "yaw";
+            this.quickView4.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
+            this.quickView4.desc = "到家点距离";
             resources.ApplyResources(this.quickView4, "quickView4");
             this.quickView4.Name = "quickView4";
             this.quickView4.number = 0D;
@@ -499,7 +499,7 @@
             // 
             this.quickView3.ContextMenuStrip = this.contextMenuStripQuickView;
             this.quickView3.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
-            this.quickView3.desc = "wp_dist";
+            this.quickView3.desc = "航点距离";
             resources.ApplyResources(this.quickView3, "quickView3");
             this.quickView3.Name = "quickView3";
             this.quickView3.number = 0D;
@@ -511,7 +511,7 @@
             // 
             this.quickView2.ContextMenuStrip = this.contextMenuStripQuickView;
             this.quickView2.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
-            this.quickView2.desc = "groundspeed";
+            this.quickView2.desc = "地速";
             resources.ApplyResources(this.quickView2, "quickView2");
             this.quickView2.Name = "quickView2";
             this.quickView2.number = 0D;
@@ -523,7 +523,7 @@
             // 
             this.quickView1.ContextMenuStrip = this.contextMenuStripQuickView;
             this.quickView1.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
-            this.quickView1.desc = "alt";
+            this.quickView1.desc = "高度";
             resources.ApplyResources(this.quickView1, "quickView1");
             this.quickView1.Name = "quickView1";
             this.quickView1.number = 0D;
@@ -531,6 +531,36 @@
             this.quickView1.numberformat = "0.00";
             this.toolTip1.SetToolTip(this.quickView1, resources.GetString("quickView1.ToolTip"));
             this.quickView1.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
+            // 
+            // quickView7
+            // 
+            this.quickView7.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "roll", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
+            this.quickView7.desc = "航滚角";
+            resources.ApplyResources(this.quickView7, "quickView7");
+            this.quickView7.Name = "quickView7";
+            this.quickView7.number = 0D;
+            this.quickView7.numberColor = System.Drawing.SystemColors.ControlText;
+            this.quickView7.numberformat = "0.00";
+            // 
+            // quickView8
+            // 
+            this.quickView8.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
+            this.quickView8.desc = "航向角";
+            resources.ApplyResources(this.quickView8, "quickView8");
+            this.quickView8.Name = "quickView8";
+            this.quickView8.number = 0D;
+            this.quickView8.numberColor = System.Drawing.SystemColors.ControlText;
+            this.quickView8.numberformat = "0.00";
+            // 
+            // quickView9
+            // 
+            this.quickView9.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "pitch", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
+            this.quickView9.desc = "俯仰角";
+            resources.ApplyResources(this.quickView9, "quickView9");
+            this.quickView9.Name = "quickView9";
+            this.quickView9.number = 0D;
+            this.quickView9.numberColor = System.Drawing.SystemColors.ControlText;
+            this.quickView9.numberformat = "0.00";
             // 
             // tabStatus
             // 
@@ -1412,36 +1442,6 @@
             // 
             this.Messagetabtimer.Interval = 200;
             this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
-            // 
-            // quickView7
-            // 
-            this.quickView7.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "roll", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
-            this.quickView7.desc = "航滚角";
-            resources.ApplyResources(this.quickView7, "quickView7");
-            this.quickView7.Name = "quickView7";
-            this.quickView7.number = 0D;
-            this.quickView7.numberColor = System.Drawing.SystemColors.ControlText;
-            this.quickView7.numberformat = "0.00";
-            // 
-            // quickView8
-            // 
-            this.quickView8.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
-            this.quickView8.desc = "航向角";
-            resources.ApplyResources(this.quickView8, "quickView8");
-            this.quickView8.Name = "quickView8";
-            this.quickView8.number = 0D;
-            this.quickView8.numberColor = System.Drawing.SystemColors.ControlText;
-            this.quickView8.numberformat = "0.00";
-            // 
-            // quickView9
-            // 
-            this.quickView9.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "pitch", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
-            this.quickView9.desc = "俯仰角";
-            resources.ApplyResources(this.quickView9, "quickView9");
-            this.quickView9.Name = "quickView9";
-            this.quickView9.number = 0D;
-            this.quickView9.numberColor = System.Drawing.SystemColors.ControlText;
-            this.quickView9.numberformat = "0.00";
             // 
             // FlightData
             // 
