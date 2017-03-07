@@ -137,6 +137,9 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
+            this.quickView7 = new MissionPlanner.Controls.QuickView();
+            this.quickView8 = new MissionPlanner.Controls.QuickView();
+            this.quickView9 = new MissionPlanner.Controls.QuickView();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -434,6 +437,9 @@
             this.tableLayoutPanelQuick.Controls.Add(this.quickView3, 0, 1);
             this.tableLayoutPanelQuick.Controls.Add(this.quickView2, 1, 0);
             this.tableLayoutPanelQuick.Controls.Add(this.quickView1, 0, 0);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView7, 2, 0);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView8, 2, 2);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView9, 2, 1);
             this.tableLayoutPanelQuick.Name = "tableLayoutPanelQuick";
             // 
             // quickView6
@@ -1407,6 +1413,36 @@
             this.Messagetabtimer.Interval = 200;
             this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
             // 
+            // quickView7
+            // 
+            this.quickView7.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "roll", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
+            this.quickView7.desc = "航滚角";
+            resources.ApplyResources(this.quickView7, "quickView7");
+            this.quickView7.Name = "quickView7";
+            this.quickView7.number = 0D;
+            this.quickView7.numberColor = System.Drawing.SystemColors.ControlText;
+            this.quickView7.numberformat = "0.00";
+            // 
+            // quickView8
+            // 
+            this.quickView8.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
+            this.quickView8.desc = "航向角";
+            resources.ApplyResources(this.quickView8, "quickView8");
+            this.quickView8.Name = "quickView8";
+            this.quickView8.number = 0D;
+            this.quickView8.numberColor = System.Drawing.SystemColors.ControlText;
+            this.quickView8.numberformat = "0.00";
+            // 
+            // quickView9
+            // 
+            this.quickView9.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "pitch", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "N/A", "N2"));
+            this.quickView9.desc = "俯仰角";
+            resources.ApplyResources(this.quickView9, "quickView9");
+            this.quickView9.Name = "quickView9";
+            this.quickView9.number = 0D;
+            this.quickView9.numberColor = System.Drawing.SystemColors.ControlText;
+            this.quickView9.numberformat = "0.00";
+            // 
             // FlightData
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1599,5 +1635,8 @@
         private System.Windows.Forms.TabPage tabPagemessages;
         private System.Windows.Forms.TextBox txt_messagebox;
         private Controls.PreFlight.CheckListControl checkListControl2;
+        private Controls.QuickView quickView7;
+        private Controls.QuickView quickView8;
+        private Controls.QuickView quickView9;
     }
 }
