@@ -41,7 +41,7 @@
             this.BUT_edit.Name = "BUT_edit";
             this.BUT_edit.Size = new System.Drawing.Size(34, 23);
             this.BUT_edit.TabIndex = 0;
-            this.BUT_edit.Text = "Edit";
+            this.BUT_edit.Text = "设置";
             this.BUT_edit.UseVisualStyleBackColor = true;
             this.BUT_edit.Click += new System.EventHandler(this.BUT_edit_Click);
             // 
@@ -63,7 +63,6 @@
             // 
             // CheckListControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BUT_edit);

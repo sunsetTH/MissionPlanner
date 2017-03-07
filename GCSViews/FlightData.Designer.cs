@@ -113,16 +113,12 @@
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.onOffCameraOverlapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altitudeAngelSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Gheading = new MissionPlanner.Controls.HSI();
-            this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
-            this.windDir1 = new MissionPlanner.Controls.WindDir();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_hdop = new MissionPlanner.Controls.MyLabel();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lbl_sats = new MissionPlanner.Controls.MyLabel();
             this.gMapControl1 = new MissionPlanner.Controls.myGMAP();
             this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
@@ -132,6 +128,7 @@
             this.label1 = new MissionPlanner.Controls.MyLabel();
             this.CHK_autopan = new System.Windows.Forms.CheckBox();
             this.CB_tuning = new System.Windows.Forms.CheckBox();
+            this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.ZedGraphTimer = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -177,11 +174,11 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripMap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Zoomlevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -447,7 +444,7 @@
             resources.ApplyResources(this.quickView6, "quickView6");
             this.quickView6.Name = "quickView6";
             this.quickView6.number = 0D;
-            this.quickView6.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.quickView6.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
             this.quickView6.numberformat = "0.00";
             this.quickView6.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
             // 
@@ -476,7 +473,7 @@
             resources.ApplyResources(this.quickView5, "quickView5");
             this.quickView5.Name = "quickView5";
             this.quickView5.number = 0D;
-            this.quickView5.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(86)))));
+            this.quickView5.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
             this.quickView5.numberformat = "0.00";
             this.quickView5.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
             // 
@@ -488,7 +485,7 @@
             resources.ApplyResources(this.quickView4, "quickView4");
             this.quickView4.Name = "quickView4";
             this.quickView4.number = 0D;
-            this.quickView4.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(83)))));
+            this.quickView4.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
             this.quickView4.numberformat = "0.00";
             this.quickView4.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
             // 
@@ -512,7 +509,7 @@
             resources.ApplyResources(this.quickView2, "quickView2");
             this.quickView2.Name = "quickView2";
             this.quickView2.number = 0D;
-            this.quickView2.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(132)))), ((int)(((byte)(46)))));
+            this.quickView2.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
             this.quickView2.numberformat = "0.00";
             this.quickView2.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
             // 
@@ -524,7 +521,7 @@
             resources.ApplyResources(this.quickView1, "quickView1");
             this.quickView1.Name = "quickView1";
             this.quickView1.number = 0D;
-            this.quickView1.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(151)))), ((int)(((byte)(248)))));
+            this.quickView1.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
             this.quickView1.numberformat = "0.00";
             this.toolTip1.SetToolTip(this.quickView1, resources.GetString("quickView1.ToolTip"));
             this.quickView1.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
@@ -1066,9 +1063,6 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
-            this.splitContainer1.Panel2.Controls.Add(this.Gheading);
-            this.splitContainer1.Panel2.Controls.Add(this.distanceBar1);
-            this.splitContainer1.Panel2.Controls.Add(this.windDir1);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
@@ -1197,42 +1191,6 @@
             resources.ApplyResources(this.altitudeAngelSettingsToolStripMenuItem, "altitudeAngelSettingsToolStripMenuItem");
             this.altitudeAngelSettingsToolStripMenuItem.Click += new System.EventHandler(this.altitudeAngelSettingsToolStripMenuItem_Click);
             // 
-            // Gheading
-            // 
-            this.Gheading.BackColor = System.Drawing.Color.Gray;
-            resources.ApplyResources(this.Gheading, "Gheading");
-            this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("Heading", this.bindingSourceStatusTab, "yaw", true));
-            this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("NavHeading", this.bindingSourceStatusTab, "nav_bearing", true));
-            this.Gheading.Heading = 0;
-            this.Gheading.Name = "Gheading";
-            this.Gheading.NavHeading = 0;
-            // 
-            // bindingSourceStatusTab
-            // 
-            this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // distanceBar1
-            // 
-            this.distanceBar1.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.distanceBar1, "distanceBar1");
-            this.distanceBar1.Name = "distanceBar1";
-            this.distanceBar1.totaldist = 100F;
-            this.distanceBar1.traveleddist = 0F;
-            // 
-            // windDir1
-            // 
-            this.windDir1.BackColor = System.Drawing.Color.Transparent;
-            this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
-            resources.ApplyResources(this.windDir1, "windDir1");
-            this.windDir1.Name = "windDir1";
-            this.windDir1.Speed = 0D;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
@@ -1268,6 +1226,10 @@
             this.lbl_hdop.Name = "lbl_hdop";
             this.lbl_hdop.resize = true;
             this.toolTip1.SetToolTip(this.lbl_hdop, resources.GetString("lbl_hdop.ToolTip"));
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
             // 
             // lbl_sats
             // 
@@ -1397,6 +1359,10 @@
             this.CB_tuning.UseVisualStyleBackColor = true;
             this.CB_tuning.CheckedChanged += new System.EventHandler(this.CB_tuning_CheckedChanged);
             // 
+            // bindingSourceStatusTab
+            // 
+            this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
+            // 
             // bindingSourceGaugesTab
             // 
             this.bindingSourceGaugesTab.DataSource = typeof(MissionPlanner.CurrentState);
@@ -1493,12 +1459,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.contextMenuStripMap.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Zoomlevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
             this.ResumeLayout(false);
 
@@ -1548,13 +1514,11 @@
         private System.Windows.Forms.BindingSource bindingSourceGaugesTab;
         private System.Windows.Forms.ToolStripMenuItem setHomeHereToolStripMenuItem;
         private MissionPlanner.Controls.Coords coords1;
-        public Controls.WindDir windDir1;
         private System.Windows.Forms.Timer Messagetabtimer;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripactionstab;
         private System.Windows.Forms.ToolStripMenuItem addPoiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveFileToolStripMenuItem;
-        private Controls.DistanceBar distanceBar1;
         private System.Windows.Forms.ToolStripMenuItem takeOffToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem swapWithMapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem videoToolStripMenuItem;
@@ -1601,7 +1565,6 @@
         private Controls.QuickView quickView3;
         private Controls.QuickView quickView2;
         private Controls.QuickView quickView1;
-        private Controls.HSI Gheading;
         public System.Windows.Forms.TabPage tabStatus;
         public System.Windows.Forms.TabPage tabServo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelServos;
