@@ -1894,7 +1894,7 @@ namespace MissionPlanner.GCSViews
                 else
                 {
                     if (
-                        CustomMessageBox.Show("This will clear your existing planned mission, Continue?", "Confirm",
+                        CustomMessageBox.Show("继续操作将会清除已有航点数据，是否继续?", "警告",
                             MessageBoxButtons.OKCancel) != DialogResult.OK)
                     {
                         return;
@@ -1905,11 +1905,11 @@ namespace MissionPlanner.GCSViews
             ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Receiving WP's"
+                Text = "获取航点"
             };
 
             frmProgressReporter.DoWork += getWPs;
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Receiving WP's");
+            frmProgressReporter.UpdateProgressAndStatus(-1, "获取航点");
 
             ThemeManager.ApplyThemeTo(frmProgressReporter);
 
@@ -1928,7 +1928,7 @@ namespace MissionPlanner.GCSViews
 
                 if (!port.BaseStream.IsOpen)
                 {
-                    throw new Exception("Please Connect First!");
+                    throw new Exception("请确保系统已连接!");
                 }
 
                 MainV2.comPort.giveComport = true;
@@ -1937,7 +1937,7 @@ namespace MissionPlanner.GCSViews
 
                 log.Info("Getting Home");
 
-                ((ProgressReporterDialogue) sender).UpdateProgressAndStatus(0, "Getting WP count");
+                ((ProgressReporterDialogue) sender).UpdateProgressAndStatus(0, "获取航点");
 
                 if (port.MAV.apname == MAVLink.MAV_AUTOPILOT.PX4)
                 {
@@ -1965,13 +1965,13 @@ namespace MissionPlanner.GCSViews
                     }
 
                     log.Info("Getting WP" + a);
-                    ((ProgressReporterDialogue) sender).UpdateProgressAndStatus(a*100/cmdcount, "Getting WP " + a);
+                    ((ProgressReporterDialogue) sender).UpdateProgressAndStatus(a*100/cmdcount, "读取航点 " + a);
                     cmds.Add(port.getWP(a));
                 }
 
                 port.setWPACK();
 
-                ((ProgressReporterDialogue) sender).UpdateProgressAndStatus(100, "Done");
+                ((ProgressReporterDialogue) sender).UpdateProgressAndStatus(100, "完成");
 
                 log.Info("Done");
             }
