@@ -873,6 +873,16 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap drone_take_off_512 {
+            get {
+                object obj = ResourceManager.GetObject("drone_take_off_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap flydata {
             get {
                 object obj = ResourceManager.GetObject("flydata", resourceCulture);
@@ -1975,6 +1985,36 @@ namespace MissionPlanner.Properties {
         public static System.Drawing.Bitmap refresh_page {
             get {
                 object obj = ResourceManager.GetObject("refresh_page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Icon rot128 {
+            get {
+                object obj = ResourceManager.GetObject("rot128", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap rotor {
+            get {
+                object obj = ResourceManager.GetObject("rotor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap rotoricon {
+            get {
+                object obj = ResourceManager.GetObject("rotoricon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

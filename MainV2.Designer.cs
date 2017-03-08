@@ -115,7 +115,6 @@ namespace MissionPlanner
             // 
             // MenuFlightData
             // 
-            this.MenuFlightData.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.MenuFlightData, "MenuFlightData");
             this.MenuFlightData.ForeColor = System.Drawing.Color.White;
             this.MenuFlightData.Image = global::MissionPlanner.Properties.Resources.flydata;
@@ -125,7 +124,6 @@ namespace MissionPlanner
             // 
             // MenuFlightPlanner
             // 
-            this.MenuFlightPlanner.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.MenuFlightPlanner, "MenuFlightPlanner");
             this.MenuFlightPlanner.ForeColor = System.Drawing.Color.White;
             this.MenuFlightPlanner.Image = global::MissionPlanner.Properties.Resources.route;
@@ -135,7 +133,6 @@ namespace MissionPlanner
             // 
             // MenuInitConfig
             // 
-            this.MenuInitConfig.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.MenuInitConfig, "MenuInitConfig");
             this.MenuInitConfig.ForeColor = System.Drawing.Color.White;
             this.MenuInitConfig.Image = global::MissionPlanner.Properties.Resources.config;
@@ -145,7 +142,6 @@ namespace MissionPlanner
             // 
             // MenuConfigTune
             // 
-            this.MenuConfigTune.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.MenuConfigTune, "MenuConfigTune");
             this.MenuConfigTune.ForeColor = System.Drawing.Color.White;
             this.MenuConfigTune.Image = global::MissionPlanner.Properties.Resources.set;
@@ -156,7 +152,6 @@ namespace MissionPlanner
             // MenuConnect
             // 
             this.MenuConnect.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.MenuConnect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.MenuConnect, "MenuConnect");
             this.MenuConnect.ForeColor = System.Drawing.Color.White;
             this.MenuConnect.Image = global::MissionPlanner.Properties.Resources.link;
