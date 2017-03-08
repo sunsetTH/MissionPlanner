@@ -1880,4 +1880,16 @@ Control-S - save grid file\par
   <data name="韦加无人机LOGO修改转曲_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\韦加无人机LOGO修改转曲-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="drone_take_off_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drone_take_off-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rot128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rot128.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotoricon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotoricon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

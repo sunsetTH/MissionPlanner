@@ -249,12 +249,12 @@ namespace MissionPlanner.GCSViews
             List<string> list = new List<string>();
 
             {
-                list.Add("LOITER_UNLIM");
-                list.Add("RETURN_TO_LAUNCH");
-                list.Add("PREFLIGHT_CALIBRATION");
-                list.Add("MISSION_START");
-                list.Add("PREFLIGHT_REBOOT_SHUTDOWN");
-                list.Add("Trigger Camera NOW");
+                list.Add("悬停");
+                list.Add("返航");
+                list.Add("飞行前校准");
+                list.Add("执行任务");
+                list.Add("飞行前系统重启");
+                list.Add("相机触发");
                 //DO_SET_SERVO
                 //DO_REPEAT_SERVO
             }
@@ -280,7 +280,7 @@ namespace MissionPlanner.GCSViews
                                          "gmapcache" + Path.DirectorySeparatorChar;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
-            gMapControl1.Zoom = 3;
+            gMapControl1.Zoom = 5;
 
             gMapControl1.OnMapZoomChanged += gMapControl1_OnMapZoomChanged;
 
@@ -2165,7 +2165,7 @@ namespace MissionPlanner.GCSViews
                     marker = new GMapMarkerRect(point);
                     marker.ToolTip = new GMapToolTip(marker);
                     marker.ToolTipMode = MarkerTooltipMode.Always;
-                    marker.ToolTipText = "Dist to Home: " +
+                    marker.ToolTipText = "距家点距离： " +
                                          ((gMapControl1.MapProvider.Projection.GetDistance(point,
                                              MainV2.comPort.MAV.cs.HomeLocation.Point()) * 1000) *
                                           CurrentState.multiplierdist).ToString("0");

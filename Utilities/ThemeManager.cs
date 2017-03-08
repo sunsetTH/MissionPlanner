@@ -75,7 +75,7 @@ namespace MissionPlanner.Utilities
         /// <param name="theme"></param>
         public static void SetTheme(Themes theme)
         {
-            log.Debug("Theme set to " + Enum.GetName(typeof (Themes), theme));
+            log.Debug("Theme set to " + Enum.GetName(typeof(Themes), theme));
             _currentTheme = theme;
         }
 
@@ -96,7 +96,7 @@ namespace MissionPlanner.Utilities
         /// <param name="control"></param>
         public static void ApplyThemeTo(Control control)
         {
-            if(control is ContainerControl)
+            if (control is ContainerControl)
                 ((ContainerControl)control).AutoScaleMode = AutoScaleMode.None;
 
             switch (_currentTheme)
@@ -107,15 +107,17 @@ namespace MissionPlanner.Utilities
                     break;
 
                 case Themes.HighContrast:
-                    SetHighContrastColours();
+                    SetBurntKermitColors();
                     ApplyTheme(control, 0);
                     break;
 
                 case Themes.Test:
+                    SetBurntKermitColors();
                     ApplyTestTheme(control, 0);
                     break;
 
                 case Themes.Custom:
+                    SetBurntKermitColors();
                     ApplyCustomTheme(control, 0);
                     break;
 
@@ -284,7 +286,7 @@ mc:Ignorable=""d""
                 {
                     //   st.WriteLine(@"<WindowsFormsHost HorizontalAlignment=""Left"" VerticalAlignment=""Top"" Margin=""" + ctl.Location.X + "," + ctl.Location.Y + @",0,0"" Width=""" + ctl.Width + @""" Height=""" + ctl.Height + @""">");
 
-                    string[] names = ctl.GetType().FullName.Split(new char[] {'.'});
+                    string[] names = ctl.GetType().FullName.Split(new char[] { '.' });
 
                     string name = names[names.Length - 2] + ":" + names[names.Length - 1];
 
@@ -371,7 +373,7 @@ mc:Ignorable=""d""
                 }
                 else if (ctl is TrackBar)
                 {
-                    if (((TrackBar) ctl).Orientation == Orientation.Horizontal)
+                    if (((TrackBar)ctl).Orientation == Orientation.Horizontal)
                         st.WriteLine(@"<Slider Name=""" + ctl.Name +
                                      @""" HorizontalAlignment=""Left"" VerticalAlignment=""Top"" Margin=""" +
                                      ctl.Location.X + "," + ctl.Location.Y + @",0,0"" Width=""" + ctl.Width +
@@ -498,36 +500,36 @@ mc:Ignorable=""d""
 
             foreach (Control ctl in temp.Controls)
             {
-                if (ctl.GetType() == typeof (Panel))
+                if (ctl.GetType() == typeof(Panel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (GroupBox))
+                else if (ctl.GetType() == typeof(GroupBox))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (TreeView))
+                else if (ctl.GetType() == typeof(TreeView))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    TreeView txtr = (TreeView) ctl;
+                    TreeView txtr = (TreeView)ctl;
                     txtr.LineColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (MyLabel))
+                else if (ctl.GetType() == typeof(MyLabel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (Button))
+                else if (ctl.GetType() == typeof(Button))
                 {
                     ctl.ForeColor = TextColor;
                     ctl.BackColor = ButBG;
                 }
-                else if (ctl.GetType() == typeof (MyButton))
+                else if (ctl.GetType() == typeof(MyButton))
                 {
-                    Controls.MyButton but = (MyButton) ctl;
+                    Controls.MyButton but = (MyButton)ctl;
                     but.BGGradTop = ButBG;
                     try
                     {
@@ -539,28 +541,28 @@ mc:Ignorable=""d""
                     but.TextColor = TextColor;
                     but.Outline = ButBorder;
                 }
-                else if (ctl.GetType() == typeof (TextBox))
+                else if (ctl.GetType() == typeof(TextBox))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
-                    TextBox txt = (TextBox) ctl;
+                    TextBox txt = (TextBox)ctl;
                     txt.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (DomainUpDown))
+                else if (ctl.GetType() == typeof(DomainUpDown))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
-                    DomainUpDown txt = (DomainUpDown) ctl;
+                    DomainUpDown txt = (DomainUpDown)ctl;
                     txt.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (GroupBox) || ctl.GetType() == typeof (UserControl))
+                else if (ctl.GetType() == typeof(GroupBox) || ctl.GetType() == typeof(UserControl))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (ZedGraph.ZedGraphControl))
+                else if (ctl.GetType() == typeof(ZedGraph.ZedGraphControl))
                 {
-                    var zg1 = (ZedGraph.ZedGraphControl) ctl;
+                    var zg1 = (ZedGraph.ZedGraphControl)ctl;
                     zg1.GraphPane.Chart.Fill = new ZedGraph.Fill(ControlBGColor);
                     zg1.GraphPane.Fill = new ZedGraph.Fill(BGColor);
 
@@ -591,7 +593,7 @@ mc:Ignorable=""d""
                     zg1.GraphPane.Legend.Fill = new ZedGraph.Fill(ControlBGColor);
                     zg1.GraphPane.Legend.FontSpec.FontColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (BSE.Windows.Forms.Panel) || ctl.GetType() == typeof (SplitterPanel))
+                else if (ctl.GetType() == typeof(BSE.Windows.Forms.Panel) || ctl.GetType() == typeof(SplitterPanel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor; // Color.FromArgb(0xe6, 0xe8, 0xea);
@@ -608,14 +610,14 @@ mc:Ignorable=""d""
                     rbg.CenterColor = ControlBGColor;
                     rbg.OutsideColor = ButBG;
                 }
-                else if (ctl.GetType() == typeof (Form))
+                else if (ctl.GetType() == typeof(Form))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                     if (Program.IconFile != null)
                         ((Form)ctl).Icon = Icon.FromHandle(((Bitmap)Program.IconFile).GetHicon());
                 }
-                else if (ctl.GetType() == typeof (RichTextBox))
+                else if (ctl.GetType() == typeof(RichTextBox))
                 {
 
                     if ((ctl.Name == "TXT_terminal") && !MainV2.TerminalTheming)
@@ -631,33 +633,33 @@ mc:Ignorable=""d""
                         ctl.BackColor = ControlBGColor;
                         ctl.ForeColor = TextColor;
                         RichTextBox txtr = (RichTextBox)ctl;
-                    txtr.BorderStyle = BorderStyle.None;
+                        txtr.BorderStyle = BorderStyle.None;
+                    }
                 }
-            }
-                else if (ctl.GetType() == typeof (CheckedListBox))
+                else if (ctl.GetType() == typeof(CheckedListBox))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
-                    CheckedListBox txtr = (CheckedListBox) ctl;
+                    CheckedListBox txtr = (CheckedListBox)ctl;
                     txtr.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (TabPage))
+                else if (ctl.GetType() == typeof(TabPage))
                 {
                     ctl.BackColor = BGColor; //ControlBGColor
                     ctl.ForeColor = TextColor;
-                    TabPage txtr = (TabPage) ctl;
+                    TabPage txtr = (TabPage)ctl;
                     txtr.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (TabControl))
+                else if (ctl.GetType() == typeof(TabControl))
                 {
                     ctl.BackColor = BGColor; //ControlBGColor
                     ctl.ForeColor = TextColor;
-                    TabControl txtr = (TabControl) ctl;
+                    TabControl txtr = (TabControl)ctl;
                 }
-                else if (ctl.GetType() == typeof (DataGridView) || ctl.GetType() == typeof(MyDataGridView))
+                else if (ctl.GetType() == typeof(DataGridView) || ctl.GetType() == typeof(MyDataGridView))
                 {
                     ctl.ForeColor = TextColor;
-                    DataGridView dgv = (DataGridView) ctl;
+                    DataGridView dgv = (DataGridView)ctl;
                     dgv.EnableHeadersVisualStyles = false;
                     dgv.BorderStyle = BorderStyle.None;
                     dgv.BackgroundColor = BGColor;
@@ -673,40 +675,40 @@ mc:Ignorable=""d""
                     dgv.ColumnHeadersDefaultCellStyle = hs;
                     dgv.RowHeadersDefaultCellStyle = hs;
                 }
-                else if (ctl.GetType() == typeof (CheckBox) || ctl.GetType() == typeof (MavlinkCheckBox))
+                else if (ctl.GetType() == typeof(CheckBox) || ctl.GetType() == typeof(MavlinkCheckBox))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    CheckBox CHK = (CheckBox) ctl;
+                    CheckBox CHK = (CheckBox)ctl;
                     // CHK.FlatStyle = FlatStyle.Flat;
                 }
-                else if (ctl.GetType() == typeof (ComboBox) || ctl.GetType() == typeof (MavlinkComboBox))
+                else if (ctl.GetType() == typeof(ComboBox) || ctl.GetType() == typeof(MavlinkComboBox))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
-                    ComboBox CMB = (ComboBox) ctl;
+                    ComboBox CMB = (ComboBox)ctl;
                     CMB.FlatStyle = FlatStyle.Flat;
                 }
-                else if (ctl.GetType() == typeof (NumericUpDown) || ctl.GetType() == typeof (MavlinkNumericUpDown))
+                else if (ctl.GetType() == typeof(NumericUpDown) || ctl.GetType() == typeof(MavlinkNumericUpDown))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (TrackBar))
+                else if (ctl.GetType() == typeof(TrackBar))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (LinkLabel))
+                else if (ctl.GetType() == typeof(LinkLabel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    LinkLabel LNK = (LinkLabel) ctl;
+                    LinkLabel LNK = (LinkLabel)ctl;
                     LNK.ActiveLinkColor = TextColor;
                     LNK.LinkColor = TextColor;
                     LNK.VisitedLinkColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (BackstageView))
+                else if (ctl.GetType() == typeof(BackstageView))
                 {
                     var bsv = ctl as BackstageView;
 
@@ -718,11 +720,11 @@ mc:Ignorable=""d""
                     bsv.UnSelectedTextColor = Color.Gray;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
                 }
-                else if (ctl.GetType() == typeof (HorizontalProgressBar2) ||
-                         ctl.GetType() == typeof (VerticalProgressBar2))
+                else if (ctl.GetType() == typeof(HorizontalProgressBar2) ||
+                         ctl.GetType() == typeof(VerticalProgressBar2))
                 {
-                    ((HorizontalProgressBar2) ctl).BackgroundColor = ControlBGColor;
-                    ((HorizontalProgressBar2) ctl).ValueColor = Color.FromArgb(148, 193, 31);
+                    ((HorizontalProgressBar2)ctl).BackgroundColor = ControlBGColor;
+                    ((HorizontalProgressBar2)ctl).ValueColor = Color.FromArgb(148, 193, 31);
                 }
                 else if (ctl.GetType() == typeof(MyProgressBar))
                 {
@@ -739,9 +741,9 @@ mc:Ignorable=""d""
         {
             foreach (Control ctl in temp.Controls)
             {
-                if (ctl.GetType() == typeof (MyButton))
+                if (ctl.GetType() == typeof(MyButton))
                 {
-                    Controls.MyButton but = (MyButton) ctl;
+                    Controls.MyButton but = (MyButton)ctl;
                     but.BGGradTop = SystemColors.ControlLight;
                     but.BGGradBot = SystemColors.ControlDark;
                     but.TextColor = SystemColors.ControlText;
@@ -755,27 +757,30 @@ mc:Ignorable=""d""
 
         private static void SetBurntKermitColors()
         {
-            BGColor = Color.FromArgb(0x26, 0x27, 0x28);                     // This changes the colour of the main menu background
-            ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45);              // This changes the colour of the sub menu backgrounds
+            BGColor = Color.FromArgb(12, 52, 61);                     // This changes the colour of the main menu background
+                                                                      /*  ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45);   */           // This changes the colour of the sub menu backgrounds
+            ControlBGColor = Color.FromArgb(0x80, 0x80, 0x80);
             TextColor = Color.White;                                        // This changes the colour of text
             BGColorTextBox = Color.FromArgb(0x43, 0x44, 0x45);              // This changes the colour of the background of textboxes
-            ButtonTextColor = Color.FromArgb(64, 87, 4);                    // This changes the colour of button text
-            ButBG = Color.FromArgb(148, 193, 31);                           // This changes the colour of button backgrounds (Top)
-            ButBGBot = Color.FromArgb(205, 226, 150);                       // This changes the colour of button backgrounds (Bot)
+            ButtonTextColor = Color.FromArgb(0, 0, 0);                    // This changes the colour of button text
+            //ButBG = Color.FromArgb(148, 193, 31);   
+            ButBG = Color.FromArgb(135, 206, 250);                           // This changes the colour of button backgrounds (Top)
+
+            ButBGBot = Color.FromArgb(135, 206, 235);                       // This changes the colour of button backgrounds (Bot)
             ProgressBarColorTop = Color.FromArgb(102, 139, 26);             // These three variables change the colours of progress bars
             ProgressBarColorBot = Color.FromArgb(124, 164, 40);
             ProgressBarOutlineColor = Color.FromArgb(150, 174, 112);
-            BannerColor1 = Color.FromArgb(0x40, 0x57, 0x04);                // These two variables change the colours of banners such as "planner" umder configuration
-            BannerColor2 = Color.FromArgb(0x94, 0xC1, 0x1F);
+            BannerColor1 = Color.FromArgb(0, 191, 255);                // These two variables change the colours of banners such as "planner" umder configuration
+            BannerColor2 = Color.FromArgb(65, 105, 225);
             ColorNotEnabled = Color.FromArgb(150, 43, 58, 3);               // This changes the background color of buttons when not enabled
-            ColorMouseOver = Color.FromArgb(73, 43, 58, 3);                 // This changes the background color of buttons when the mouse is hovering over a button
-            ColorMouseDown = Color.FromArgb(73, 43, 58, 3);                 // This changes the background color of buttons when the mouse is clicked down on a button
+            ColorMouseOver = Color.FromArgb(0x76, 0xEE, 0xC6);                 // This changes the background color of buttons when the mouse is hovering over a button
+            ColorMouseDown = Color.White;                 // This changes the background color of buttons when the mouse is clicked down on a button
             CurrentPPMBackground = Color.Green;                             // This changes the background colour of the current PPM setting in the flight modes tab
             ZedGraphChartFill = Color.FromArgb(0x1F, 0x1F, 0x20);           // These three variables change the fill colours of Zed Graphs
             ZedGraphPaneFill = Color.FromArgb(0x37, 0x37, 0x38);
             ZedGraphLegendFill = Color.FromArgb(0x85, 0x84, 0x83);
             RTBForeColor = Color.WhiteSmoke;                                // This changes the colour of text in rich text boxes
-            BSVButtonAreaBGColor = Color.Black;                             // This changes the colour of a backstageview button area
+            BSVButtonAreaBGColor = Color.FromArgb(74, 112, 139);                              // This changes the colour of a backstageview button area
             UnselectedTextColour = Color.WhiteSmoke;                        // This changes the colour of unselected text in a BSV button
             HorizontalPBValueColor = Color.FromArgb(148, 193, 31);          // This changes the colour of the horizontal progressbar
 
@@ -809,13 +814,13 @@ mc:Ignorable=""d""
         private static void SetHighContrastColours()
         {
 
-            BGColor = Color.FromArgb(0xEE, 0xEE, 0xEE);                     // This changes the colour of the main menu background
-            ControlBGColor = Color.FromArgb(0xE2, 0xE2, 0xE2);              // This changes the colour of the sub menu backgrounds
+            BGColor = Color.FromArgb(213, 234, 243);                     // This changes the colour of the main menu background
+            ControlBGColor = Color.FromArgb(245, 234, 174);              // This changes the colour of the sub menu backgrounds
             TextColor = Color.Black;                                        // This changes the colour of text
             BGColorTextBox = ControlBGColor;                                // This changes the colour of the background of textboxes
             ButtonTextColor = Color.Black;                                  // This changes the colour of button text
-            ButBG = Color.FromArgb(0xFF, 0xFF, 0x99);                       // This changes the colour of button backgrounds (Top)
-            ButBGBot = Color.FromArgb(0xCC, 0xCC, 0x66);                    // This changes the colour of button backgrounds (Bot)
+            ButBG = Color.FromArgb(23, 197, 161);                       // This changes the colour of button backgrounds (Top)
+            ButBGBot = Color.FromArgb(23, 197, 161);                    // This changes the colour of button backgrounds (Bot)
             ProgressBarColorTop = Color.FromArgb(227, 227, 227);            // These three variables change the colours of progress bars
             ProgressBarColorBot = Color.FromArgb(227, 227, 227);
             ProgressBarOutlineColor = Color.FromArgb(150, 174, 112);
@@ -829,7 +834,7 @@ mc:Ignorable=""d""
             ZedGraphPaneFill = BGColor;
             ZedGraphLegendFill = ControlBGColor;
             RTBForeColor = TextColor;                                       // This changes the colour of text in rich text boxes
-            BSVButtonAreaBGColor = Color.White;                             // This changes the colour of a backstageview button area
+            BSVButtonAreaBGColor = Color.AliceBlue;                             // This changes the colour of a backstageview button area
             UnselectedTextColour = Color.Gray;                              // This changes the colour of unselected text in a BSV button
             HorizontalPBValueColor = Color.FromArgb(148, 193, 31);          // This changes the colour of the horizontal progressbar
 
@@ -870,43 +875,43 @@ mc:Ignorable=""d""
 
             foreach (Control ctl in temp.Controls)
             {
-                if (ctl.GetType() == typeof (Label))
+                if (ctl.GetType() == typeof(Label))
                 {
                     if (!(ctl.Tag is string && (string)ctl.Tag == "custom"))
                     {
                         ctl.ForeColor = TextColor;
                     }
                 }
-                else if (ctl.GetType() == typeof (TreeView))
+                else if (ctl.GetType() == typeof(TreeView))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    TreeView txtr = (TreeView) ctl;
+                    TreeView txtr = (TreeView)ctl;
                     txtr.LineColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (Panel))
+                else if (ctl.GetType() == typeof(Panel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (GroupBox))
+                else if (ctl.GetType() == typeof(GroupBox))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (MyLabel))
+                else if (ctl.GetType() == typeof(MyLabel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (Button))
+                else if (ctl.GetType() == typeof(Button))
                 {
                     ctl.ForeColor = Color.Black;
                     ctl.BackColor = ButBG;
                 }
-                else if (ctl.GetType() == typeof (MyButton))
+                else if (ctl.GetType() == typeof(MyButton))
                 {
-                    Controls.MyButton but = (MyButton) ctl;
+                    Controls.MyButton but = (MyButton)ctl;
                     but.BGGradTop = ButBG;
                     but.BGGradBot = ButBGBot;
                     but.TextColor = ButtonTextColor;
@@ -915,29 +920,29 @@ mc:Ignorable=""d""
                     but.ColorMouseOver = ColorMouseOver;
                     but.ColorNotEnabled = ColorNotEnabled;
                 }
-                else if (ctl.GetType() == typeof (TextBox))
+                else if (ctl.GetType() == typeof(TextBox))
                 {
                     ctl.BackColor = BGColorTextBox;             //sets the BG colour of text boxes to specified colour
                     ctl.ForeColor = TextColor;
-                    TextBox txt = (TextBox) ctl;
+                    TextBox txt = (TextBox)ctl;
                     txt.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (DomainUpDown))
+                else if (ctl.GetType() == typeof(DomainUpDown))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
-                    DomainUpDown txt = (DomainUpDown) ctl;
+                    DomainUpDown txt = (DomainUpDown)ctl;
                     txt.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (GroupBox) || ctl.GetType() == typeof (UserControl) ||
-                         ctl.GetType() == typeof (DataTreeListView))
+                else if (ctl.GetType() == typeof(GroupBox) || ctl.GetType() == typeof(UserControl) ||
+                         ctl.GetType() == typeof(DataTreeListView))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (ZedGraph.ZedGraphControl))
+                else if (ctl.GetType() == typeof(ZedGraph.ZedGraphControl))
                 {
-                    var zg1 = (ZedGraph.ZedGraphControl) ctl;
+                    var zg1 = (ZedGraph.ZedGraphControl)ctl;
                     zg1.GraphPane.Chart.Fill = new ZedGraph.Fill(ZedGraphChartFill);
                     zg1.GraphPane.Fill = new ZedGraph.Fill(ZedGraphPaneFill);
 
@@ -968,31 +973,31 @@ mc:Ignorable=""d""
                     zg1.GraphPane.Legend.Fill = new ZedGraph.Fill(ZedGraphLegendFill);
                     zg1.GraphPane.Legend.FontSpec.FontColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (BSE.Windows.Forms.Panel) || ctl.GetType() == typeof (SplitterPanel))
+                else if (ctl.GetType() == typeof(BSE.Windows.Forms.Panel) || ctl.GetType() == typeof(SplitterPanel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
                 else if (ctl.GetType() == typeof(RadialGradientBG)) //not included in original burntkermit theme
                 {
-                //    var rbg = ctl as RadialGradientBG;
-                //    rbg.CenterColor = ControlBGColor;
-                //    rbg.OutsideColor = ButBG;
+                    //    var rbg = ctl as RadialGradientBG;
+                    //    rbg.CenterColor = ControlBGColor;
+                    //    rbg.OutsideColor = ButBG;
                 }
                 else if (ctl.GetType() == typeof(GradientBG))
                 {
-                //    var rbg = ctl as GradientBG;
-                //    rbg.CenterColor = ControlBGColor;
-                //    rbg.OutsideColor = ButBG;
+                    //    var rbg = ctl as GradientBG;
+                    //    rbg.CenterColor = ControlBGColor;
+                    //    rbg.OutsideColor = ButBG;
                 }
-                else if (ctl.GetType() == typeof (Form))
+                else if (ctl.GetType() == typeof(Form))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                     if (Program.IconFile != null)
                         ((Form)ctl).Icon = Icon.FromHandle(((Bitmap)Program.IconFile).GetHicon());
                 }
-                else if (ctl.GetType() == typeof (RichTextBox))
+                else if (ctl.GetType() == typeof(RichTextBox))
                 {
                     if ((ctl.Name == "TXT_terminal") && !MainV2.TerminalTheming)
                     {
@@ -1009,30 +1014,30 @@ mc:Ignorable=""d""
                         txtr.BackColor = ControlBGColor;
                     }
                 }
-                else if (ctl.GetType() == typeof (CheckedListBox))
+                else if (ctl.GetType() == typeof(CheckedListBox))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
-                    CheckedListBox txtr = (CheckedListBox) ctl;
+                    CheckedListBox txtr = (CheckedListBox)ctl;
                     txtr.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (TabPage))
+                else if (ctl.GetType() == typeof(TabPage))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    TabPage txtr = (TabPage) ctl;
+                    TabPage txtr = (TabPage)ctl;
                     txtr.BorderStyle = BorderStyle.None;
                 }
-                else if (ctl.GetType() == typeof (TabControl))
+                else if (ctl.GetType() == typeof(TabControl))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    TabControl txtr = (TabControl) ctl;
+                    TabControl txtr = (TabControl)ctl;
                 }
-                else if (ctl.GetType() == typeof (DataGridView) || ctl.GetType() == typeof(MyDataGridView))
+                else if (ctl.GetType() == typeof(DataGridView) || ctl.GetType() == typeof(MyDataGridView))
                 {
                     ctl.ForeColor = TextColor;
-                    DataGridView dgv = (DataGridView) ctl;
+                    DataGridView dgv = (DataGridView)ctl;
                     dgv.EnableHeadersVisualStyles = false;
                     dgv.BorderStyle = BorderStyle.None;
                     dgv.BackgroundColor = BGColor;
@@ -1050,40 +1055,40 @@ mc:Ignorable=""d""
                     dgv.ColumnHeadersDefaultCellStyle = hs;
                     dgv.RowHeadersDefaultCellStyle = hs;
                 }
-                else if (ctl.GetType() == typeof (CheckBox) || ctl.GetType() == typeof (MavlinkCheckBox))
+                else if (ctl.GetType() == typeof(CheckBox) || ctl.GetType() == typeof(MavlinkCheckBox))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    CheckBox CHK = (CheckBox) ctl;
+                    CheckBox CHK = (CheckBox)ctl;
                     // CHK.FlatStyle = FlatStyle.Flat;
                 }
-                else if (ctl.GetType() == typeof (ComboBox) || ctl.GetType() == typeof (MavlinkComboBox))
+                else if (ctl.GetType() == typeof(ComboBox) || ctl.GetType() == typeof(MavlinkComboBox))
                 {
                     ctl.BackColor = ControlBGColor;
                     ctl.ForeColor = TextColor;
-                    ComboBox CMB = (ComboBox) ctl;
+                    ComboBox CMB = (ComboBox)ctl;
                     CMB.FlatStyle = FlatStyle.Flat;
                 }
-                else if (ctl.GetType() == typeof (NumericUpDown) || ctl.GetType() == typeof (MavlinkNumericUpDown))
+                else if (ctl.GetType() == typeof(NumericUpDown) || ctl.GetType() == typeof(MavlinkNumericUpDown))
                 {
                     ctl.BackColor = BGColorTextBox;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (TrackBar))
+                else if (ctl.GetType() == typeof(TrackBar))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (LinkLabel))
+                else if (ctl.GetType() == typeof(LinkLabel))
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
-                    LinkLabel LNK = (LinkLabel) ctl;
+                    LinkLabel LNK = (LinkLabel)ctl;
                     LNK.ActiveLinkColor = TextColor;
                     LNK.LinkColor = TextColor;
                     LNK.VisitedLinkColor = TextColor;
                 }
-                else if (ctl.GetType() == typeof (BackstageView))
+                else if (ctl.GetType() == typeof(BackstageView))
                 {
                     var bsv = ctl as BackstageView;
 
@@ -1095,20 +1100,21 @@ mc:Ignorable=""d""
                     bsv.UnSelectedTextColor = UnselectedTextColour;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
                 }
-                else if (ctl.GetType() == typeof (HorizontalProgressBar2) ||
-                         ctl.GetType() == typeof (VerticalProgressBar2))
+                else if (ctl.GetType() == typeof(HorizontalProgressBar2) ||
+                         ctl.GetType() == typeof(VerticalProgressBar2))
                 {
-                    ((HorizontalProgressBar2) ctl).BackgroundColor = ControlBGColor;
-                    ((HorizontalProgressBar2) ctl).ValueColor = HorizontalPBValueColor;
+                    ((HorizontalProgressBar2)ctl).BackgroundColor = ControlBGColor;
+                    ((HorizontalProgressBar2)ctl).ValueColor = HorizontalPBValueColor;
                 }
                 else if (ctl.GetType() == typeof(MyProgressBar))
                 {
                     ((MyProgressBar)ctl).BGGradTop = ProgressBarColorTop;
                     ((MyProgressBar)ctl).BGGradBot = ProgressBarColorBot;
                     ((MyProgressBar)ctl).Outline = ProgressBarOutlineColor;        //sets the colour of the progress bar box
-                } else if (ctl.GetType() == typeof (QuickView))
+                }
+                else if (ctl.GetType() == typeof(QuickView))
                 {
-                    Controls.QuickView but = (QuickView) ctl;
+                    Controls.QuickView but = (QuickView)ctl;
                     if (but.desc == "DistToMAV")
                     {
                         but.numberColor = Color.FromArgb(0, 255, 252);

@@ -79,22 +79,22 @@ namespace MissionPlanner
         {
             public override Image fd
             {
-                get { return global::MissionPlanner.Properties.Resources.light_flightdata_icon; }
+                get { return global::MissionPlanner.Properties.Resources.flydata; }
             }
 
             public override Image fp
             {
-                get { return global::MissionPlanner.Properties.Resources.light_flightplan_icon; }
+                get { return global::MissionPlanner.Properties.Resources.route; }
             }
 
             public override Image initsetup
             {
-                get { return global::MissionPlanner.Properties.Resources.light_initialsetup_icon; }
+                get { return global::MissionPlanner.Properties.Resources.config; }
             }
 
             public override Image config_tuning
             {
-                get { return global::MissionPlanner.Properties.Resources.light_tuningconfig_icon; }
+                get { return global::MissionPlanner.Properties.Resources.set; }
             }
 
             public override Image sim
@@ -119,12 +119,12 @@ namespace MissionPlanner
 
             public override Image connect
             {
-                get { return global::MissionPlanner.Properties.Resources.light_connect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.link; }
             }
 
             public override Image disconnect
             {
-                get { return global::MissionPlanner.Properties.Resources.light_disconnect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.linklost; }
             }
 
             public override Image bg
@@ -141,22 +141,22 @@ namespace MissionPlanner
         {
             public override Image fd
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_flightdata_icon; }
+                get { return global::MissionPlanner.Properties.Resources.flydata; }
             }
 
             public override Image fp
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_flightplan_icon; }
+                get { return global::MissionPlanner.Properties.Resources.route; }
             }
 
             public override Image initsetup
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_initialsetup_icon; }
+                get { return global::MissionPlanner.Properties.Resources.config; }
             }
 
             public override Image config_tuning
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_tuningconfig_icon; }
+                get { return global::MissionPlanner.Properties.Resources.set; }
             }
 
             public override Image sim
@@ -181,12 +181,12 @@ namespace MissionPlanner
 
             public override Image connect
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_connect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.link; }
             }
 
             public override Image disconnect
             {
-                get { return global::MissionPlanner.Properties.Resources.dark_disconnect_icon; }
+                get { return global::MissionPlanner.Properties.Resources.linklost; }
             }
 
             public override Image bg

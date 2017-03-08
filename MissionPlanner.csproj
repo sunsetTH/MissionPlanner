@@ -4075,6 +4075,10 @@
     <None Include="Resources\icon\tools_48px_1067327_easyicon.net.png" />
     <None Include="Resources\icon\韦加无人机LOGO修改转曲-1.jpg" />
     <None Include="Resources\icon\韦加无人机LOGO修改转曲-1.png" />
+    <None Include="Resources\rotor.png" />
+    <None Include="Resources\drone_take_off-512.png" />
+    <None Include="Resources\rotoricon.png" />
+    <None Include="Resources\rot128.ico" />
     <Content Include="Scripts\example7.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
