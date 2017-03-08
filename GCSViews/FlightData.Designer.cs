@@ -671,6 +671,8 @@
             // 
             // BUT_loadtelem
             // 
+            this.BUT_loadtelem.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_loadtelem.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_loadtelem.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_loadtelem.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_loadtelem.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -708,6 +710,8 @@
             // 
             // BUT_log2kml
             // 
+            this.BUT_log2kml.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_log2kml.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_log2kml.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_log2kml.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_log2kml.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -718,6 +722,8 @@
             // 
             // BUT_playlog
             // 
+            this.BUT_playlog.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_playlog.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_playlog.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_playlog.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_playlog.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -746,6 +752,8 @@
             // 
             // BUT_speed10
             // 
+            this.BUT_speed10.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_speed10.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_speed10.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_speed10.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_speed10.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -757,6 +765,8 @@
             // 
             // BUT_speed5
             // 
+            this.BUT_speed5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_speed5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_speed5.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_speed5.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_speed5.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -768,6 +778,8 @@
             // 
             // BUT_speed2
             // 
+            this.BUT_speed2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_speed2.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_speed2.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_speed2.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_speed2.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -779,6 +791,8 @@
             // 
             // BUT_speed1
             // 
+            this.BUT_speed1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_speed1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_speed1.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_speed1.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_speed1.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -790,6 +804,8 @@
             // 
             // BUT_speed1_2
             // 
+            this.BUT_speed1_2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_speed1_2.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_speed1_2.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_speed1_2.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_speed1_2.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -801,6 +817,8 @@
             // 
             // BUT_speed1_4
             // 
+            this.BUT_speed1_4.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_speed1_4.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_speed1_4.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_speed1_4.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_speed1_4.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -812,6 +830,8 @@
             // 
             // BUT_speed1_10
             // 
+            this.BUT_speed1_10.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_speed1_10.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.BUT_speed1_10.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_speed1_10.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_speed1_10.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -951,6 +971,8 @@
             // 
             // myButton12
             // 
+            this.myButton12.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton12.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.myButton12.ColorMouseDown = System.Drawing.Color.Empty;
             this.myButton12.ColorMouseOver = System.Drawing.Color.Empty;
             this.myButton12.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -962,6 +984,8 @@
             // 
             // myButton13
             // 
+            this.myButton13.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton13.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.myButton13.ColorMouseDown = System.Drawing.Color.Empty;
             this.myButton13.ColorMouseOver = System.Drawing.Color.Empty;
             this.myButton13.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -973,6 +997,8 @@
             // 
             // myButton14
             // 
+            this.myButton14.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton14.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
             this.myButton14.ColorMouseDown = System.Drawing.Color.Empty;
             this.myButton14.ColorMouseOver = System.Drawing.Color.Empty;
             this.myButton14.ColorNotEnabled = System.Drawing.Color.Empty;
@@ -998,12 +1024,18 @@
             // 
             // myButton15
             // 
+            this.myButton15.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton15.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton15.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton15, "myButton15");
             this.myButton15.Name = "myButton15";
             this.myButton15.UseVisualStyleBackColor = true;
             // 
             // myButton7
             // 
+            this.myButton7.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton7.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton7.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton7, "myButton7");
             this.myButton7.Name = "myButton7";
             this.toolTip1.SetToolTip(this.myButton7, resources.GetString("myButton7.ToolTip"));
@@ -1012,6 +1044,9 @@
             // 
             // myButton8
             // 
+            this.myButton8.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton8.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton8.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton8, "myButton8");
             this.myButton8.Name = "myButton8";
             this.toolTip1.SetToolTip(this.myButton8, resources.GetString("myButton8.ToolTip"));
@@ -1020,6 +1055,9 @@
             // 
             // myButton9
             // 
+            this.myButton9.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton9.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton9.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton9, "myButton9");
             this.myButton9.Name = "myButton9";
             this.toolTip1.SetToolTip(this.myButton9, resources.GetString("myButton9.ToolTip"));
@@ -1028,6 +1066,9 @@
             // 
             // myButton11
             // 
+            this.myButton11.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton11.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton11.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton11, "myButton11");
             this.myButton11.Name = "myButton11";
             this.toolTip1.SetToolTip(this.myButton11, resources.GetString("myButton11.ToolTip"));
@@ -1036,6 +1077,9 @@
             // 
             // myButton10
             // 
+            this.myButton10.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton10.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton10.ColorMouseDown = System.Drawing.Color.Yellow;
             resources.ApplyResources(this.myButton10, "myButton10");
             this.myButton10.Name = "myButton10";
             this.toolTip1.SetToolTip(this.myButton10, resources.GetString("myButton10.ToolTip"));
@@ -1044,6 +1088,9 @@
             // 
             // myButton6
             // 
+            this.myButton6.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton6.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton6.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton6, "myButton6");
             this.myButton6.Name = "myButton6";
             this.toolTip1.SetToolTip(this.myButton6, resources.GetString("myButton6.ToolTip"));
@@ -1052,6 +1099,9 @@
             // 
             // myButton4
             // 
+            this.myButton4.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton4.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton4.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton4, "myButton4");
             this.myButton4.Name = "myButton4";
             this.toolTip1.SetToolTip(this.myButton4, resources.GetString("myButton4.ToolTip"));
@@ -1060,6 +1110,9 @@
             // 
             // myButton5
             // 
+            this.myButton5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.myButton5.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.myButton5, "myButton5");
             this.myButton5.Name = "myButton5";
             this.toolTip1.SetToolTip(this.myButton5, resources.GetString("myButton5.ToolTip"));
