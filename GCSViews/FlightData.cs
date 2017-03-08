@@ -24,7 +24,6 @@ using MissionPlanner.Log;
 using MissionPlanner.Utilities;
 using MissionPlanner.Warnings;
 using OpenTK;
-using Org.BouncyCastle.Asn1.X509.Qualified;
 using WebCamService;
 using ZedGraph;
 using LogAnalyzer = MissionPlanner.Utilities.LogAnalyzer;
@@ -250,12 +249,12 @@ namespace MissionPlanner.GCSViews
             List<string> list = new List<string>();
 
             {
-                list.Add("LOITER_UNLIM");
-                list.Add("RETURN_TO_LAUNCH");
-                list.Add("PREFLIGHT_CALIBRATION");
-                list.Add("MISSION_START");
-                list.Add("PREFLIGHT_REBOOT_SHUTDOWN");
-                list.Add("Trigger Camera NOW");
+                list.Add("悬停");
+                list.Add("返航");
+                list.Add("飞行前校准");
+                list.Add("执行任务");
+                list.Add("飞行前系统重启");
+                list.Add("相机触发");
                 //DO_SET_SERVO
                 //DO_REPEAT_SERVO
             }
@@ -281,7 +280,7 @@ namespace MissionPlanner.GCSViews
                                          "gmapcache" + Path.DirectorySeparatorChar;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
-            gMapControl1.Zoom = 3;
+            gMapControl1.Zoom = 5;
 
             gMapControl1.OnMapZoomChanged += gMapControl1_OnMapZoomChanged;
 
@@ -317,10 +316,10 @@ namespace MissionPlanner.GCSViews
             gMapControl1.Overlays.Add(poioverlay);
 
             float gspeedMax = Settings.Instance.GetFloat("GspeedMAX");
-            if (gspeedMax != 0)
-            {
-                //Gspeed.MaxValue = gspeedMax;
-            }
+            //if (gspeedMax != 0)
+            //{
+            //    Gspeed.MaxValue = gspeedMax;
+            //}
 
             MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
 
@@ -345,7 +344,7 @@ namespace MissionPlanner.GCSViews
 
         void mymap_Paint(object sender, PaintEventArgs e)
         {
-            distanceBar1.DoPaintRemote(e);
+            //distanceBar1.DoPaintRemote(e);
         }
 
         internal GMapMarker CurrentGMapMarker;
@@ -1129,7 +1128,7 @@ namespace MissionPlanner.GCSViews
 
                             float dist = 0;
                             float travdist = 0;
-                            distanceBar1.ClearWPDist();
+                            //distanceBar1.ClearWPDist();
                             MAVLink.mavlink_mission_item_t lastplla = new MAVLink.mavlink_mission_item_t();
                             MAVLink.mavlink_mission_item_t home = new MAVLink.mavlink_mission_item_t();
 
@@ -1166,7 +1165,7 @@ namespace MissionPlanner.GCSViews
                                             new PointLatLngAlt(plla.x, plla.y).GetDistance(new PointLatLngAlt(
                                                 lastplla.x, lastplla.y));
 
-                                    distanceBar1.AddWPDist(dist);
+                                    //distanceBar1.AddWPDist(dist);
 
                                     if (plla.seq <= MainV2.comPort.MAV.cs.wpno)
                                     {
@@ -1194,7 +1193,7 @@ namespace MissionPlanner.GCSViews
                             travdist -= MainV2.comPort.MAV.cs.wp_dist;
 
                             if (MainV2.comPort.MAV.cs.mode.ToUpper() == "AUTO")
-                                distanceBar1.traveleddist = travdist;
+                                //distanceBar1.traveleddist = travdist;
 
                             RegeneratePolygon();
 
@@ -2166,7 +2165,7 @@ namespace MissionPlanner.GCSViews
                     marker = new GMapMarkerRect(point);
                     marker.ToolTip = new GMapToolTip(marker);
                     marker.ToolTipMode = MarkerTooltipMode.Always;
-                    marker.ToolTipText = "Dist to Home: " +
+                    marker.ToolTipText = "距家点距离： " +
                                          ((gMapControl1.MapProvider.Projection.GetDistance(point,
                                              MainV2.comPort.MAV.cs.HomeLocation.Point()) * 1000) *
                                           CurrentState.multiplierdist).ToString("0");
@@ -2392,7 +2391,7 @@ namespace MissionPlanner.GCSViews
 
             if (scale > 0.5 && scale < 1.9)
             {
-                // square
+                //// square
                 //Gvspeed.Visible = true;
 
                 if (tabGauges.Height < tabGauges.Width)
@@ -2403,7 +2402,7 @@ namespace MissionPlanner.GCSViews
                 //Gvspeed.Height = myheight;
                 //Gspeed.Height = myheight;
                 //Galt.Height = myheight;
-                Gheading.Height = myheight;
+                //Gheading.Height = myheight;
 
                 //Gvspeed.Location = new Point(0, 0);
                 //Gspeed.Location = new Point(Gvspeed.Right, 0);
@@ -2415,30 +2414,30 @@ namespace MissionPlanner.GCSViews
                 return;
             }
 
-            if (tabGauges.Width < 500)
-            {
-                //Gvspeed.Visible = false;
-                //mywidth = tabGauges.Width / 3;
+            //if (tabGauges.Width < 500)
+            //{
+            //    Gvspeed.Visible = false;
+            //    mywidth = tabGauges.Width / 3;
 
-                //Gspeed.Height = mywidth;
-                //Galt.Height = mywidth;
-                //Gheading.Height = mywidth;
+            //    Gspeed.Height = mywidth;
+            //    Galt.Height = mywidth;
+            //    Gheading.Height = mywidth;
 
-                //Gspeed.Location = new Point(0, 0);
-            }
-            else
-            {
-                //Gvspeed.Visible = true;
-                //mywidth = tabGauges.Width / 4;
+            //    Gspeed.Location = new Point(0, 0);
+            //}
+            //else
+            //{
+            //    Gvspeed.Visible = true;
+            //    mywidth = tabGauges.Width / 4;
 
-                //Gvspeed.Height = mywidth;
-                //Gspeed.Height = mywidth;
-                //Galt.Height = mywidth;
-                //Gheading.Height = mywidth;
+            //    Gvspeed.Height = mywidth;
+            //    Gspeed.Height = mywidth;
+            //    Galt.Height = mywidth;
+            //    Gheading.Height = mywidth;
 
-                //Gvspeed.Location = new Point(0, 0);
-                //Gspeed.Location = new Point(Gvspeed.Right, 0);
-            }
+            //    Gvspeed.Location = new Point(0, 0);
+            //    Gspeed.Location = new Point(Gvspeed.Right, 0);
+            //}
 
             //Galt.Location = new Point(Gspeed.Right, 0);
             //Gheading.Location = new Point(Galt.Right, 0);
@@ -3628,41 +3627,41 @@ namespace MissionPlanner.GCSViews
 
         private void BUT_run_script_Click(object sender, EventArgs e)
         {
-            if (File.Exists(selectedscript))
-            {
-                scriptthread = new Thread(run_selected_script)
-                {
-                    IsBackground = true,
-                    Name = "Script Thread (new)"
-                };
-                //labelScriptStatus.Text = "Script Status: Running";
+            //if (File.Exists(selectedscript))
+            //{
+            //    scriptthread = new Thread(run_selected_script)
+            //    {
+            //        IsBackground = true,
+            //        Name = "Script Thread (new)"
+            //    };
+            //    labelScriptStatus.Text = "Script Status: Running";
 
-                script = null;
-                outputwindowstarted = false;
+            //    script = null;
+            //    outputwindowstarted = false;
 
-                scriptthread.Start();
-                scriptrunning = true;
-                //BUT_run_script.Enabled = false;
-                //BUT_select_script.Enabled = false;
-                //BUT_abort_script.Visible = true;
-                //BUT_edit_selected.Enabled = false;
-                //scriptChecker.Enabled = true;
-                //checkBoxRedirectOutput.Enabled = false;
+            //    scriptthread.Start();
+            //    scriptrunning = true;
+            //    BUT_run_script.Enabled = false;
+            //    BUT_select_script.Enabled = false;
+            //    BUT_abort_script.Visible = true;
+            //    BUT_edit_selected.Enabled = false;
+            //    scriptChecker.Enabled = true;
+            //    checkBoxRedirectOutput.Enabled = false;
 
-                while (script == null)
-                {
-                }
+            //    while (script == null)
+            //    {
+            //    }
 
-                scriptChecker_Tick(null, null);
+            //    scriptChecker_Tick(null, null);
 
-                MissionPlanner.Utilities.Tracking.AddPage(
-                    System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.ToString(),
-                    System.Reflection.MethodBase.GetCurrentMethod().Name);
-            }
-            else
-            {
-                CustomMessageBox.Show("Please select a valid script", "Bad Script");
-            }
+            //    MissionPlanner.Utilities.Tracking.AddPage(
+            //        System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.ToString(),
+            //        System.Reflection.MethodBase.GetCurrentMethod().Name);
+            //}
+            //else
+            //{
+            //    CustomMessageBox.Show("Please select a valid script", "Bad Script");
+            //}
         }
 
         void run_selected_script()
@@ -3699,8 +3698,8 @@ namespace MissionPlanner.GCSViews
 
         private void BUT_abort_script_Click(object sender, EventArgs e)
         {
-            //scriptthread.Abort();
-            //scriptrunning = false;
+            scriptthread.Abort();
+            scriptrunning = false;
             //BUT_abort_script.Visible = false;
         }
 
@@ -3746,23 +3745,23 @@ namespace MissionPlanner.GCSViews
 
         private void BUT_mountmode_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //if (MainV2.comPort.MAV.param.ContainsKey("MNT_MODE"))
-                //{
-                //    MainV2.comPort.setParam("MNT_MODE", (int)CMB_mountmode.SelectedValue);
-                //}
-                //else
-                //{
-                //    // copter 3.3 acks with an error, but is ok
-                //    MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_MOUNT_CONTROL, 0, 0, 0, 0, 0, 0,
-                //        (int)CMB_mountmode.SelectedValue);
-                //}
-            }
-            catch
-            {
-                CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR);
-            }
+            //try
+            //{
+            //    if (MainV2.comPort.MAV.param.ContainsKey("MNT_MODE"))
+            //    {
+            //        MainV2.comPort.setParam("MNT_MODE", (int)CMB_mountmode.SelectedValue);
+            //    }
+            //    else
+            //    {
+            //        // copter 3.3 acks with an error, but is ok
+            //        MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_MOUNT_CONTROL, 0, 0, 0, 0, 0, 0,
+            //            (int)CMB_mountmode.SelectedValue);
+            //    }
+            //}
+            //catch
+            //{
+            //    CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR);
+            //}
         }
 
         private void but_bintolog_Click(object sender, EventArgs e)
@@ -4484,4 +4483,3 @@ namespace MissionPlanner.GCSViews
         }
     }
 }
-
