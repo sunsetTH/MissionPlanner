@@ -309,6 +309,7 @@
             // 
             // contextMenuStripHud
             // 
+            this.contextMenuStripHud.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripHud.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.videoToolStripMenuItem,
             this.setAspectRatioToolStripMenuItem,
@@ -409,6 +410,7 @@
             // 
             // contextMenuStripactionstab
             // 
+            this.contextMenuStripactionstab.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customizeToolStripMenuItem});
             this.contextMenuStripactionstab.Name = "contextMenuStripactionstab";
@@ -456,6 +458,7 @@
             // 
             // contextMenuStripQuickView
             // 
+            this.contextMenuStripQuickView.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripQuickView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.setViewCountToolStripMenuItem});
             this.contextMenuStripQuickView.Name = "contextMenuStripQuickView";
@@ -1176,6 +1179,7 @@
             // 
             // contextMenuStripMap
             // 
+            this.contextMenuStripMap.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goHereToolStripMenuItem,
             this.flyToHereAltToolStripMenuItem,

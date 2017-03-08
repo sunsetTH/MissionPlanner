@@ -4079,6 +4079,7 @@
     <None Include="Resources\drone_take_off-512.png" />
     <None Include="Resources\rotoricon.png" />
     <None Include="Resources\rot128.ico" />
+    <None Include="Resources\2.png" />
     <Content Include="Scripts\example7.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

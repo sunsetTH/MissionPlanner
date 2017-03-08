@@ -125,9 +125,9 @@ namespace MissionPlanner.GCSViews
             this.BUT_loadwpfile = new MissionPlanner.Controls.MyButton();
             this.BUT_saveWPFile = new MissionPlanner.Controls.MyButton();
             this.panelMap = new System.Windows.Forms.Panel();
-            this.lbl_distance = new System.Windows.Forms.Label();
-            this.lbl_homedist = new System.Windows.Forms.Label();
-            this.lbl_prevdist = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxWithPseudoOpacity1 = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
             this.MainMap = new MissionPlanner.Controls.myGMAP();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -199,6 +199,9 @@ namespace MissionPlanner.GCSViews
             this.enterUTMCoordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.switchDockingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_distance = new System.Windows.Forms.Label();
+            this.lbl_homedist = new System.Windows.Forms.Label();
+            this.lbl_prevdist = new System.Windows.Forms.Label();
             this.trackBar1 = new MissionPlanner.Controls.MyTrackBar();
             this.label11 = new System.Windows.Forms.Label();
             this.panelBASE = new System.Windows.Forms.Panel();
@@ -214,6 +217,9 @@ namespace MissionPlanner.GCSViews
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelMap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panelBASE.SuspendLayout();
@@ -468,6 +474,9 @@ namespace MissionPlanner.GCSViews
             // 
             // BUT_write
             // 
+            this.BUT_write.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_write.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_write.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_write, "BUT_write");
             this.BUT_write.Name = "BUT_write";
             this.BUT_write.UseVisualStyleBackColor = true;
@@ -475,6 +484,9 @@ namespace MissionPlanner.GCSViews
             // 
             // BUT_read
             // 
+            this.BUT_read.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_read.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_read.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_read, "BUT_read");
             this.BUT_read.Name = "BUT_read";
             this.BUT_read.UseVisualStyleBackColor = true;
@@ -649,6 +661,9 @@ namespace MissionPlanner.GCSViews
             // 
             // BUT_Add
             // 
+            this.BUT_Add.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_Add.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_Add.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_Add, "BUT_Add");
             this.BUT_Add.Name = "BUT_Add";
             this.toolTip1.SetToolTip(this.BUT_Add, resources.GetString("BUT_Add.ToolTip"));
@@ -676,9 +691,9 @@ namespace MissionPlanner.GCSViews
             this.panelAction.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
             this.panelAction.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.panelAction.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.panelAction, "panelAction");
             this.panelAction.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelAction.Image = null;
+            resources.ApplyResources(this.panelAction, "panelAction");
             this.panelAction.Name = "panelAction";
             this.panelAction.ShowExpandIcon = true;
             this.panelAction.ToolTipTextCloseIcon = null;
@@ -754,6 +769,9 @@ namespace MissionPlanner.GCSViews
             // 
             // BUT_loadwpfile
             // 
+            this.BUT_loadwpfile.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_loadwpfile.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_loadwpfile.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_loadwpfile, "BUT_loadwpfile");
             this.BUT_loadwpfile.Name = "BUT_loadwpfile";
             this.BUT_loadwpfile.UseVisualStyleBackColor = true;
@@ -761,6 +779,9 @@ namespace MissionPlanner.GCSViews
             // 
             // BUT_saveWPFile
             // 
+            this.BUT_saveWPFile.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_saveWPFile.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_saveWPFile.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_saveWPFile, "BUT_saveWPFile");
             this.BUT_saveWPFile.Name = "BUT_saveWPFile";
             this.BUT_saveWPFile.UseVisualStyleBackColor = true;
@@ -768,10 +789,14 @@ namespace MissionPlanner.GCSViews
             // 
             // panelMap
             // 
+            this.panelMap.Controls.Add(this.pictureBox2);
+            this.panelMap.Controls.Add(this.pictureBox1);
+            this.panelMap.Controls.Add(this.pictureBoxWithPseudoOpacity1);
+            this.panelMap.Controls.Add(this.panelAction);
+            this.panelMap.Controls.Add(this.MainMap);
             this.panelMap.Controls.Add(this.lbl_distance);
             this.panelMap.Controls.Add(this.lbl_homedist);
             this.panelMap.Controls.Add(this.lbl_prevdist);
-            this.panelMap.Controls.Add(this.MainMap);
             this.panelMap.Controls.Add(this.trackBar1);
             this.panelMap.Controls.Add(this.label11);
             resources.ApplyResources(this.panelMap, "panelMap");
@@ -779,20 +804,25 @@ namespace MissionPlanner.GCSViews
             this.panelMap.Name = "panelMap";
             this.panelMap.Resize += new System.EventHandler(this.panelMap_Resize);
             // 
-            // lbl_distance
+            // pictureBox2
             // 
-            resources.ApplyResources(this.lbl_distance, "lbl_distance");
-            this.lbl_distance.Name = "lbl_distance";
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::MissionPlanner.Properties.Resources._2;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
-            // lbl_homedist
+            // pictureBox1
             // 
-            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
-            this.lbl_homedist.Name = "lbl_homedist";
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
-            // lbl_prevdist
+            // pictureBoxWithPseudoOpacity1
             // 
-            resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
-            this.lbl_prevdist.Name = "lbl_prevdist";
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
+            this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
+            this.pictureBoxWithPseudoOpacity1.TabStop = false;
             // 
             // MainMap
             // 
@@ -824,6 +854,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deleteWPToolStripMenuItem,
             this.insertWpToolStripMenuItem,
@@ -1310,6 +1341,21 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.setHomeHereToolStripMenuItem, "setHomeHereToolStripMenuItem");
             this.setHomeHereToolStripMenuItem.Click += new System.EventHandler(this.setHomeHereToolStripMenuItem_Click);
             // 
+            // lbl_distance
+            // 
+            resources.ApplyResources(this.lbl_distance, "lbl_distance");
+            this.lbl_distance.Name = "lbl_distance";
+            // 
+            // lbl_homedist
+            // 
+            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
+            this.lbl_homedist.Name = "lbl_homedist";
+            // 
+            // lbl_prevdist
+            // 
+            resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
+            this.lbl_prevdist.Name = "lbl_prevdist";
+            // 
             // trackBar1
             // 
             resources.ApplyResources(this.trackBar1, "trackBar1");
@@ -1334,7 +1380,6 @@ namespace MissionPlanner.GCSViews
             this.panelBASE.Controls.Add(this.splitter1);
             this.panelBASE.Controls.Add(this.panelMap);
             this.panelBASE.Controls.Add(this.panelWaypoints);
-            this.panelBASE.Controls.Add(this.panelAction);
             this.panelBASE.Controls.Add(this.label6);
             resources.ApplyResources(this.panelBASE, "panelBASE");
             this.panelBASE.Name = "panelBASE";
@@ -1369,6 +1414,9 @@ namespace MissionPlanner.GCSViews
             this.panel2.PerformLayout();
             this.panelMap.ResumeLayout(false);
             this.panelMap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panelBASE.ResumeLayout(false);
@@ -1522,5 +1570,8 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.DataGridViewTextBoxColumn TagData;
         private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createCircleSurveyToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity1;
     }
 }
