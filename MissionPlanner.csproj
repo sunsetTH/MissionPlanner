@@ -364,6 +364,12 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigGPSInject.Designer.cs">
       <DependentUpon>ConfigGPSInject.cs</DependentUpon>
     </Compile>
+    <Compile Include="GCSViews\ConfigurationView\Calibra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\Calibra.Designer.cs">
+      <DependentUpon>Calibra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log\LogDownloadscp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2289,6 +2295,9 @@
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigWizard.resx">
       <DependentUpon>ConfigWizard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\Calibra.resx">
+      <DependentUpon>Calibra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.ar.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
@@ -4079,6 +4088,13 @@
     <None Include="Resources\drone_take_off-512.png" />
     <None Include="Resources\rotoricon.png" />
     <None Include="Resources\rot128.ico" />
+    <None Include="Resources\rotoricon1.png" />
+    <None Include="Resources\r0.png" />
+    <None Include="Resources\r90.png" />
+    <None Include="Resources\r180.png" />
+    <None Include="Resources\r270.png" />
+    <None Include="Resources\up90.png" />
+    <None Include="Resources\down90.png" />
     <Content Include="Scripts\example7.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

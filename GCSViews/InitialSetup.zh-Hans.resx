@@ -149,7 +149,7 @@
     <value>飞行模式</value>
   </data>
   <data name="backstageViewPagefs.Text" xml:space="preserve">
-    <value>故障保护</value>
+    <value>安全保护设置</value>
   </data>
   <data name="backstageViewPageopt.Text" xml:space="preserve">
     <value>可选硬件</value>
@@ -197,7 +197,7 @@
     <value>电调校准</value>
   </data>
   <data name="backstageViewPageBatt2.Text" xml:space="preserve">
-    <value>电池监测器2</value>
+    <value>电池传感器设置</value>
   </data>
   <data name="backstageViewPageESP.Text" xml:space="preserve">
     <value>ESP8266设置</value>

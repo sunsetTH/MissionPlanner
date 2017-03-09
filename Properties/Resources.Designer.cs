@@ -873,6 +873,16 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap down90 {
+            get {
+                object obj = ResourceManager.GetObject("down90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap drone_take_off_512 {
             get {
                 object obj = ResourceManager.GetObject("drone_take_off_512", resourceCulture);
@@ -1962,6 +1972,46 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap r0 {
+            get {
+                object obj = ResourceManager.GetObject("r0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap r180 {
+            get {
+                object obj = ResourceManager.GetObject("r180", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap r270 {
+            get {
+                object obj = ResourceManager.GetObject("r270", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap r90 {
+            get {
+                object obj = ResourceManager.GetObject("r90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap redsinglecopter2 {
             get {
                 object obj = ResourceManager.GetObject("redsinglecopter2", resourceCulture);
@@ -2015,6 +2065,16 @@ namespace MissionPlanner.Properties {
         public static System.Drawing.Bitmap rotoricon {
             get {
                 object obj = ResourceManager.GetObject("rotoricon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap rotoricon1 {
+            get {
+                object obj = ResourceManager.GetObject("rotoricon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2275,6 +2335,16 @@ namespace MissionPlanner.Properties {
         public static System.Drawing.Bitmap up {
             get {
                 object obj = ResourceManager.GetObject("up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap up90 {
+            get {
+                object obj = ResourceManager.GetObject("up90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

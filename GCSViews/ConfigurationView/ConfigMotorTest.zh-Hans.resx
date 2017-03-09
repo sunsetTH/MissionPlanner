@@ -124,9 +124,6 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>油门 %</value>
-  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 48</value>
   </data>
@@ -139,17 +136,10 @@
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 24</value>
   </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>请点击此处查看您的电机序号，
-滚动到页面底部</value>
-  </data>
   <data name="NUM_duration.Location" type="System.Drawing.Point, System.Drawing">
     <value>254, 3</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>171, 5</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>持续时间 (s)</value>
   </data>
 </root>

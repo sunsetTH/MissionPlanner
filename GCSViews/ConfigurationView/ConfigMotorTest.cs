@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using MissionPlanner.Controls;
 using MissionPlanner.HIL;
-
+using MissionPlanner.GCSViews.ConfigurationView;
 namespace MissionPlanner.GCSViews.ConfigurationView
 {
     public partial class ConfigMotorTest : UserControl, IActivate
@@ -12,31 +12,14 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         public ConfigMotorTest()
         {
             InitializeComponent();
+            trackBar1.Value =(int) duration.Value;
+            trackBar2.Value = (int)thr_percent.Value;
         }
-
-        /*
-#if (FRAME_CONFIG == QUAD_FRAME)
-        MAV_TYPE_QUADROTOR,
-#elif (FRAME_CONFIG == TRI_FRAME)
-        MAV_TYPE_TRICOPTER,
-#elif (FRAME_CONFIG == HEXA_FRAME || FRAME_CONFIG == Y6_FRAME)
-        MAV_TYPE_HEXAROTOR,
-#elif (FRAME_CONFIG == OCTA_FRAME || FRAME_CONFIG == OCTA_QUAD_FRAME)
-        MAV_TYPE_OCTOROTOR,
-#elif (FRAME_CONFIG == HELI_FRAME)
-        MAV_TYPE_HELICOPTER,
-#elif (FRAME_CONFIG == SINGLE_FRAME)  //because mavlink did not define a singlecopter, we use a rocket
-        MAV_TYPE_ROCKET,
-#elif (FRAME_CONFIG == COAX_FRAME)  //because mavlink did not define a singlecopter, we use a rocket
-        MAV_TYPE_ROCKET,
-#else
-  #error Unrecognised frame type
-#endif*/
 
         public void Activate()
         {
-            var x = 20;
-            var y = 40;
+            var x = 500;
+            var y = 60;
 
             var motormax = this.get_motormax();
 
@@ -44,40 +27,41 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             for (var a = 1; a <= motormax; a++)
             {
                 but = new MyButton();
-                but.Text = "Test motor " + (char) ((a - 1) + 'A');
+                but.Text = "待测电机 " + (char)((a - 1) + 'A');
                 but.Location = new Point(x, y);
                 but.Click += but_Click;
                 but.Tag = a;
 
                 Controls.Add(but);
 
-                y += 25;
+                y += 30;
             }
 
             but = new MyButton();
-            but.Text = "Test all motors";
+            but.Text = "测试所有电机";
             but.Location = new Point(x, y);
-            but.Size = new Size(75, 37);
+            but.Size = new Size(90, 40);
             but.Click += but_TestAll;
             Controls.Add(but);
 
-            y += 39;
+            y += 40;
 
             but = new MyButton();
-            but.Text = "Stop all motors";
+            but.Text = "所有电机停转";
             but.Location = new Point(x, y);
-            but.Size = new Size(75, 37);
+            but.Size = new Size(90, 40);
             but.Click += but_StopAll;
             Controls.Add(but);
 
-            y += 39;
+            y += 40;
 
             but = new MyButton();
-            but.Text = "Test all in Sequence";
+            but.Text = "依次测试所有电机";
             but.Location = new Point(x, y);
-            but.Size = new Size(75, 37);
+            but.Size = new Size(90, 40);
             but.Click += but_TestAllSeq;
             Controls.Add(but);
+
 
             Utilities.ThemeManager.ApplyThemeTo(this);
         }
@@ -117,6 +101,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                 }
 
                 frame_type = (int)MainV2.comPort.MAV.param["Q_FRAME_TYPE"].Value;
+
             }
             else if (MainV2.comPort.MAV.param.ContainsKey("FRAME"))
             {
@@ -136,24 +121,43 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                 motormax = 4;
 
                 motors = Motor.build_motors(MAVLink.MAV_TYPE.TRICOPTER, frame_type);
+
             }
             else if (type == MAVLink.MAV_TYPE.QUADROTOR)
             {
                 motormax = 4;
 
                 motors = Motor.build_motors(MAVLink.MAV_TYPE.QUADROTOR, frame_type);
+                if (frame_type == 0)//+字型机架
+                    pictureBox1.BackgroundImage = Properties.Resources._4_;
+                else if (frame_type == 1)
+                    pictureBox1.BackgroundImage = Properties.Resources._4x;
+                else
+                    pictureBox1.BackgroundImage = null;
             }
             else if (type == MAVLink.MAV_TYPE.HEXAROTOR)
             {
                 motormax = 6;
 
                 motors = Motor.build_motors(MAVLink.MAV_TYPE.HEXAROTOR, frame_type);
+                if (frame_type == 0)//+字型机架
+                    pictureBox1.BackgroundImage = Properties.Resources._6_;
+                else if (frame_type == 1)
+                    pictureBox1.BackgroundImage = Properties.Resources._6x;
+                else
+                    pictureBox1.BackgroundImage = null;
             }
             else if (type == MAVLink.MAV_TYPE.OCTOROTOR)
             {
                 motormax = 8;
 
                 motors = Motor.build_motors(MAVLink.MAV_TYPE.OCTOROTOR, frame_type);
+                if (frame_type == 0)//+字型机架
+                    pictureBox1.BackgroundImage = Properties.Resources._8_;
+                else if (frame_type == 1)
+                    pictureBox1.BackgroundImage = Properties.Resources._8x;
+                else
+                    pictureBox1.BackgroundImage = null;
             }
             else if (type == MAVLink.MAV_TYPE.HELICOPTER)
             {
@@ -165,8 +169,8 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 
         private void but_TestAll(object sender, EventArgs e)
         {
-            int speed = (int) NUM_thr_percent.Value;
-            int time = (int) NUM_duration.Value;
+            int speed = (int)thr_percent.Value;
+            int time = (int)duration.Value;
 
             int motormax = this.get_motormax();
             for (int i = 1; i <= motormax; i++)
@@ -178,8 +182,8 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         private void but_TestAllSeq(object sender, EventArgs e)
         {
             int motormax = this.get_motormax();
-            int speed = (int) NUM_thr_percent.Value;
-            int time = (int) NUM_duration.Value;
+            int speed = (int)thr_percent.Value;
+            int time = (int)duration.Value;
 
             testMotor(1, speed, time, motormax);
         }
@@ -195,11 +199,11 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 
         private void but_Click(object sender, EventArgs e)
         {
-            int speed = (int) NUM_thr_percent.Value;
-            int time = (int) NUM_duration.Value;
+            int speed = (int)thr_percent.Value;
+            int time = (int)duration.Value;
             try
             {
-                var motor = (int) ((MyButton) sender).Tag;
+                var motor = (int)((MyButton)sender).Tag;
                 this.testMotor(motor, speed, time);
             }
             catch (Exception ex)
@@ -208,7 +212,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
         }
 
-        private void testMotor(int motor, int speed, int time,int motorcount = 0)
+        private void testMotor(int motor, int speed, int time, int motorcount = 0)
         {
             try
             {
@@ -216,7 +220,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     !MainV2.comPort.doMotorTest(motor, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
                         speed, time, motorcount))
                 {
-                    CustomMessageBox.Show("Command was denied by the autopilot");
+                    CustomMessageBox.Show("命令被控制系统拒绝，请检查是否解锁或其他设置");
                 }
             }
             catch
@@ -235,6 +239,33 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             {
                 CustomMessageBox.Show("Bad default system association", Strings.ERROR);
             }
+        }
+
+        private void ConfigMotorTest_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            duration.Value = trackBar1.Value;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            thr_percent.Value = trackBar2.Value;
+        }
+
+        private void duration_ValueChanged(object sender, EventArgs e)
+        {
+            trackBar1.Value = (int)duration.Value;
+           
+        }
+
+        private void thr_percent_ValueChanged(object sender, EventArgs e)
+        {
+           
+            trackBar2.Value = (int)thr_percent.Value;
         }
     }
 }

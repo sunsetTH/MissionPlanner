@@ -32,10 +32,10 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigRadioInput));
             this.groupBoxElevons = new System.Windows.Forms.GroupBox();
-            this.CHK_mixmode = new MavlinkCheckBox();
-            this.CHK_elevonch2rev = new MavlinkCheckBox();
-            this.CHK_elevonrev = new MavlinkCheckBox();
-            this.CHK_elevonch1rev = new MavlinkCheckBox();
+            this.CHK_mixmode = new MissionPlanner.Controls.MavlinkCheckBox();
+            this.CHK_elevonch2rev = new MissionPlanner.Controls.MavlinkCheckBox();
+            this.CHK_elevonrev = new MissionPlanner.Controls.MavlinkCheckBox();
+            this.CHK_elevonch1rev = new MissionPlanner.Controls.MavlinkCheckBox();
             this.BUT_BindDSM8 = new MissionPlanner.Controls.MyButton();
             this.BUT_BindDSMX = new MissionPlanner.Controls.MyButton();
             this.BUT_BindDSM2 = new MissionPlanner.Controls.MyButton();
@@ -60,9 +60,16 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.CHK_revch2 = new MissionPlanner.Controls.MavlinkCheckBox();
             this.CHK_revch1 = new MissionPlanner.Controls.MavlinkCheckBox();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelfm1 = new System.Windows.Forms.Label();
+            this.CMB_fmode1 = new System.Windows.Forms.ComboBox();
+            this.labelfm2 = new System.Windows.Forms.Label();
+            this.labelfm3 = new System.Windows.Forms.Label();
+            this.labelfm4 = new System.Windows.Forms.Label();
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxElevons
@@ -79,32 +86,43 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this.CHK_mixmode, "CHK_mixmode");
             this.CHK_mixmode.Name = "CHK_mixmode";
+            this.CHK_mixmode.OffValue = 0D;
+            this.CHK_mixmode.OnValue = 1D;
+            this.CHK_mixmode.ParamName = null;
             this.CHK_mixmode.UseVisualStyleBackColor = true;
-            
             // 
             // CHK_elevonch2rev
             // 
             resources.ApplyResources(this.CHK_elevonch2rev, "CHK_elevonch2rev");
             this.CHK_elevonch2rev.Name = "CHK_elevonch2rev";
+            this.CHK_elevonch2rev.OffValue = 0D;
+            this.CHK_elevonch2rev.OnValue = 1D;
+            this.CHK_elevonch2rev.ParamName = null;
             this.CHK_elevonch2rev.UseVisualStyleBackColor = true;
-            
             // 
             // CHK_elevonrev
             // 
             resources.ApplyResources(this.CHK_elevonrev, "CHK_elevonrev");
             this.CHK_elevonrev.Name = "CHK_elevonrev";
+            this.CHK_elevonrev.OffValue = 0D;
+            this.CHK_elevonrev.OnValue = 1D;
+            this.CHK_elevonrev.ParamName = null;
             this.CHK_elevonrev.UseVisualStyleBackColor = true;
-            
             // 
             // CHK_elevonch1rev
             // 
             resources.ApplyResources(this.CHK_elevonch1rev, "CHK_elevonch1rev");
             this.CHK_elevonch1rev.Name = "CHK_elevonch1rev";
+            this.CHK_elevonch1rev.OffValue = 0D;
+            this.CHK_elevonch1rev.OnValue = 1D;
+            this.CHK_elevonch1rev.ParamName = null;
             this.CHK_elevonch1rev.UseVisualStyleBackColor = true;
-            
             // 
             // BUT_BindDSM8
             // 
+            this.BUT_BindDSM8.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_BindDSM8.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_BindDSM8.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_BindDSM8, "BUT_BindDSM8");
             this.BUT_BindDSM8.Name = "BUT_BindDSM8";
             this.BUT_BindDSM8.UseVisualStyleBackColor = true;
@@ -112,6 +130,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // BUT_BindDSMX
             // 
+            this.BUT_BindDSMX.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_BindDSMX.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_BindDSMX.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_BindDSMX, "BUT_BindDSMX");
             this.BUT_BindDSMX.Name = "BUT_BindDSMX";
             this.BUT_BindDSMX.UseVisualStyleBackColor = true;
@@ -119,6 +140,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // BUT_BindDSM2
             // 
+            this.BUT_BindDSM2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_BindDSM2.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_BindDSM2.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_BindDSM2, "BUT_BindDSM2");
             this.BUT_BindDSM2.Name = "BUT_BindDSM2";
             this.BUT_BindDSM2.UseVisualStyleBackColor = true;
@@ -126,6 +150,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // BUT_Calibrateradio
             // 
+            this.BUT_Calibrateradio.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_Calibrateradio.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_Calibrateradio.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.BUT_Calibrateradio, "BUT_Calibrateradio");
             this.BUT_Calibrateradio.Name = "BUT_Calibrateradio";
             this.BUT_Calibrateradio.UseVisualStyleBackColor = true;
@@ -408,9 +435,49 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             this.currentStateBindingSource.DataSource = typeof(MissionPlanner.CurrentState);
             // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.labelfm1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelfm2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.labelfm3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelfm4, 0, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // labelfm1
+            // 
+            resources.ApplyResources(this.labelfm1, "labelfm1");
+            this.labelfm1.Name = "labelfm1";
+            // 
+            // CMB_fmode1
+            // 
+            this.CMB_fmode1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode1.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode1, "CMB_fmode1");
+            this.CMB_fmode1.Name = "CMB_fmode1";
+            // 
+            // labelfm2
+            // 
+            resources.ApplyResources(this.labelfm2, "labelfm2");
+            this.labelfm2.Name = "labelfm2";
+            // 
+            // labelfm3
+            // 
+            resources.ApplyResources(this.labelfm3, "labelfm3");
+            this.labelfm3.Name = "labelfm3";
+            // 
+            // labelfm4
+            // 
+            resources.ApplyResources(this.labelfm4, "labelfm4");
+            this.labelfm4.Name = "labelfm4";
+            // 
             // ConfigRadioInput
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.BAR14);
             this.Controls.Add(this.BAR13);
             this.Controls.Add(this.BAR12);
@@ -438,6 +505,8 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.groupBoxElevons.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,5 +543,11 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         private HorizontalProgressBar2 BAR12;
         private HorizontalProgressBar2 BAR11;
         private HorizontalProgressBar2 BAR10;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label labelfm1;
+        private System.Windows.Forms.ComboBox CMB_fmode1;
+        private System.Windows.Forms.Label labelfm2;
+        private System.Windows.Forms.Label labelfm3;
+        private System.Windows.Forms.Label labelfm4;
     }
 }

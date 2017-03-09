@@ -757,9 +757,9 @@ mc:Ignorable=""d""
 
         private static void SetBurntKermitColors()
         {
-            BGColor = Color.FromArgb(12, 52, 61);                     // This changes the colour of the main menu background
+            BGColor = Color.FromArgb(135, 135, 135);                     // This changes the colour of the main menu background
                                                                       /*  ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45);   */           // This changes the colour of the sub menu backgrounds
-            ControlBGColor = Color.FromArgb(0x80, 0x80, 0x80);
+            ControlBGColor = Color.FromArgb(0x00, 0x80, 0x80);
             TextColor = Color.White;                                        // This changes the colour of text
             BGColorTextBox = Color.FromArgb(0x43, 0x44, 0x45);              // This changes the colour of the background of textboxes
             ButtonTextColor = Color.FromArgb(0, 0, 0);                    // This changes the colour of button text
@@ -771,7 +771,7 @@ mc:Ignorable=""d""
             ProgressBarColorBot = Color.FromArgb(124, 164, 40);
             ProgressBarOutlineColor = Color.FromArgb(150, 174, 112);
             BannerColor1 = Color.FromArgb(0, 191, 255);                // These two variables change the colours of banners such as "planner" umder configuration
-            BannerColor2 = Color.FromArgb(65, 105, 225);
+            BannerColor2 = Color.FromArgb(0, 191, 255);
             ColorNotEnabled = Color.FromArgb(150, 43, 58, 3);               // This changes the background color of buttons when not enabled
             ColorMouseOver = Color.FromArgb(0x76, 0xEE, 0xC6);                 // This changes the background color of buttons when the mouse is hovering over a button
             ColorMouseDown = Color.White;                 // This changes the background color of buttons when the mouse is clicked down on a button
@@ -780,7 +780,7 @@ mc:Ignorable=""d""
             ZedGraphPaneFill = Color.FromArgb(0x37, 0x37, 0x38);
             ZedGraphLegendFill = Color.FromArgb(0x85, 0x84, 0x83);
             RTBForeColor = Color.WhiteSmoke;                                // This changes the colour of text in rich text boxes
-            BSVButtonAreaBGColor = Color.FromArgb(74, 112, 139);                              // This changes the colour of a backstageview button area
+            BSVButtonAreaBGColor = Color.FromArgb(74, 112, 100);                              // This changes the colour of a backstageview button area
             UnselectedTextColour = Color.WhiteSmoke;                        // This changes the colour of unselected text in a BSV button
             HorizontalPBValueColor = Color.FromArgb(148, 193, 31);          // This changes the colour of the horizontal progressbar
 
@@ -1148,3 +1148,4 @@ mc:Ignorable=""d""
         }
     }
 }
+
