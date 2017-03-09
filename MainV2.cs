@@ -486,9 +486,9 @@ namespace MissionPlanner
             // setup adsb
             Utilities.adsb.UpdatePlanePosition += adsb_UpdatePlanePosition;
 
-            Form splash = Program.Splash;
+            //Form splash = Program.Splash;
 
-            splash.Refresh();
+            //splash.Refresh();
 
             Application.DoEvents();
 
@@ -561,7 +561,7 @@ namespace MissionPlanner
             }
             // ** Done
 
-            splash.Refresh();
+            //splash.Refresh();
             Application.DoEvents();
 
             // load last saved connection settings
@@ -613,8 +613,8 @@ namespace MissionPlanner
                 changelanguage(CultureInfoEx.GetCultureInfo(Settings.Instance["language"]));
             }
 
-            this.Text = splash.Text;
-            titlebar = splash.Text;
+            //this.Text = splash.Text;
+            //titlebar = splash.Text;
 
             if (!MONO) // windows only
             {
@@ -1530,7 +1530,7 @@ namespace MissionPlanner
                 // save the baudrate for this port
                 Settings.Instance[_connectionControl.CMB_serialport.Text + "_BAUD"] = _connectionControl.CMB_baudrate.Text;
 
-                this.Text = titlebar + " " + comPort.MAV.VersionString;
+                this.Text = "多旋翼GCS";/*titlebar + " " + comPort.MAV.VersionString;*/
 
                 // refresh config window if needed
                 if (MyView.current != null)
@@ -2820,7 +2820,7 @@ namespace MissionPlanner
 
             this.ResumeLayout();
 
-            Program.Splash.Close();
+            //Program.Splash.Close();
 
             log.Info("appload time");
             MissionPlanner.Utilities.Tracking.AddTiming("AppLoad", "Load Time",

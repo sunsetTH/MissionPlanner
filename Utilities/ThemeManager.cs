@@ -757,10 +757,10 @@ mc:Ignorable=""d""
 
         private static void SetBurntKermitColors()
         {
-            BGColor = Color.FromArgb(135, 135, 135);                     // This changes the colour of the main menu background
+            BGColor = Color.FromArgb(122, 197, 205);                     // This changes the colour of the main menu background
                                                                       /*  ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45);   */           // This changes the colour of the sub menu backgrounds
-            ControlBGColor = Color.FromArgb(0x00, 0x80, 0x80);
-            TextColor = Color.White;                                        // This changes the colour of text
+            ControlBGColor = Color.FromArgb(255, 255, 51);
+            TextColor = Color.Black;                                        // This changes the colour of text
             BGColorTextBox = Color.FromArgb(0x43, 0x44, 0x45);              // This changes the colour of the background of textboxes
             ButtonTextColor = Color.FromArgb(0, 0, 0);                    // This changes the colour of button text
             //ButBG = Color.FromArgb(148, 193, 31);   

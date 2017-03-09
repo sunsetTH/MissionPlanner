@@ -2011,8 +2011,8 @@ namespace MissionPlanner.GCSViews
 
                     MainV2.comPort.giveComport = false;
 
-                    BUT_read.Enabled = true;
-
+                    //BUT_read.Enabled = true;
+                    读取航点.Enabled = true;
                     writeKML();
                 });
             }
@@ -4019,16 +4019,16 @@ namespace MissionPlanner.GCSViews
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            try
-            {
-                lock (thisLock)
-                {
-                    MainMap.Zoom = trackBar1.Value;
-                }
-            }
-            catch
-            {
-            }
+            //try
+            //{
+            //    lock (thisLock)
+            //    {
+            //        MainMap.Zoom = trackBar1.Value;
+            //    }
+            //}
+            //catch
+            //{
+            //}
         }
 
 
@@ -4437,7 +4437,7 @@ namespace MissionPlanner.GCSViews
             MainMap.Size = new Size(panelMap.Size.Width - 50, panelMap.Size.Height);
             trackBar1.Location = new Point(panelMap.Size.Width - 50, trackBar1.Location.Y);
             trackBar1.Size = new Size(trackBar1.Size.Width, panelMap.Size.Height - trackBar1.Location.Y);
-            label11.Location = new Point(panelMap.Size.Width - 50, label11.Location.Y);
+            //label11.Location = new Point(panelMap.Size.Width - 50, label11.Location.Y);
         }
 
         DateTime mapupdate = DateTime.MinValue;
@@ -6968,6 +6968,42 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void lbl_homedist_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lock (thisLock)
+                {
+                    MainMap.Zoom  -=0.5;
+                    if (MainMap.Zoom < 0)
+                        MainMap.Zoom = 0;
+                }
+            }
+            catch
+            {
+            }
+         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lock (thisLock)
+                {
+                    MainMap.Zoom  +=0.5;
+                    if (MainMap.Zoom > 24)
+                     MainMap.Zoom = 24;
+                }
+            }
+            catch
+            {
+            }
+
+
+           
+            
         }
     }
 }

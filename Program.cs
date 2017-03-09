@@ -75,48 +75,48 @@ namespace MissionPlanner
             //    return;
             //}
 
-            name = "Mission Planner";
+            name = "多旋翼GCS";
 
-            try
-            {
-                if (File.Exists(Settings.GetRunningDirectory() + "logo.txt"))
-                    name = File.ReadAllLines(Settings.GetRunningDirectory() + "logo.txt",
-                        Encoding.UTF8)[0];
-            }
-            catch
-            {
-            }
+            //try
+            //{
+            //    if (File.Exists(Settings.GetRunningDirectory() + "logo.txt"))
+            //        name = File.ReadAllLines(Settings.GetRunningDirectory() + "logo.txt",
+            //            Encoding.UTF8)[0];
+            //}
+            //catch
+            //{
+            //}
 
-            if (File.Exists(Settings.GetRunningDirectory() + "logo.png"))
-                Logo = new Bitmap(Settings.GetRunningDirectory() + "logo.png");
+            //if (File.Exists(Settings.GetRunningDirectory() + "logo.png"))
+            //    Logo = new Bitmap(Settings.GetRunningDirectory() + "logo.png");
 
-            if (File.Exists(Settings.GetRunningDirectory() + "icon.png"))
-            {
-                // 128*128
-                IconFile = new Bitmap(Settings.GetRunningDirectory() + "icon.png");
-            }
-            else
-            {
+            //if (File.Exists(Settings.GetRunningDirectory() + "icon.png"))
+            //{
+            //    // 128*128
+            //    IconFile = new Bitmap(Settings.GetRunningDirectory() + "icon.png");
+            //}
+            //else
+            //{
                 IconFile = MissionPlanner.Properties.Resources.rotoricon;
-            }
+            //}
 
-            if (File.Exists(Settings.GetRunningDirectory() + "splashbg.png")) // 600*375
-                SplashBG = new Bitmap(Settings.GetRunningDirectory() + "splashbg.png");
+            //if (File.Exists(Settings.GetRunningDirectory() + "splashbg.png")) // 600*375
+            //    SplashBG = new Bitmap(Settings.GetRunningDirectory() + "splashbg.png");
 
 
-            Splash = new MissionPlanner.Splash();
-            if (SplashBG != null)
-            {
-                Splash.BackgroundImage = SplashBG;
-                Splash.pictureBox1.Visible = false;
-            }
+            //Splash = new MissionPlanner.Splash();
+            //if (SplashBG != null)
+            //{
+            //    Splash.BackgroundImage = SplashBG;
+            //    Splash.pictureBox1.Visible = false;
+            //}
 
-            if (IconFile != null)
-                Splash.Icon = Icon.FromHandle(((Bitmap)IconFile).GetHicon());
+            //if (IconFile != null)
+            //    Splash.Icon = Icon.FromHandle(((Bitmap)IconFile).GetHicon());
 
-            string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            Splash.Text = name + " " + Application.ProductVersion + " build " + strVersion;
-            //Splash.Show();
+            //string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            //Splash.Text = name;/* + " " + Application.ProductVersion + " build " + strVersion;*/
+            ////Splash.Show();
 
             Application.DoEvents();
             Application.DoEvents();
