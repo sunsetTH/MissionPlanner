@@ -74,6 +74,28 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.CMB_fmode4 = new System.Windows.Forms.ComboBox();
             this.CMB_fmode3 = new System.Windows.Forms.ComboBox();
             this.CMB_fmode2 = new System.Windows.Forms.ComboBox();
+            this.CB_simple1 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.chk_ss1 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.LBL_flightmodepwm = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lbl_currentmode = new System.Windows.Forms.Label();
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
@@ -453,12 +475,29 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.tableLayoutPanel1.Controls.Add(this.labelfm4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelfm5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.labelfm6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_SaveModes, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.CMB_fmode6, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.CMB_fmode5, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.CMB_fmode4, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.CMB_fmode3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.CMB_fmode2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CB_simple1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox4, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox5, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.chk_ss1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox6, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox7, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox8, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox9, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox10, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label12, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label8, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label10, 4, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label11, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // labelfm1
@@ -554,12 +593,139 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             resources.ApplyResources(this.CMB_fmode2, "CMB_fmode2");
             this.CMB_fmode2.Name = "CMB_fmode2";
             // 
+            // CB_simple1
+            // 
+            resources.ApplyResources(this.CB_simple1, "CB_simple1");
+            this.CB_simple1.Name = "CB_simple1";
+            this.CB_simple1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            resources.ApplyResources(this.checkBox2, "checkBox2");
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            resources.ApplyResources(this.checkBox5, "checkBox5");
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // chk_ss1
+            // 
+            resources.ApplyResources(this.chk_ss1, "chk_ss1");
+            this.chk_ss1.Name = "chk_ss1";
+            this.chk_ss1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            resources.ApplyResources(this.checkBox6, "checkBox6");
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            resources.ApplyResources(this.checkBox7, "checkBox7");
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            resources.ApplyResources(this.checkBox8, "checkBox8");
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            resources.ApplyResources(this.checkBox9, "checkBox9");
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            resources.ApplyResources(this.checkBox10, "checkBox10");
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // LBL_flightmodepwm
+            // 
+            resources.ApplyResources(this.LBL_flightmodepwm, "LBL_flightmodepwm");
+            this.LBL_flightmodepwm.Name = "LBL_flightmodepwm";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // lbl_currentmode
+            // 
+            resources.ApplyResources(this.lbl_currentmode, "lbl_currentmode");
+            this.lbl_currentmode.Name = "lbl_currentmode";
+            // 
             // ConfigRadioInput
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.LBL_flightmodepwm);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbl_currentmode);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.BAR14);
             this.Controls.Add(this.BAR13);
+            this.Controls.Add(this.BUT_SaveModes);
             this.Controls.Add(this.BAR12);
             this.Controls.Add(this.BAR11);
             this.Controls.Add(this.BAR10);
@@ -637,5 +803,27 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         private System.Windows.Forms.ComboBox CMB_fmode4;
         private System.Windows.Forms.ComboBox CMB_fmode3;
         private System.Windows.Forms.ComboBox CMB_fmode2;
+        private System.Windows.Forms.CheckBox CB_simple1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox chk_ss1;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label LBL_flightmodepwm;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_currentmode;
     }
 }
