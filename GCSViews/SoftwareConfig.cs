@@ -47,8 +47,8 @@ namespace MissionPlanner.GCSViews
                 {
                     //start = AddBackstageViewPage(typeof(ConfigFlightModes), Strings.FlightModes);
 
-                    if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
-                        AddBackstageViewPage(typeof( ConfigAC_Fence), Strings.GeoFence);
+                    //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
+                    //    AddBackstageViewPage(typeof( ConfigAC_Fence), Strings.GeoFence);
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
