@@ -66,6 +66,14 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.labelfm2 = new System.Windows.Forms.Label();
             this.labelfm3 = new System.Windows.Forms.Label();
             this.labelfm4 = new System.Windows.Forms.Label();
+            this.labelfm5 = new System.Windows.Forms.Label();
+            this.labelfm6 = new System.Windows.Forms.Label();
+            this.BUT_SaveModes = new MissionPlanner.Controls.MyButton();
+            this.CMB_fmode6 = new System.Windows.Forms.ComboBox();
+            this.CMB_fmode5 = new System.Windows.Forms.ComboBox();
+            this.CMB_fmode4 = new System.Windows.Forms.ComboBox();
+            this.CMB_fmode3 = new System.Windows.Forms.ComboBox();
+            this.CMB_fmode2 = new System.Windows.Forms.ComboBox();
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
@@ -443,6 +451,14 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.tableLayoutPanel1.Controls.Add(this.labelfm2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelfm3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.labelfm4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelfm5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.labelfm6, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_SaveModes, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode6, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode5, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode4, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode2, 1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // labelfm1
@@ -473,6 +489,70 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this.labelfm4, "labelfm4");
             this.labelfm4.Name = "labelfm4";
+            // 
+            // labelfm5
+            // 
+            resources.ApplyResources(this.labelfm5, "labelfm5");
+            this.labelfm5.Name = "labelfm5";
+            // 
+            // labelfm6
+            // 
+            resources.ApplyResources(this.labelfm6, "labelfm6");
+            this.labelfm6.Name = "labelfm6";
+            // 
+            // BUT_SaveModes
+            // 
+            this.BUT_SaveModes.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_SaveModes.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(168)))), ((int)(((byte)(173)))));
+            this.BUT_SaveModes.ColorMouseDown = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.BUT_SaveModes, "BUT_SaveModes");
+            this.BUT_SaveModes.Name = "BUT_SaveModes";
+            this.BUT_SaveModes.UseVisualStyleBackColor = true;
+            // 
+            // CMB_fmode6
+            // 
+            this.CMB_fmode6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode6.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode6, "CMB_fmode6");
+            this.CMB_fmode6.Name = "CMB_fmode6";
+            // 
+            // CMB_fmode5
+            // 
+            this.CMB_fmode5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode5.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode5, "CMB_fmode5");
+            this.CMB_fmode5.Name = "CMB_fmode5";
+            // 
+            // CMB_fmode4
+            // 
+            this.CMB_fmode4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode4.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode4, "CMB_fmode4");
+            this.CMB_fmode4.Name = "CMB_fmode4";
+            // 
+            // CMB_fmode3
+            // 
+            this.CMB_fmode3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode3.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode3, "CMB_fmode3");
+            this.CMB_fmode3.Name = "CMB_fmode3";
+            // 
+            // CMB_fmode2
+            // 
+            this.CMB_fmode2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode2.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode2, "CMB_fmode2");
+            this.CMB_fmode2.Name = "CMB_fmode2";
             // 
             // ConfigRadioInput
             // 
@@ -549,5 +629,13 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         private System.Windows.Forms.Label labelfm2;
         private System.Windows.Forms.Label labelfm3;
         private System.Windows.Forms.Label labelfm4;
+        private System.Windows.Forms.Label labelfm5;
+        private System.Windows.Forms.Label labelfm6;
+        private MyButton BUT_SaveModes;
+        private System.Windows.Forms.ComboBox CMB_fmode6;
+        private System.Windows.Forms.ComboBox CMB_fmode5;
+        private System.Windows.Forms.ComboBox CMB_fmode4;
+        private System.Windows.Forms.ComboBox CMB_fmode3;
+        private System.Windows.Forms.ComboBox CMB_fmode2;
     }
 }

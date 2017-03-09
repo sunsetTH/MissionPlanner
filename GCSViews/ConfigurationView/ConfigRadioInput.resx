@@ -853,7 +853,7 @@
     <value>3, 0</value>
   </data>
   <data name="labelfm1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 80</value>
+    <value>77, 80</value>
   </data>
   <data name="labelfm1.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -877,10 +877,10 @@
     <value>0</value>
   </data>
   <data name="CMB_fmode1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 3</value>
+    <value>86, 3</value>
   </data>
   <data name="CMB_fmode1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
+    <value>95, 20</value>
   </data>
   <data name="CMB_fmode1.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
@@ -907,7 +907,7 @@
     <value>3, 80</value>
   </data>
   <data name="labelfm2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
+    <value>77, 24</value>
   </data>
   <data name="labelfm2.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
@@ -940,7 +940,7 @@
     <value>3, 206</value>
   </data>
   <data name="labelfm3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
+    <value>77, 24</value>
   </data>
   <data name="labelfm3.TabIndex" type="System.Int32, mscorlib">
     <value>140</value>
@@ -973,7 +973,7 @@
     <value>3, 288</value>
   </data>
   <data name="labelfm4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
+    <value>77, 24</value>
   </data>
   <data name="labelfm4.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
@@ -995,6 +995,204 @@
   </data>
   <data name="&gt;&gt;labelfm4.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="labelfm5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelfm5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelfm5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 337</value>
+  </data>
+  <data name="labelfm5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 24</value>
+  </data>
+  <data name="labelfm5.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="labelfm5.Text" xml:space="preserve">
+    <value>Flight Mode 5</value>
+  </data>
+  <data name="labelfm5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelfm5.Name" xml:space="preserve">
+    <value>labelfm5</value>
+  </data>
+  <data name="&gt;&gt;labelfm5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelfm5.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelfm5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelfm6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelfm6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelfm6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 388</value>
+  </data>
+  <data name="labelfm6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 24</value>
+  </data>
+  <data name="labelfm6.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="labelfm6.Text" xml:space="preserve">
+    <value>Flight Mode 6</value>
+  </data>
+  <data name="labelfm6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelfm6.Name" xml:space="preserve">
+    <value>labelfm6</value>
+  </data>
+  <data name="&gt;&gt;labelfm6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelfm6.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelfm6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="BUT_SaveModes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_SaveModes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 425</value>
+  </data>
+  <data name="BUT_SaveModes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 32</value>
+  </data>
+  <data name="BUT_SaveModes.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="BUT_SaveModes.Text" xml:space="preserve">
+    <value>Save Modes</value>
+  </data>
+  <data name="&gt;&gt;BUT_SaveModes.Name" xml:space="preserve">
+    <value>BUT_SaveModes</value>
+  </data>
+  <data name="&gt;&gt;BUT_SaveModes.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.6277.17949, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_SaveModes.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;BUT_SaveModes.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="CMB_fmode6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 391</value>
+  </data>
+  <data name="CMB_fmode6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="CMB_fmode6.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode6.Name" xml:space="preserve">
+    <value>CMB_fmode6</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode6.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode6.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CMB_fmode5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 340</value>
+  </data>
+  <data name="CMB_fmode5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="CMB_fmode5.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode5.Name" xml:space="preserve">
+    <value>CMB_fmode5</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode5.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode5.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="CMB_fmode4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 291</value>
+  </data>
+  <data name="CMB_fmode4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="CMB_fmode4.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode4.Name" xml:space="preserve">
+    <value>CMB_fmode4</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode4.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="CMB_fmode3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 209</value>
+  </data>
+  <data name="CMB_fmode3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="CMB_fmode3.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode3.Name" xml:space="preserve">
+    <value>CMB_fmode3</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode3.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="CMB_fmode2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 83</value>
+  </data>
+  <data name="CMB_fmode2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="CMB_fmode2.TabIndex" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode2.Name" xml:space="preserve">
+    <value>CMB_fmode2</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;CMB_fmode2.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 404</value>
@@ -1021,7 +1219,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelfm1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CMB_fmode1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelfm2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelfm3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelfm4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,69.17809,Percent,30.82192,Absolute,160,Absolute,77,Absolute,103" /&gt;&lt;Rows Styles="Percent,38.88889,Percent,61.11111,Absolute,82,Absolute,49,Absolute,51,Absolute,14,Absolute,57" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelfm1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CMB_fmode1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelfm2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelfm3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelfm4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelfm5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelfm6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_SaveModes" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="CMB_fmode6" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="CMB_fmode5" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="CMB_fmode4" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="CMB_fmode3" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="CMB_fmode2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,45.1087,Percent,54.8913,Absolute,122,Absolute,77,Absolute,103" /&gt;&lt;Rows Styles="Percent,38.88889,Percent,61.11111,Absolute,82,Absolute,49,Absolute,51,Absolute,34,Absolute,37" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
