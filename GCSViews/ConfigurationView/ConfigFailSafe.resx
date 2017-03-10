@@ -216,6 +216,9 @@
   <data name="&gt;&gt;lbl_currentmode.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="LNK_wiki.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -271,7 +274,7 @@
     <value>mavlinkNumericUpDownlow_voltage</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
     <value>PNL_low_bat</value>
@@ -310,7 +313,7 @@
     <value>mavlinkCheckBoxlong_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -349,7 +352,7 @@
     <value>mavlinkCheckBoxshort_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -388,7 +391,7 @@
     <value>mavlinkCheckBoxgcs_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -428,7 +431,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxthr_fs_action</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -461,7 +464,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownfs_thr_value</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Parent" xml:space="preserve">
     <value>PNL_thr_fs_value</value>
@@ -494,7 +497,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownthr_fs_value</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
     <value>PNL_thr_fs_value</value>
@@ -533,7 +536,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxthr_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -566,7 +569,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkComboBox_fs_thr_enable</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -596,7 +599,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkComboBoxfs_batt_enable</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -632,13 +635,61 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxFS_GCS_ENABLE</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>pnlmah</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownFS_BATT_MAH</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Parent" xml:space="preserve">
+    <value>pnlmah</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlmah.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 40</value>
+  </data>
+  <data name="pnlmah.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 21</value>
+  </data>
+  <data name="pnlmah.TabIndex" type="System.Int32, mscorlib">
+    <value>157</value>
+  </data>
+  <data name="pnlmah.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlmah.Name" xml:space="preserve">
+    <value>pnlmah</value>
+  </data>
+  <data name="&gt;&gt;pnlmah.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlmah.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;pnlmah.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -686,55 +737,13 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownFS_BATT_MAH</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkNumericUpDown, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Parent" xml:space="preserve">
     <value>pnlmah</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="pnlmah.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 40</value>
-  </data>
-  <data name="pnlmah.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 21</value>
-  </data>
-  <data name="pnlmah.TabIndex" type="System.Int32, mscorlib">
-    <value>157</value>
-  </data>
-  <data name="pnlmah.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pnlmah.Name" xml:space="preserve">
-    <value>pnlmah</value>
-  </data>
-  <data name="&gt;&gt;pnlmah.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlmah.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;pnlmah.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 3</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 12</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>154</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Low Battery</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -772,26 +781,35 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   <data name="&gt;&gt;PNL_low_bat.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 3</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>148</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>154</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>FS Pwm</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Low Battery</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>PNL_low_bat</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -825,6 +843,39 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   </data>
   <data name="&gt;&gt;PNL_thr_fs_value.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>FS Pwm</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>PNL_thr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lbl_armed.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 26.25pt</value>
@@ -1343,7 +1394,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>1</value>
   </data>
   <data name="configAC_Fence1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 462</value>
+    <value>0, 413</value>
   </data>
   <data name="configAC_Fence1.Size" type="System.Drawing.Size, System.Drawing">
     <value>528, 231</value>
@@ -1355,7 +1406,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>configAC_Fence1</value>
   </data>
   <data name="&gt;&gt;configAC_Fence1.Type" xml:space="preserve">
-    <value>MissionPlanner.GCSViews.ConfigurationView.ConfigAC_Fence, viga_gcs, Version=1.1.6277.28989, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.GCSViews.ConfigurationView.ConfigAC_Fence, viga_gcs, Version=1.1.6278.24887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configAC_Fence1.Parent" xml:space="preserve">
     <value>$this</value>

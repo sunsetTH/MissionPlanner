@@ -117,583 +117,57 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;CHK_compass2_external.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_deg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass2_mot.Name" xml:space="preserve">
-    <value>LBL_compass2_mot</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CHK_autodec.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CHK_autodec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 22</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="linkLabelmagdec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CHK_compass1_use.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="&gt;&gt;LBL_primary_compass.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="BUT_level.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass2_mot.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CMB_compass1_orient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 20</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CHK_compass3_external.Text" xml:space="preserve">
-    <value>Externally mounted</value>
-  </data>
-  <data name="linkLabelmagdec.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass3.Name" xml:space="preserve">
-    <value>groupBoxCompass3</value>
-  </data>
-  <data name="TXT_declination_deg.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="LBL_compass1_offset.Text" xml:space="preserve">
-    <value>OFFSET</value>
-  </data>
-  <data name="TXT_declination_deg.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lbl_Accel_user.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 76</value>
-  </data>
-  <data name="&gt;&gt;lbl_Accel_user.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_external.Parent" xml:space="preserve">
-    <value>groupBoxCompass1</value>
-  </data>
-  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 48</value>
-  </data>
-  <data name="TXT_declination_deg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 21</value>
-  </data>
-  <data name="CHK_compass3_use.Text" xml:space="preserve">
-    <value>Use this compass</value>
-  </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 59</value>
-  </data>
-  <data name="LBL_compass2_mot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 12</value>
-  </data>
-  <data name="groupBoxCompass1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 150</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LBL_primary_compass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 48</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="LBL_compass3_mot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 12</value>
-  </data>
-  <data name="CHK_enablecompass.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="BUT_MagCalibrationLive.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 821</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Minutes</value>
-  </data>
-  <data name="LBL_compass1_offset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass_learn.Name" xml:space="preserve">
-    <value>CHK_compass_learn</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_offset.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CHK_autodec.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass3_orient.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="LBL_primary_compass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 12</value>
-  </data>
-  <data name="LBL_compass2_mot.Text" xml:space="preserve">
-    <value>MOT</value>
-  </data>
-  <data name="LBL_compass2_offset.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CHK_compass2_external.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>644, 5</value>
-  </data>
-  <data name="LBL_compass2_offset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 103</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 496</value>
-  </data>
-  <data name="LBL_compass3_mot.Text" xml:space="preserve">
-    <value>MOT</value>
-  </data>
-  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BUT_calib_accell.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="LBL_compass2_mot.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass3_use.Name" xml:space="preserve">
-    <value>CHK_compass3_use</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 44</value>
-  </data>
-  <data name="&gt;&gt;LBL_primary_compass.Name" xml:space="preserve">
-    <value>LBL_primary_compass</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>644, 5</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="LBL_compass3_offset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 103</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CMB_compass3_orient.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="LBL_compass1_mot.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="CMB_primary_compass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 20</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass3_orient.Name" xml:space="preserve">
-    <value>CMB_compass3_orient</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CHK_compass3_external.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 39</value>
-  </data>
-  <data name="groupBoxGeneralSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="&gt;&gt;CHK_autodec.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass_learn.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass2_orient.Name" xml:space="preserve">
-    <value>CMB_compass2_orient</value>
-  </data>
-  <data name="CMB_compass3_orient.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="TXT_declination_min.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 40</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneralSettings.Name" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass2_use.Parent" xml:space="preserve">
-    <value>groupBoxCompass2</value>
-  </data>
-  <data name="LBL_compass1_mot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 120</value>
-  </data>
-  <data name="LBL_compass3_offset.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CHK_compass_learn.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass_learn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="CHK_compass2_use.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_offset.Name" xml:space="preserve">
-    <value>LBL_compass3_offset</value>
-  </data>
-  <data name="LBL_compass3_offset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneralSettings.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CHK_compass_learn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 18</value>
-  </data>
-  <data name="CMB_compass2_orient.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CHK_compass1_external.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_external.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="CHK_enablecompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 18</value>
-  </data>
-  <data name="CHK_compass_learn.Text" xml:space="preserve">
-    <value>Automatically learn offsets</value>
-  </data>
-  <data name="CHK_compass3_external.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="BUT_level.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 21</value>
-  </data>
-  <data name="LBL_compass2_offset.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="LBL_compass1_mot.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_offset.Parent" xml:space="preserve">
-    <value>groupBoxCompass1</value>
-  </data>
-  <data name="LBL_compass3_mot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 120</value>
-  </data>
-  <data name="LBL_compass3_offset.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;LBL_primary_compass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelmagdec.Name" xml:space="preserve">
-    <value>linkLabelmagdec</value>
-  </data>
-  <data name="CHK_compass3_external.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
-  </data>
-  <data name="&gt;&gt;CHK_autodec.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="LBL_primary_compass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BUT_calib_accell.Text" xml:space="preserve">
-    <value>Calibrate Accel</value>
-  </data>
-  <data name="CMB_primary_compass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 44</value>
-  </data>
-  <data name="LBL_compass2_offset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="&gt;&gt;CMB_primary_compass.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="LBL_primary_compass.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BUT_level.Name" xml:space="preserve">
-    <value>BUT_level</value>
-  </data>
-  <data name="&gt;&gt;CMB_primary_compass.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="CHK_compass2_use.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 24</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.Name" xml:space="preserve">
-    <value>BUT_MagCalibrationLive</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="groupBoxGeneralSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>615, 85</value>
-  </data>
-  <data name="CHK_compass3_use.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="groupBoxCompass1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 645</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass2_mot.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass3_orient.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="LBL_compass1_offset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_mot.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_offset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CHK_compass2_external.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CHK_compass1_use.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 20</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass2_use.Name" xml:space="preserve">
-    <value>CHK_compass2_use</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.6277.17949, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneralSettings.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="CHK_autodec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CHK_compass1_use.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_mot.Parent" xml:space="preserve">
-    <value>groupBoxCompass1</value>
-  </data>
-  <data name="CHK_autodec.Text" xml:space="preserve">
-    <value>Obtain declination automatically</value>
-  </data>
-  <data name="CHK_compass3_use.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 20</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Level your Autopilot to set default accelerometer Min/Max (3 axis).
-This will ask you to place your autopilot on each edge.</value>
-  </data>
-  <data name="LBL_compass3_mot.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_Accel_user.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;BUT_level.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LBL_primary_compass.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Degrees</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LBL_compass1_offset.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 163</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>473, 24</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_use.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="LBL_compass1_mot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 12</value>
-  </data>
-  <data name="&gt;&gt;lbl_Accel_user.Name" xml:space="preserve">
-    <value>lbl_Accel_user</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneralSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;linkLabelmagdec.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="CHK_compass2_external.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass2_orient.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_offset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_min.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass_learn.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="CMB_primary_compass.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass3_external.Name" xml:space="preserve">
-    <value>CHK_compass3_external</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="CMB_compass3_orient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 68</value>
-  </data>
-  <data name="CHK_compass3_use.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TXT_declination_deg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 41</value>
-  </data>
-  <data name="LBL_compass3_offset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
+    <value>137, 12</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Level your Autopilot to set default accelerometer offsets (1 axis/AHRS trims).
-This requires you to place your autopilot flat and level.</value>
+    <value>校准角速度计水平偏移量</value>
   </data>
-  <data name="&gt;&gt;CHK_compass2_external.Name" xml:space="preserve">
-    <value>CHK_compass2_external</value>
+  <data name="BUT_level.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 223</value>
   </data>
-  <data name="groupBoxCompass3.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
+  <data name="BUT_level.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
+  <data name="BUT_level.Text" xml:space="preserve">
+    <value>水平校准</value>
   </data>
-  <data name="&gt;&gt;CMB_compass2_orient.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="lbl_Accel_user.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 86</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
+  <data name="lbl_Accel_user.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 37</value>
   </data>
-  <data name="&gt;&gt;BUT_level.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="BUT_calib_accell.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 126</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 51</value>
+  <data name="BUT_calib_accell.Text" xml:space="preserve">
+    <value>加速度校准</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 59</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 12</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>请按照提示完成各个轴的校准</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>加速度计校准</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 192</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 52</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4092,563 +3566,280 @@ This requires you to place your autopilot flat and level.</value>
         UQyqVkQ/0b8R//d//w//hOFqOY6jJAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="lbl_Accel_user.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 59</value>
   </data>
-  <data name="LBL_compass3_mot.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_deg.Name" xml:space="preserve">
-    <value>TXT_declination_deg</value>
-  </data>
-  <data name="CMB_compass1_orient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 68</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass2_offset.Parent" xml:space="preserve">
-    <value>groupBoxCompass2</value>
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass1_orient.Name" xml:space="preserve">
-    <value>CMB_compass1_orient</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_external.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_external.Name" xml:space="preserve">
-    <value>CHK_compass1_external</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_mot.Name" xml:space="preserve">
-    <value>LBL_compass1_mot</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CMB_compass2_orient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 20</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_mot.Name" xml:space="preserve">
-    <value>LBL_compass3_mot</value>
+  <data name="BUT_MagCalibrationLive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 623</value>
   </data>
   <data name="BUT_MagCalibrationLive.Text" xml:space="preserve">
-    <value>Live Calibration</value>
+    <value>校准</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 28</value>
-  </data>
-  <data name="BUT_calib_accell.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 519</value>
-  </data>
-  <data name="CHK_enablecompass.Text" xml:space="preserve">
-    <value>Enable compasses</value>
-  </data>
-  <data name="&gt;&gt;linkLabelmagdec.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;CMB_primary_compass.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="linkLabelmagdec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 64</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;BUT_level.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.6277.17949, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="CHK_compass2_external.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="linkLabelmagdec.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_mot.Parent" xml:space="preserve">
-    <value>groupBoxCompass3</value>
-  </data>
-  <data name="LBL_compass2_offset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass2_offset.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_use.Name" xml:space="preserve">
-    <value>CHK_compass1_use</value>
-  </data>
-  <data name="groupBoxCompass2.Text" xml:space="preserve">
-    <value>Compass #2</value>
-  </data>
-  <data name="CHK_enablecompass.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
-    <value>pictureBox4</value>
-  </data>
-  <data name="CHK_compass1_external.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass3_external.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 454</value>
-  </data>
-  <data name="CMB_compass1_orient.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass2_orient.Parent" xml:space="preserve">
-    <value>groupBoxCompass2</value>
-  </data>
-  <data name="LBL_compass1_mot.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass2_offset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
-  </data>
-  <data name="&gt;&gt;BUT_calib_accell.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.6277.17949, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="CHK_compass1_external.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass3_use.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;CHK_autodec.Name" xml:space="preserve">
-    <value>CHK_autodec</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass3_external.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CHK_compass_learn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_use.Parent" xml:space="preserve">
-    <value>groupBoxCompass1</value>
-  </data>
-  <data name="TXT_declination_min.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="LBL_compass3_mot.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_min.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass2.Name" xml:space="preserve">
-    <value>groupBoxCompass2</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass3_use.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="CHK_compass2_use.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 20</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 20</value>
-  </data>
-  <data name="CMB_compass3_orient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 20</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="CHK_compass3_use.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass2_external.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxCompass3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 150</value>
-  </data>
-  <data name="CMB_primary_compass.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass1_use.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass1.Name" xml:space="preserve">
-    <value>groupBoxCompass1</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass1_orient.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="groupBoxCompass3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 645</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 209</value>
-  </data>
-  <data name="BUT_calib_accell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 21</value>
-  </data>
-  <data name="CHK_compass2_use.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass2_use.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="LBL_compass2_offset.Text" xml:space="preserve">
-    <value>OFFSET</value>
-  </data>
-  <data name="CHK_compass1_use.Text" xml:space="preserve">
-    <value>Use this compass</value>
-  </data>
-  <data name="lbl_Accel_user.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="groupBoxCompass2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 645</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Accelerometer Calibration</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Calibration</value>
-  </data>
-  <data name="BUT_calib_accell.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_offset.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass2_external.Parent" xml:space="preserve">
-    <value>groupBoxCompass2</value>
-  </data>
-  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="BUT_calib_accell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 165</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.Name" xml:space="preserve">
-    <value>CHK_enablecompass</value>
-  </data>
-  <data name="linkLabelmagdec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 12</value>
-  </data>
-  <data name="CHK_compass_learn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="BUT_MagCalibrationLive.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBoxCompass2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 150</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CHK_compass1_external.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 39</value>
-  </data>
-  <data name="CHK_autodec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 18</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="groupBoxCompass1.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass1_orient.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, viga_gcs, Version=1.1.6278.25364, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="groupBoxGeneralSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 554</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LBL_primary_compass.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_min.Name" xml:space="preserve">
-    <value>TXT_declination_min</value>
-  </data>
-  <data name="CHK_compass2_use.Text" xml:space="preserve">
-    <value>Use this compass</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CHK_compass_learn.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="CHK_compass3_use.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass3_orient.Parent" xml:space="preserve">
-    <value>groupBoxCompass3</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="lbl_Accel_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 86</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="TXT_declination_min.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="LBL_primary_compass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
   </data>
   <data name="LBL_primary_compass.Text" xml:space="preserve">
-    <value>Primary Compass:</value>
+    <value>主罗盘</value>
   </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_deg.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 8</value>
-  </data>
-  <data name="LBL_compass1_offset.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass3_use.Parent" xml:space="preserve">
-    <value>groupBoxCompass3</value>
-  </data>
-  <data name="LBL_compass2_mot.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 86</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass2_offset.Name" xml:space="preserve">
-    <value>LBL_compass2_offset</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BUT_level.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Compass</value>
-  </data>
-  <data name="CMB_compass1_orient.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_offset.Parent" xml:space="preserve">
-    <value>groupBoxCompass3</value>
-  </data>
-  <data name="CMB_compass2_orient.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="CMB_compass2_orient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 68</value>
-  </data>
-  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_mot.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CHK_compass3_external.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LBL_compass1_offset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 103</value>
-  </data>
-  <data name="BUT_MagCalibrationLive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 37</value>
-  </data>
-  <data name="CHK_compass2_external.Text" xml:space="preserve">
-    <value>Externally mounted</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Accel_user.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TXT_declination_min.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 21</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_min.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
-    <value>pictureBox3</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>906, 1016</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="LBL_compass1_offset.Text" xml:space="preserve">
+    <value>磁偏量</value>
   </data>
   <data name="LBL_compass3_offset.Text" xml:space="preserve">
-    <value>OFFSET</value>
+    <value>磁偏量</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="LBL_compass2_offset.Text" xml:space="preserve">
+    <value>磁偏量</value>
   </data>
-  <data name="BUT_MagCalibrationLive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="CHK_compass3_external.Text" xml:space="preserve">
+    <value>外部安装</value>
   </data>
-  <data name="&gt;&gt;BUT_calib_accell.Name" xml:space="preserve">
-    <value>BUT_calib_accell</value>
+  <data name="CHK_compass3_use.Text" xml:space="preserve">
+    <value>使用此罗盘</value>
   </data>
-  <data name="LBL_compass1_mot.Text" xml:space="preserve">
-    <value>MOT</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="LBL_compass2_mot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 120</value>
-  </data>
-  <data name="LBL_compass2_mot.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_mot.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 137</value>
-  </data>
-  <data name="CHK_compass2_use.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass1_offset.Name" xml:space="preserve">
-    <value>LBL_compass1_offset</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 236</value>
-  </data>
-  <data name="CHK_compass1_external.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="groupBoxCompass3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 451</value>
   </data>
   <data name="groupBoxCompass3.Text" xml:space="preserve">
-    <value>Compass #3</value>
+    <value>罗盘3</value>
   </data>
-  <data name="CHK_compass1_use.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="CHK_autodec.Text" xml:space="preserve">
+    <value>自动获取磁偏角</value>
   </data>
-  <data name="groupBoxCompass2.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 300</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 28</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>磁罗盘校准</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 334</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>度</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="CHK_compass2_external.Text" xml:space="preserve">
+    <value>外部安装</value>
+  </data>
+  <data name="CHK_compass2_use.Text" xml:space="preserve">
+    <value>使用此罗盘</value>
+  </data>
+  <data name="groupBoxCompass2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 451</value>
+  </data>
+  <data name="groupBoxCompass2.Text" xml:space="preserve">
+    <value>罗盘2</value>
+  </data>
+  <data name="CHK_compass1_external.Text" xml:space="preserve">
+    <value>外部安装</value>
+  </data>
+  <data name="CHK_compass1_use.Text" xml:space="preserve">
+    <value>使用此罗盘</value>
+  </data>
+  <data name="groupBoxCompass1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 451</value>
   </data>
   <data name="groupBoxCompass1.Text" xml:space="preserve">
-    <value>Compass #1</value>
+    <value>罗盘1</value>
   </data>
-  <data name="&gt;&gt;LBL_compass2_mot.Parent" xml:space="preserve">
-    <value>groupBoxCompass2</value>
+  <data name="CHK_compass_learn.Text" xml:space="preserve">
+    <value>自主学习磁盘角</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="CHK_enablecompass.Text" xml:space="preserve">
+    <value>使用磁罗盘数据</value>
   </data>
-  <data name="&gt;&gt;lbl_Accel_user.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="groupBoxGeneralSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 354</value>
   </data>
-  <data name="&gt;&gt;CHK_compass3_external.Parent" xml:space="preserve">
-    <value>groupBoxCompass3</value>
+  <data name="groupBoxGeneralSettings.Text" xml:space="preserve">
+    <value>磁罗盘配置</value>
   </data>
-  <data name="CHK_compass2_external.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 39</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 112</value>
-  </data>
-  <data name="&gt;&gt;TXT_declination_deg.Parent" xml:space="preserve">
-    <value>groupBoxGeneralSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelmagdec.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LBL_compass3_mot.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 59</value>
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        kRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrq
+        zJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGX
+        CixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixV
+        y22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22C
+        ysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJG
+        aqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgz
+        R14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14q
+        sFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQt
+        twkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkq
+        Cxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxup
+        oc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4c
+        eanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanA
+        UrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXc
+        JqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgs
+        bKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAcrXgdlc52EgN
+        debISwWWqwW3s8rAZmqoM0deKnCYWnY7qTOzqRrqzJGXChyqFt8O6qxsrIY6c+SlAoeq5beDOisbq6HO
+        HHmpwOFqAV6pzsjmaqgzR14qcIpahFeoszFADXXmyEsFTlHL8Ap1Ngaooc4ceanAKWoZXqHOxgA11Jni
+        r3/7L3BNBNili4z+AAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4954,258 +4145,7 @@ This requires you to place your autopilot flat and level.</value>
         wCEQEnkopPtsWuQsv7IlHUmHGzlLzpKz5Cw5S87yX7EcccT/B5hBBSf0rBIzAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="BUT_level.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 340</value>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 269</value>
   </data>
-  <data name="CHK_compass3_external.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="BUT_level.Text" xml:space="preserve">
-    <value>Calibrate Level</value>
-  </data>
-  <data name="&gt;&gt;CHK_compass2_use.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="CHK_enablecompass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;BUT_calib_accell.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass1_orient.Parent" xml:space="preserve">
-    <value>groupBoxCompass1</value>
-  </data>
-  <data name="CHK_compass1_external.Text" xml:space="preserve">
-    <value>Externally mounted</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 43</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="CHK_compass1_use.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="linkLabelmagdec.Text" xml:space="preserve">
-    <value>Declination WebSite</value>
-  </data>
-  <data name="CHK_enablecompass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 23</value>
-  </data>
-  <data name="groupBoxGeneralSettings.Text" xml:space="preserve">
-    <value>General Compass Settings</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        kRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrq
-        zJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGX
-        CixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixV
-        y22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22C
-        ysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJG
-        aqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgz
-        R14qsFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14q
-        sFQttwkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQt
-        twkqCxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkq
-        Cxupoc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxup
-        oc4ceanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4c
-        eanAUrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanA
-        UrXcJqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXc
-        JqgsbKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAUrXcJqgs
-        bKSGOnPkpQJL1XKboLKwkRrqzJGXCixVy22CysJGaqgzR14qsFQttwkqCxupoc4ceanAcrXgdlc52EgN
-        debISwWWqwW3s8rAZmqoM0deKnCYWnY7qTOzqRrqzJGXChyqFt8O6qxsrIY6c+SlAoeq5beDOisbq6HO
-        HHmpwOFqAV6pzsjmaqgzR14qcIpahFeoszFADXXmyEsFTlHL8Ap1Ngaooc4ceanAKWoZXqHOxgA11Jni
-        r3/7L3BNBNili4z+AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCompass1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;CMB_primary_compass.Name" xml:space="preserve">
-    <value>CMB_primary_compass</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh-Hans</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

@@ -229,23 +229,23 @@ namespace MissionPlanner.GCSViews
 
                     if (pass == false)
                     {
-                        CustomMessageBox.Show("You must have a home altitude");
+                        CustomMessageBox.Show("请设定家点高度数据");
                         string homealt = "100";
-                        if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
+                        if (DialogResult.Cancel == InputBox.Show("家点高度", "家点高度", ref homealt))
                             return;
                         TXT_homealt.Text = homealt;
                     }
                     int results1;
                     if (!int.TryParse(TXT_DefaultAlt.Text, out results1))
                     {
-                        CustomMessageBox.Show("Your default alt is not valid");
+                        CustomMessageBox.Show("默认家点位置无效");
                         return;
                     }
 
                     if (results1 == 0)
                     {
                         string defalt = "100";
-                        if (DialogResult.Cancel == InputBox.Show("Default Alt", "Default Altitude", ref defalt))
+                        if (DialogResult.Cancel == InputBox.Show("默认高度", "默认高度值", ref defalt))
                             return;
                         TXT_DefaultAlt.Text = defalt;
                     }
@@ -296,7 +296,7 @@ namespace MissionPlanner.GCSViews
                 }
                 else
                 {
-                    CustomMessageBox.Show("Invalid Home or wp Alt");
+                    CustomMessageBox.Show("无效家点或航点值！");
                     cell.Style.BackColor = Color.Red;
                 }
             }
@@ -610,7 +610,7 @@ namespace MissionPlanner.GCSViews
             center = new GMarkerGoogle(MainMap.Position, GMarkerGoogleType.none);
             top.Markers.Add(center);
 
-            MainMap.Zoom = 3;
+            MainMap.Zoom = 5;
 
             CMB_altmode.DisplayMember = "Value";
             CMB_altmode.ValueMember = "Key";
@@ -4105,7 +4105,7 @@ namespace MissionPlanner.GCSViews
             else
             {
                 CustomMessageBox.Show(
-                    "If you're at the field, connect to your APM and wait for GPS lock. Then click 'Home Location' link to set home to your location");
+                    "请在空旷场地，确保飞控GPS定位后，点击获取家点位置");
             }
         }
 
@@ -7004,6 +7004,22 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
            
             
+        }
+
+        private void 家点设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (MainV2.comPort.MAV.cs.lat != 0)
+            {
+                TXT_homealt.Text = (MainV2.comPort.MAV.cs.altasl).ToString("0");
+                TXT_homelat.Text = MainV2.comPort.MAV.cs.lat.ToString();
+                TXT_homelng.Text = MainV2.comPort.MAV.cs.lng.ToString();
+            }
+            else
+            {
+                CustomMessageBox.Show(
+                    "请在空旷场地，确保飞控GPS定位后，点击获取家点位置");
+            }
         }
     }
 }

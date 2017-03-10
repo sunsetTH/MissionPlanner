@@ -1168,6 +1168,9 @@
     <EmbeddedResource Include="FollowMe.ar.resx">
       <DependentUpon>FollowMe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\Calibra.zh-Hans.resx">
+      <DependentUpon>Calibra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.ar.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
     </EmbeddedResource>
