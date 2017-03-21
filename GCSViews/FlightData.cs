@@ -271,8 +271,8 @@ namespace MissionPlanner.GCSViews
 
             CMB_setwp.SelectedIndex = 0;
 
-            log.Info("Graph Setup");
-            CreateChart(zg1);
+            //log.Info("Graph Setup");
+            //CreateChart(zg1);
 
             // config map      
             log.Info("Map Setup");
@@ -470,8 +470,8 @@ namespace MissionPlanner.GCSViews
 
             OnResize(EventArgs.Empty);
 
-            if (CB_tuning.Checked)
-                ZedGraphTimer.Start();
+            //if (CB_tuning.Checked)
+            //    ZedGraphTimer.Start();
 
             if (MainV2.MONO)
             {
@@ -553,16 +553,16 @@ namespace MissionPlanner.GCSViews
                     if (Math.Round(Settings.Instance.GetDouble("maplast_lat"), 1) == 0)
                     {
                         // no zoom in
-                        Zoomlevel.Value = 3;
+                        //Zoomlevel.Value = 3;
                         TRK_zoom.Value = 3;
                     }
                     else
                     {
                         var zoom = Settings.Instance.GetFloat("maplast_zoom");
-                        if (Zoomlevel.Maximum < (decimal)zoom)
-                            zoom = (float)Zoomlevel.Maximum;
-                        Zoomlevel.Value = (decimal)zoom;
-                        TRK_zoom.Value = (float)Zoomlevel.Value;
+                        //if (Zoomlevel.Maximum < (decimal)zoom)
+                        //    zoom = (float)Zoomlevel.Maximum;
+                        //Zoomlevel.Value = (decimal)zoom;
+                        //TRK_zoom.Value = (float)Zoomlevel.Value;
                     }
                 }
                 catch
@@ -631,7 +631,7 @@ namespace MissionPlanner.GCSViews
             {
                 // Exception System.Runtime.InteropServices.SEHException: External component has thrown an exception.
                 TRK_zoom.Value = (float)gMapControl1.Zoom;
-                Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
+                //Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
             }
             catch
             {
@@ -655,9 +655,9 @@ namespace MissionPlanner.GCSViews
 
             gMapControl1.EmptyTileColor = Color.Gray;
 
-            Zoomlevel.Minimum = gMapControl1.MapProvider.MinZoom;
-            Zoomlevel.Maximum = 24;
-            Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
+            //Zoomlevel.Minimum = gMapControl1.MapProvider.MinZoom;
+            //Zoomlevel.Maximum = 24;
+            //Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
 
             var item1 = ParameterMetaDataRepository.GetParameterOptionsInt("MNT_MODE",
                 MainV2.comPort.MAV.cs.firmware.ToString());
@@ -672,19 +672,15 @@ namespace MissionPlanner.GCSViews
             //CMB_mountmode.DisplayMember = "Value";
             //CMB_mountmode.ValueMember = "Key";
 
-            if (Settings.Instance["CHK_autopan"] != null)
-                CHK_autopan.Checked = Settings.Instance.GetBoolean("CHK_autopan");
+            //if (Settings.Instance["CHK_autopan"] != null)
+            //    CHK_autopan.Checked = Settings.Instance.GetBoolean("CHK_autopan");
 
             if (Settings.Instance.ContainsKey("FlightSplitter"))
             {
                 MainH.SplitterDistance = Settings.Instance.GetInt32("FlightSplitter");
             }
 
-            if (Settings.Instance.ContainsKey("russian_hud"))
-            {
-                hud1.Russian = Settings.Instance.GetBoolean("russian_hud");
-            }
-
+            hud1.Width = MainH.SplitterDistance;
             hud1.doResize();
 
             thisthread = new Thread(mainloop);
@@ -1050,30 +1046,30 @@ namespace MissionPlanner.GCSViews
                     Vario.SetValue(MainV2.comPort.MAV.cs.climbrate);
 
                     // udpate tunning tab
-                    if (tunning.AddMilliseconds(50) < DateTime.Now && CB_tuning.Checked)
-                    {
-                        double time = (Environment.TickCount - tickStart) / 1000.0;
-                        if (list1item != null)
-                            list1.Add(time, ConvertToDouble(list1item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list2item != null)
-                            list2.Add(time, ConvertToDouble(list2item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list3item != null)
-                            list3.Add(time, ConvertToDouble(list3item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list4item != null)
-                            list4.Add(time, ConvertToDouble(list4item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list5item != null)
-                            list5.Add(time, ConvertToDouble(list5item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list6item != null)
-                            list6.Add(time, ConvertToDouble(list6item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list7item != null)
-                            list7.Add(time, ConvertToDouble(list7item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list8item != null)
-                            list8.Add(time, ConvertToDouble(list8item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list9item != null)
-                            list9.Add(time, ConvertToDouble(list9item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list10item != null)
-                            list10.Add(time, ConvertToDouble(list10item.GetValue(MainV2.comPort.MAV.cs, null)));
-                    }
+                    //if (tunning.AddMilliseconds(50) < DateTime.Now && CB_tuning.Checked)
+                    //{
+                    //    double time = (Environment.TickCount - tickStart) / 1000.0;
+                    //    if (list1item != null)
+                    //        list1.Add(time, ConvertToDouble(list1item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list2item != null)
+                    //        list2.Add(time, ConvertToDouble(list2item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list3item != null)
+                    //        list3.Add(time, ConvertToDouble(list3item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list4item != null)
+                    //        list4.Add(time, ConvertToDouble(list4item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list5item != null)
+                    //        list5.Add(time, ConvertToDouble(list5item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list6item != null)
+                    //        list6.Add(time, ConvertToDouble(list6item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list7item != null)
+                    //        list7.Add(time, ConvertToDouble(list7item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list8item != null)
+                    //        list8.Add(time, ConvertToDouble(list8item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list9item != null)
+                    //        list9.Add(time, ConvertToDouble(list9item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list10item != null)
+                    //        list10.Add(time, ConvertToDouble(list10item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //}
 
                     // update map
                     if (tracklast.AddSeconds(1.2) < DateTime.Now)
@@ -1413,7 +1409,7 @@ namespace MissionPlanner.GCSViews
                             }
 
                             if (route.Points.Count == 0 || route.Points[route.Points.Count - 1].Lat != 0 &&
-                                (mapupdate.AddSeconds(3) < DateTime.Now) && CHK_autopan.Checked)
+                                (mapupdate.AddSeconds(3) < DateTime.Now) )
                             {
                                 updateMapPosition(currentloc);
                                 mapupdate = DateTime.Now;
@@ -1903,46 +1899,46 @@ namespace MissionPlanner.GCSViews
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            try
-            {
-                // Make sure that the curvelist has at least one curve
-                if (zg1.GraphPane.CurveList.Count <= 0)
-                    return;
+            //try
+            //{
+            //    // Make sure that the curvelist has at least one curve
+            //    if (zg1.GraphPane.CurveList.Count <= 0)
+            //        return;
 
-                // Get the first CurveItem in the graph
-                LineItem curve = zg1.GraphPane.CurveList[0] as LineItem;
-                if (curve == null)
-                    return;
+            //    // Get the first CurveItem in the graph
+            //    LineItem curve = zg1.GraphPane.CurveList[0] as LineItem;
+            //    if (curve == null)
+            //        return;
 
-                // Get the PointPairList
-                IPointListEdit list = curve.Points as IPointListEdit;
-                // If this is null, it means the reference at curve.Points does not
-                // support IPointListEdit, so we won't be able to modify it
-                if (list == null)
-                    return;
+            //    // Get the PointPairList
+            //    IPointListEdit list = curve.Points as IPointListEdit;
+            //    // If this is null, it means the reference at curve.Points does not
+            //    // support IPointListEdit, so we won't be able to modify it
+            //    if (list == null)
+            //        return;
 
-                // Time is measured in seconds
-                double time = (Environment.TickCount - tickStart) / 1000.0;
+            //    // Time is measured in seconds
+            //    double time = (Environment.TickCount - tickStart) / 1000.0;
 
-                // Keep the X scale at a rolling 30 second interval, with one
-                // major step between the max X value and the end of the axis
-                Scale xScale = zg1.GraphPane.XAxis.Scale;
-                if (time > xScale.Max - xScale.MajorStep)
-                {
-                    xScale.Max = time + xScale.MajorStep;
-                    xScale.Min = xScale.Max - 10.0;
-                }
+            //    // Keep the X scale at a rolling 30 second interval, with one
+            //    // major step between the max X value and the end of the axis
+            //    Scale xScale = zg1.GraphPane.XAxis.Scale;
+            //    if (time > xScale.Max - xScale.MajorStep)
+            //    {
+            //        xScale.Max = time + xScale.MajorStep;
+            //        xScale.Min = xScale.Max - 10.0;
+            //    }
 
-                // Make sure the Y axis is rescaled to accommodate actual data
-                zg1.AxisChange();
+            //    // Make sure the Y axis is rescaled to accommodate actual data
+            //    zg1.AxisChange();
 
-                // Force a redraw
+            //    // Force a redraw
 
-                zg1.Invalidate();
-            }
-            catch
-            {
-            }
+            //    zg1.Invalidate();
+            //}
+            //catch
+            //{
+            //}
         }
 
         private void BUT_clear_track_Click(object sender, EventArgs e)
@@ -2026,21 +2022,21 @@ namespace MissionPlanner.GCSViews
 
         private void CB_tuning_CheckedChanged(object sender, EventArgs e)
         {
-            if (CB_tuning.Checked)
-            {
-                splitContainer1.Panel1Collapsed = false;
-                ZedGraphTimer.Enabled = true;
-                ZedGraphTimer.Start();
-                zg1.Visible = true;
-                zg1.Refresh();
-            }
-            else
-            {
-                splitContainer1.Panel1Collapsed = true;
-                ZedGraphTimer.Enabled = false;
-                ZedGraphTimer.Stop();
-                zg1.Visible = false;
-            }
+            //if (CB_tuning.Checked)
+            //{
+            //    splitContainer1.Panel1Collapsed = false;
+            //    ZedGraphTimer.Enabled = true;
+            //    ZedGraphTimer.Start();
+            //    zg1.Visible = true;
+            //    zg1.Refresh();
+            //}
+            //else
+            //{
+            //    splitContainer1.Panel1Collapsed = true;
+            //    ZedGraphTimer.Enabled = false;
+            //    ZedGraphTimer.Stop();
+            //    zg1.Visible = false;
+            //}
         }
 
         private void BUT_RAWSensor_Click(object sender, EventArgs e)
@@ -2121,20 +2117,20 @@ namespace MissionPlanner.GCSViews
 
         private void Zoomlevel_ValueChanged(object sender, EventArgs e)
         {
-            try
-            {
-                if (gMapControl1.MaxZoom + 1 == (double)Zoomlevel.Value)
-                {
-                    gMapControl1.Zoom = (double)Zoomlevel.Value - .1;
-                }
-                else
-                {
-                    gMapControl1.Zoom = (double)Zoomlevel.Value;
-                }
-            }
-            catch
-            {
-            }
+            //try
+            //{
+            //    if (gMapControl1.MaxZoom + 1 == (double)Zoomlevel.Value)
+            //    {
+            //        gMapControl1.Zoom = (double)Zoomlevel.Value - .1;
+            //    }
+            //    else
+            //    {
+            //        gMapControl1.Zoom = (double)Zoomlevel.Value;
+            //    }
+            //}
+            //catch
+            //{
+            //}
         }
 
         private void gMapControl1_MouseMove(object sender, MouseEventArgs e)
@@ -2353,9 +2349,9 @@ namespace MissionPlanner.GCSViews
                 list10.Clear();
                 tickStart = Environment.TickCount;
 
-                zg1.GraphPane.XAxis.Scale.Min = 0;
-                zg1.GraphPane.XAxis.Scale.Max = 1;
-                ZedGraphTimer.Start();
+                //zg1.GraphPane.XAxis.Scale.Min = 0;
+                //zg1.GraphPane.XAxis.Scale.Max = 1;
+                //ZedGraphTimer.Start();
                 playingLog = true;
             }
         }
@@ -2983,185 +2979,185 @@ namespace MissionPlanner.GCSViews
 
         void chk_log_CheckedChanged(object sender, EventArgs e)
         {
-            if (((CheckBox)sender).Checked)
-            {
-                zg1.GraphPane.YAxis.Type = AxisType.Log;
-            }
-            else
-            {
-                zg1.GraphPane.YAxis.Type = AxisType.Linear;
-            }
+            //if (((CheckBox)sender).Checked)
+            //{
+            //    zg1.GraphPane.YAxis.Type = AxisType.Log;
+            //}
+            //else
+            //{
+            //    zg1.GraphPane.YAxis.Type = AxisType.Linear;
+            //}
         }
 
         void chk_box_CheckedChanged(object sender, EventArgs e)
         {
-            if (((CheckBox)sender).Checked)
-            {
-                ((CheckBox)sender).BackColor = Color.Green;
+            //if (((CheckBox)sender).Checked)
+            //{
+            //    ((CheckBox)sender).BackColor = Color.Green;
 
-                if (list1item == null)
-                {
-                    if (setupPropertyInfo(ref list1item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list1.Clear();
-                        list1curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list1, Color.Red, SymbolType.None);
-                    }
-                }
-                else if (list2item == null)
-                {
-                    if (setupPropertyInfo(ref list2item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list2.Clear();
-                        list2curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list2, Color.Blue, SymbolType.None);
-                    }
-                }
-                else if (list3item == null)
-                {
-                    if (setupPropertyInfo(ref list3item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list3.Clear();
-                        list3curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list3, Color.Green,
-                            SymbolType.None);
-                    }
-                }
-                else if (list4item == null)
-                {
-                    if (setupPropertyInfo(ref list4item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list4.Clear();
-                        list4curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list4, Color.Orange,
-                            SymbolType.None);
-                    }
-                }
-                else if (list5item == null)
-                {
-                    if (setupPropertyInfo(ref list5item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list5.Clear();
-                        list5curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list5, Color.Yellow,
-                            SymbolType.None);
-                    }
-                }
-                else if (list6item == null)
-                {
-                    if (setupPropertyInfo(ref list6item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list6.Clear();
-                        list6curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list6, Color.Magenta,
-                            SymbolType.None);
-                    }
-                }
-                else if (list7item == null)
-                {
-                    if (setupPropertyInfo(ref list7item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list7.Clear();
-                        list7curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list7, Color.Purple,
-                            SymbolType.None);
-                    }
-                }
-                else if (list8item == null)
-                {
-                    if (setupPropertyInfo(ref list8item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list8.Clear();
-                        list8curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list8, Color.LimeGreen,
-                            SymbolType.None);
-                    }
-                }
-                else if (list9item == null)
-                {
-                    if (setupPropertyInfo(ref list9item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list9.Clear();
-                        list9curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list9, Color.Cyan, SymbolType.None);
-                    }
-                }
-                else if (list10item == null)
-                {
-                    if (setupPropertyInfo(ref list10item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
-                    {
-                        list10.Clear();
-                        list10curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list10, Color.Violet,
-                            SymbolType.None);
-                    }
-                }
-                else
-                {
-                    CustomMessageBox.Show("Max 10 at a time.");
-                    ((CheckBox)sender).Checked = false;
-                }
-                ThemeManager.ApplyThemeTo((Control)sender);
+            //    if (list1item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list1item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list1.Clear();
+            //            list1curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list1, Color.Red, SymbolType.None);
+            //        }
+            //    }
+            //    else if (list2item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list2item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list2.Clear();
+            //            list2curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list2, Color.Blue, SymbolType.None);
+            //        }
+            //    }
+            //    else if (list3item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list3item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list3.Clear();
+            //            list3curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list3, Color.Green,
+            //                SymbolType.None);
+            //        }
+            //    }
+            //    else if (list4item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list4item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list4.Clear();
+            //            list4curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list4, Color.Orange,
+            //                SymbolType.None);
+            //        }
+            //    }
+            //    else if (list5item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list5item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list5.Clear();
+            //            list5curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list5, Color.Yellow,
+            //                SymbolType.None);
+            //        }
+            //    }
+            //    else if (list6item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list6item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list6.Clear();
+            //            list6curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list6, Color.Magenta,
+            //                SymbolType.None);
+            //        }
+            //    }
+            //    else if (list7item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list7item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list7.Clear();
+            //            list7curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list7, Color.Purple,
+            //                SymbolType.None);
+            //        }
+            //    }
+            //    else if (list8item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list8item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list8.Clear();
+            //            list8curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list8, Color.LimeGreen,
+            //                SymbolType.None);
+            //        }
+            //    }
+            //    else if (list9item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list9item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list9.Clear();
+            //            list9curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list9, Color.Cyan, SymbolType.None);
+            //        }
+            //    }
+            //    else if (list10item == null)
+            //    {
+            //        if (setupPropertyInfo(ref list10item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+            //        {
+            //            list10.Clear();
+            //            list10curve = zg1.GraphPane.AddCurve(((CheckBox)sender).Name, list10, Color.Violet,
+            //                SymbolType.None);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        CustomMessageBox.Show("Max 10 at a time.");
+            //        ((CheckBox)sender).Checked = false;
+            //    }
+            //    ThemeManager.ApplyThemeTo((Control)sender);
 
-                string selected = "";
-                try
-                {
-                    foreach (var curve in zg1.GraphPane.CurveList)
-                    {
-                        selected = selected + curve.Label.Text + "|";
-                    }
-                }
-                catch
-                {
-                }
-                Settings.Instance["Tuning_Graph_Selected"] = selected;
-            }
-            else
-            {
-                ((CheckBox)sender).BackColor = Color.Transparent;
+            //    string selected = "";
+            //    try
+            //    {
+            //        foreach (var curve in zg1.GraphPane.CurveList)
+            //        {
+            //            selected = selected + curve.Label.Text + "|";
+            //        }
+            //    }
+            //    catch
+            //    {
+            //    }
+            //    Settings.Instance["Tuning_Graph_Selected"] = selected;
+            //}
+            //else
+            //{
+            //    ((CheckBox)sender).BackColor = Color.Transparent;
 
-                // reset old stuff
-                if (list1item != null && list1item.Name == ((CheckBox)sender).Name)
-                {
-                    list1item = null;
-                    zg1.GraphPane.CurveList.Remove(list1curve);
-                }
-                if (list2item != null && list2item.Name == ((CheckBox)sender).Name)
-                {
-                    list2item = null;
-                    zg1.GraphPane.CurveList.Remove(list2curve);
-                }
-                if (list3item != null && list3item.Name == ((CheckBox)sender).Name)
-                {
-                    list3item = null;
-                    zg1.GraphPane.CurveList.Remove(list3curve);
-                }
-                if (list4item != null && list4item.Name == ((CheckBox)sender).Name)
-                {
-                    list4item = null;
-                    zg1.GraphPane.CurveList.Remove(list4curve);
-                }
-                if (list5item != null && list5item.Name == ((CheckBox)sender).Name)
-                {
-                    list5item = null;
-                    zg1.GraphPane.CurveList.Remove(list5curve);
-                }
-                if (list6item != null && list6item.Name == ((CheckBox)sender).Name)
-                {
-                    list6item = null;
-                    zg1.GraphPane.CurveList.Remove(list6curve);
-                }
-                if (list7item != null && list7item.Name == ((CheckBox)sender).Name)
-                {
-                    list7item = null;
-                    zg1.GraphPane.CurveList.Remove(list7curve);
-                }
-                if (list8item != null && list8item.Name == ((CheckBox)sender).Name)
-                {
-                    list8item = null;
-                    zg1.GraphPane.CurveList.Remove(list8curve);
-                }
-                if (list9item != null && list9item.Name == ((CheckBox)sender).Name)
-                {
-                    list9item = null;
-                    zg1.GraphPane.CurveList.Remove(list9curve);
-                }
-                if (list10item != null && list10item.Name == ((CheckBox)sender).Name)
-                {
-                    list10item = null;
-                    zg1.GraphPane.CurveList.Remove(list10curve);
-                }
-            }
+            //    // reset old stuff
+            //    if (list1item != null && list1item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list1item = null;
+            //        zg1.GraphPane.CurveList.Remove(list1curve);
+            //    }
+            //    if (list2item != null && list2item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list2item = null;
+            //        zg1.GraphPane.CurveList.Remove(list2curve);
+            //    }
+            //    if (list3item != null && list3item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list3item = null;
+            //        zg1.GraphPane.CurveList.Remove(list3curve);
+            //    }
+            //    if (list4item != null && list4item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list4item = null;
+            //        zg1.GraphPane.CurveList.Remove(list4curve);
+            //    }
+            //    if (list5item != null && list5item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list5item = null;
+            //        zg1.GraphPane.CurveList.Remove(list5curve);
+            //    }
+            //    if (list6item != null && list6item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list6item = null;
+            //        zg1.GraphPane.CurveList.Remove(list6curve);
+            //    }
+            //    if (list7item != null && list7item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list7item = null;
+            //        zg1.GraphPane.CurveList.Remove(list7curve);
+            //    }
+            //    if (list8item != null && list8item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list8item = null;
+            //        zg1.GraphPane.CurveList.Remove(list8curve);
+            //    }
+            //    if (list9item != null && list9item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list9item = null;
+            //        zg1.GraphPane.CurveList.Remove(list9curve);
+            //    }
+            //    if (list10item != null && list10item.Name == ((CheckBox)sender).Name)
+            //    {
+            //        list10item = null;
+            //        zg1.GraphPane.CurveList.Remove(list10curve);
+            //    }
+            //}
         }
 
         private void pointCameraHereToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3204,7 +3200,7 @@ namespace MissionPlanner.GCSViews
 
         private void CHK_autopan_CheckedChanged(object sender, EventArgs e)
         {
-            Settings.Instance["CHK_autopan"] = CHK_autopan.Checked.ToString();
+            //Settings.Instance["CHK_autopan"] = CHK_autopan.Checked.ToString();
 
             //GCSViews.FlightPlanner.instance.autopan = CHK_autopan.Checked;
         }
@@ -3386,7 +3382,7 @@ namespace MissionPlanner.GCSViews
 
         private void flightPlannerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (Control ctl in splitContainer1.Panel2.Controls)
+            foreach (Control ctl in MainH.Panel1.Controls)
             {
                 ctl.Visible = false;
             }
@@ -3397,13 +3393,13 @@ namespace MissionPlanner.GCSViews
                 {
                     MyButton but = new MyButton
                     {
-                        Location = new Point(splitContainer1.Panel2.Width / 2, 0),
+                        Location = new Point(MainH.Panel1.Width / 2, 0),
                         Text = "Close"
                     };
                     but.Click += but_Click;
 
-                    splitContainer1.Panel2.Controls.Add(but);
-                    splitContainer1.Panel2.Controls.Add(sc.Control);
+                    MainH.Panel1.Controls.Add(but);
+                    MainH.Panel1.Controls.Add(sc.Control);
                     ThemeManager.ApplyThemeTo(sc.Control);
                     ThemeManager.ApplyThemeTo(this);
 
@@ -3427,8 +3423,8 @@ namespace MissionPlanner.GCSViews
             {
                 if (sc.Name == "FlightPlanner")
                 {
-                    splitContainer1.Panel2.Controls.Remove(sc.Control);
-                    splitContainer1.Panel2.Controls.Remove((Control)sender);
+                    MainH.Panel1.Controls.Remove(sc.Control);
+                    MainH.Panel1.Controls.Remove((Control)sender);
                     sc.Control.Visible = false;
 
                     if (sc.Control is IDeactivate)
@@ -3440,7 +3436,7 @@ namespace MissionPlanner.GCSViews
                 }
             }
 
-            foreach (Control ctl in splitContainer1.Panel2.Controls)
+            foreach (Control ctl in MainH.Panel1.Controls)
             {
                 ctl.Visible = true;
             }
@@ -4157,23 +4153,23 @@ namespace MissionPlanner.GCSViews
 
         private void SwapHud1AndMap()
         {
-            if (this.huddropout)
-                return;
+            //if (this.huddropout)
+            //    return;
 
-            MainH.Panel2.SuspendLayout();
+            //MainH.Panel2.SuspendLayout();
 
-            if (this.SubMainLeft.Panel1.Controls.Contains(hud1))
-            {
-                MainH.Panel2.Controls.Add(hud1);
-                SubMainLeft.Panel1.Controls.Add(tableMap);
-            }
-            else
-            {
-                MainH.Panel2.Controls.Add(tableMap);
-                SubMainLeft.Panel1.Controls.Add(hud1);
-            }
+            //if (this.SubMainLeft.Panel1.Controls.Contains(hud1))
+            //{
+            //    MainH.Panel2.Controls.Add(hud1);
+            //    SubMainLeft.Panel1.Controls.Add(tableMap);
+            //}
+            //else
+            //{
+            //    MainH.Panel2.Controls.Add(tableMap);
+            //    SubMainLeft.Panel1.Controls.Add(hud1);
+            //}
 
-            MainH.Panel2.ResumeLayout();
+            //MainH.Panel2.ResumeLayout();
         }
 
         private void swapWithMapToolStripMenuItem_Click(object sender, EventArgs e)
